@@ -7,54 +7,121 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shorcut icon" href="../img/icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/principal.css">
     <title>DreamAcademy</title>
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a href="./principal.html"><img src="../img/icono.png" alt="Logo"></a>
-            <label for="Search"></label>
-            <form>
-                <input type="text" placeholder="Search" id="Search">
-                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </form>
-            <div class="inicio-sesion">    
-                <a href="../index.html">Iniciar Sesion</a>
-                <a href="./registro.html">Registrarse</a>
-            </div>
-            <a class="carrito" href="#"><img src="../img/shopping-cart-01-stroke-rounded.svg" alt="Shopping-car"><p class="numero-carrito">0</p></a>
+        <nav class="navBar">
+            <section class="navBar_elements">
+                <!-- LOGO -->
+                <a href="../pages/principal.html">
+                    <img class="logo" src="../img/icono.png"  alt="logo">
+                </a>
+                <!-- BUSQUEDA -->
+                <form class="form-busqueda" method="get" action="../pages/principal.html">
+                    <p class="textoBusqueda" >Buscar:</p>
+                    <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
+                    <button  class="boton-lupa" type="submit" >
+                        <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
+                    </button>
+                </form>
+                <!-- BOTONES DE INICIO Y REGISTRO -->
+                <div >
+                    <ul class="botones-sesion">
+                        <li>
+                            <a class="botonInicio" href="../index.html"> Iniciar Sesion</a>
+                        </li>
+                        <li>
+                            <a class="botonRegistro" href="../pages/registro.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- CARRITO DE COMPRAS -->
+                <a class="carrito" href="#">
+                    <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
+                    <p class="numero-carrito">0</p>
+                </a>
+            </section>
         </nav>
+
+        <section class="menu">
+            <div class="lista-menu">
+                <a href="#">Clases</a>
+                <a href="#">Calendario</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Cursos para empresas</a>
+                <a href="#">Contacto </a>
+            </div>
+        </section>
+
     </header>
 
+    <main class="main">
+        
+        <h1>slider de una imagen</h1>
+        <p>...</p>
+        <div>
+
+        </div>
+        <h2>CURSOS DESTACADOS</h2>
+        <div>
+
+        </div>
+        <p>...3 imagenes...</p>
+        <p>...3 imagenes...</p>
+        <div>
+
+        </div>
+        <h2>MEDIOS DE PAGO</h2>
+        <div>
+            
+        </div>
+        <h3>...SLIDER CON 4 IMAGENES EN PANTALLA...</h3>
+    </main>
+
     <footer class="footer">
-        <div class="datos-grupo">
-            <h3 class="datos-grupo-titulo">Datos Del Grupo</h3>
+        <section class="datos-grupo">
+            <h3 class="datos-grupo-titulo">Datos </h3>
             <ul class="datos-grupo-lista">
-                <li>Lautaro Caprino: 47164463</li>
-                <li>García Lucas Agustin: 46288646</li>
-                <li></li>
-                <li></li>
+                <li>Lautaro Caprino - DNI: 47164463</li>
+                <li>Lucas Agustín García - DNI: 46288646</li> 
+                <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
+                <li>Ramiro Matias Bruzon - DNI: 37990199</li>
             </ul>
-        </div>
-        <div class="menu-inferior">
+        </section>
+
+        <section class="menu-inferior">
             <h3>Menu inferior</h3>
-            <ul class="menu-inferior-ul">
-                <li><a href="#">Clases</a></li>
-                <li><a href="#">Proximos cursos</a></li>
-                <li><a href="#">Gift Card</a></li>
-                <li><a href="#">Cursos para empresas</h3></a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul class="menu-inferior-lista">
+                <li><a href="#"> Clases </a></li>
+                <li><a href="../pages/calendario.html"> Calendario </a></li>
+                <li><a href="#"> Gift Card </a></li>
+                <li><a href="#"> Cursos para empresas </a></li>
+                <li><a href="#"> Contacto </a></li>
             </ul>
-        </div>
-        <div class="redes-sociales">
+        </section>
+
+        <section class="redes-sociales">
             <h3>Redes sociales</h3>
-            <ul class="lista-redes">
-                <li><a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg" alt="instagram"><p>Instagram</p></a></li>
-                <li><a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg" alt="X"><p>X/Twitter</p></a></li>
-                <li><a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber"><p>Youtube</p></a></li>
-                <li><a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail"><p>Gwyn@lordOfCinder.com</p></a></li>
+            <ul class="redes-sociales-lista">
+                <li>
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg" alt="instagram">Instagram 
+                    </a>
+                </li>
+                <li>  
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg" alt="X">X/Twitter</a>
+                </li>
+                <li>
+                    
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber">Youtube</a>
+                    </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
+                    </li>
             </ul>
-        </div>
+        </section>
     </footer>
+    
 </body>
 </html>
