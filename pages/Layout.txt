@@ -14,7 +14,7 @@
         <nav class="navBar">
             <section class="navBar_elements">
                 <!-- LOGO -->
-                <a href="../index2.html">
+                <a href="../pages/principal.html">
                     <img class="logo" src="../img/icono.png"  alt="logo">
                 </a>
                 <!-- BUSQUEDA -->
@@ -48,7 +48,7 @@
         <section class="menu">
             <div class="lista-menu">
                 <a href="#">Clases</a>
-                <a href="#">Calendario</a>
+                <a href="../pages/calendario.html">Calendario</a>
                 <a href="#">Gift Card</a>
                 <a href="#">Cursos para empresas</a>
                 <a href="#">Contacto </a>

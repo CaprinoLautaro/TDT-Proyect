@@ -1,4 +1,8 @@
 
+body{
+    color: var(--color--texto);
+}
+
 :root{
     --color--principal: #3db0fa;
     --color--texto: #020202;
@@ -81,4 +85,5 @@ a{
     border-radius: 0.4rem;
     padding: 0.2rem;
     text-transform: uppercase;
+    color: var(--color--texto);
 }
