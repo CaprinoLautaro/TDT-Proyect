@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prueba jiji</title>
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./main.css"/>
 </head>
-<body>
-    <h1>lautarado</h1>
+
+<body class="imgfondo">
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <main>
+    <div class="titulo">
+        <h2>Formulario de Contacto</h2>
+    </div>
+
+    <div class="contacto-formulario-container">
+        <div class="formulario">
+        <h3>Complete el Formulario:</h3>
+
+    <form>
+        <input type="text" name="name" id="name" placeholder="Nombre" required/>
+        <input type="text" name="last_name" id="last_name" placeholder="Apellido" required/>
+        <input type="email" name="email" id="email" placeholder="E-Mail" required/>
+        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono (opcional)"/>
+        <textarea name="consulta" id="consulta" placeholder="Detalle su consulta" required></textarea>
+        <!-- <input type="text" name="consulta" id="consulta" placeholder="Detalle su consulta" required/> -->
+
+        <button type="submit" class="button">Envíar</button>
+
+    </form>
+    </div>
+
+    <div class="contacto-info">
+        <h2>Datos de Contacto</h2>
+        <img id="imagenContacto" src="./AssetsTp/contacto.png" width="50%" height="50%"/> 
+        <p>Nombre de la Empresa</p>
+        <p>Dirección: yVaElTercero912, Madrid, España</p>
+        <p>Teléfono: +9122018</p>
+        <p>Email: contacto@empresa.com</p>
+    </div>
+    </div>
+
+    <div class="mapa">
+        <h2 id="ubi">Ubicación de la Empresa</h2>
+        <img src="./AssetsTp/ubicacionEmpresa.jpeg" width="50%" height="60%" alt="ubicacionDeLaEmpresaDesdeGoogleMaps"/>
+    </div>
+
+    </main>
 </body>
 </html>
