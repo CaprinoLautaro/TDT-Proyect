@@ -1,0 +1,95 @@
+
+body{
+    color: var(--color--texto);
+}
+
+:root{
+    --color--principal: #3db0fa;
+    --color--texto: #020202;
+    --color--secundario: #f9f7ff;
+    --color--tercero: #03112b;
+}
+
+a{
+    color: var(--color--texto);
+}
+
+
+
+.calendar-container{
+    width: 100%;
+    max-width: 75rem;
+    background-color: white;
+    box-shadow: 0 0.2rem 1rem #aaa;
+    margin: 0 auto;
+    border-radius: 0.625rem;
+}
+.calendar-header{
+    text-align: center;
+    padding: 1.2rem 0;
+    border-bottom: 0.2rem solid #aaa;
+    color: #03112b;
+
+}
+.calendar-hearder h1{
+    font-size: 1.1rem;
+    margin: 0;
+    
+}
+
+.calendar-header p{
+    font-size: 0.8rem;
+    margin: 0.3rem;
+    font-weight: bold;
+    
+}
+
+.calendar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(7.5rem, 1fr));
+    grid-template-rows: 3.125rem;
+    grid-auto-rows: 7.5rem;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: right;
+    padding: 0.8rem 1.2rem;
+    border-bottom: 0.0625rem solid #aaa;
+    border-right: 0.0625rem solid #aaa;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.day-name{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--color--tercero);
+    text-align: center;
+    line-height: 3.125rem;
+    font-weight: bold;
+    border-bottom: 0.0625rem solid #aaa;
+}
+
+.day:nth-of-type(7n + 7){
+    border-right: none;
+}
+
+.day-disabled{
+    background-color: #0b0c25ad;
+    cursor: not-allowed;
+}
+
+.task{
+    background-color: var(--color--principal);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color--texto);
+}
