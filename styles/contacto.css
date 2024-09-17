@@ -1,0 +1,114 @@
+.main{
+    margin: 1em;
+    background-color:rgba(3, 17, 43, 0.8);
+    border-radius: 2em;
+    justify-content: center;   
+}
+
+.titulo{
+    color: white;
+    text-transform: uppercase;
+    margin-left: 11.5%;
+
+}
+
+/* Estilo para el contenedor de formulario y contacto */
+.contacto-formulario-container {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+    gap: 2rem; /* Espacio entre el formulario y la información de contacto */
+}
+
+/* Estilo para el formulario */
+.formulario {
+    margin-left: 10%;
+    width: 45%;
+    height: 50%;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--color--tercero);
+    border-radius: 2rem;
+    border: 0.2rem solid #ffffff;
+}
+
+/* Estilo para la información de contacto */
+.contacto-info {
+    margin-right: 10%;
+    width: 30%; /* Ajusta el ancho según sea necesario */
+    background-color: var(--color--tercero);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: 0.2rem solid #ffffff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagenContacto{
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Ajusta los estilos para que el formulario y la información de contacto se alineen */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"] {
+    width: 100%; /* Ajusta el ancho a 100% para que se alinee correctamente */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    width: 100%;
+    min-height: 10rem; /* Altura mínima para el campo de consulta */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.25rem;
+    box-sizing: border-box; /* Incluye el padding y el border en el tamaño total */
+    resize: vertical; /* Permite al usuario ajustar la altura verticalmente */
+}
+
+.formulario button {
+    background: var(--color--tercero);
+    color: #fff;
+    border-radius: 2rem;
+    border: 0.1rem solid #ffffff;
+
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.formulario button:hover {
+    background: var(--color--principal)
+}
+
+#ubi{
+    color: var(--color--secundario);
+}
+
+/* Estilo para el mapa */
+.mapa {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.mapa img {
+    border: 2px solid #333; /* Borde alrededor del header */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+:root{
+    --color--principal: #3db0fa;
+    --color--texto: #020202;
+    --color--secundario: #f9f7ff;
+    --color--tercero: #03112b;
+}

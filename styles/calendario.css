@@ -28,16 +28,20 @@ a{
     text-align: center;
     padding: 1.2rem 0;
     border-bottom: 0.2rem solid #aaa;
+    color: #03112b;
+
 }
 .calendar-hearder h1{
     font-size: 1.1rem;
     margin: 0;
+    
 }
 
 .calendar-header p{
     font-size: 0.8rem;
     margin: 0.3rem;
     font-weight: bold;
+    
 }
 
 .calendar{

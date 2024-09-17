@@ -3,58 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/layout.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="shorcut icon" href="../img/icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="../styles/calendario.css">
+    <link rel="stylesheet" href="../styles/header-footer-style.css"> 
+
     <title>Calendario</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navBar">
-            <section class="navBar_elements">
-                <!-- LOGO -->
-                <a href="../pages/principal.html">
-                    <img class="logo" src="../img/icono.png"  alt="logo">
-                </a>
-                <!-- BUSQUEDA -->
-                <form class="form-busqueda" method="get" action="../pages/principal.html">
-                    <p class="textoBusqueda" >Buscar:</p>
-                    <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
-                    <button  class="boton-lupa" type="submit" >
-                        <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
-                    </button>
-                </form>
-                <!-- BOTONES DE INICIO Y REGISTRO -->
-                <div >
-                    <ul class="botones-sesion">
-                        <li>
-                            <a class="botonInicio" href="../pages/principal.html"> Iniciar Sesion</a>
-                        </li>
-                        <li>
-                            <a class="botonRegistro" href="../pages/registro.html">Registrarse</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- CARRITO DE COMPRAS -->
-                <a class="carrito" href="#">
-                    <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
-                    <p class="numero-carrito">0</p>
-                </a>
-            </section>
-        </nav>
-
+        <!-- 1er barra de navegacion -->
+        <section class="navBar-sup">
+            <nav class="navBar1">
+                <section class="navBar1_elements">
+                    <!-- LOGO -->
+                    <a href="./pag-principal.html">
+                        <img class="logo" src="../img/icono.png"  alt="logo">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="busqueda" method="get" action="https://www.google.com.ar">
+                        <p class="textoBusqueda" >Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
+                        <button  class="boton-lupa" type="submit" >
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
+                        </button>
+                    </form>
+                    <!-- BOTONES DE INICIO Y REGISTRO -->
+                    <div >
+                        <ul class="botones-navBar1">
+                            <li>
+                                <a class="botones-navBar1-Inicio" href="../index.html"> Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CARRITO DE COMPRAS -->
+                    <a class="carrito" href="#">
+                        <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
+                        <p class="numero-carrito">0</p>
+                    </a>
+                </section>
+            </nav>
+        </section><!-- aca termina la 1er barra de nav -->
+    
+        <!-- 2da BARRA- MENU -->
         <section class="menu">
             <div class="lista-menu">
-                <a href="#">Clases</a>
-                <a href="../pages/calendario.html">Calendario</a>
-                <a href="../pages/giftCard.html">Gift Card</a>
-                <a href="#">Cursos para empresas</a>
-                <a href="#">Contacto </a>
+                <a href="../pages/clases.html">Cursos</a>
+                <a href="./calendario.html">Calendario</a>
+                <a href="./giftCard.html">Gift Card</a>
+                <a href="./formuEmpresas.html">Inscripcion Empresas</a>
+                <a href="./contacto.html">Contacto</a>
             </div>
         </section>
-
     </header>
 
     <main class="calendar-container">
@@ -123,10 +128,10 @@
             <h3>Menu inferior</h3>
             <ul class="menu-inferior-lista">
                 <li><a href="#"> Clases </a></li>
-                <li><a href="../pages/calendario.html"> Calendario </a></li>
-                <li><a href="../pages/giftCard.html"> Gift Card </a></li>
+                <li><a href="#"> Calendario </a></li>
+                <li><a href="./giftCard.html"> Gift Card </a></li>
                 <li><a href="#"> Cursos para empresas </a></li>
-                <li><a href="#"> Contacto </a></li>
+                <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
         </section>
 
