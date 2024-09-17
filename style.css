@@ -1,0 +1,136 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+.imgfondo{
+   background-image: url(./AssetsTp/imagenDeFondo.jpeg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed; /* para que no se mueva */
+   background-size: cover; /* central la imagen */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 1rem;
+
+}
+
+.titulo{
+    color: white;
+    text-transform: uppercase;
+    margin-left: 11.5%;
+}
+
+h3{
+    text-align: center;
+}
+/* ---------------ApartadoCarrito y Compra------------------- */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+/* --------------------Carrito------------------------ */
+.carrito{
+    width: 42rem;
+    height: 16rem;
+    color: white;
+
+    padding: 1rem;
+    background-color: var(--color--tercero);
+    border-radius: 1rem;
+    border: 1px solid #ffffff;
+}
+
+.carritoImput{
+    gap: 1.5rem;
+    display: grid;
+    grid-template: 
+    "numTarjeta numTarjeta numTarjeta" auto
+    "mesExpiracion anio cvv" auto 
+    "button button button";
+
+    #numTarjeta{
+        grid-area: numTarjeta;
+    }
+
+    #mesExpiracion{
+        grid-area: mesExpiracion;
+    }
+
+    #anio{
+        grid-area: anio;
+    }
+
+    #cvv{
+        grid-area: cvv;
+    }
+
+    .button{
+        grid-area: button;
+    }
+}
+
+.carritoImput input{
+    height: 2rem;
+}
+
+.carritoImput button{
+    height: 3rem;
+}
+
+.carritoImput button:hover{
+    background-color: var(--color--principal)
+}
+
+/* --------------listaCompra---------- */
+
+.listaCompra{
+    padding: 1rem;
+    background-color: var(--color--tercero);
+    border: 1px solid white; 
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    width: 42rem;
+    height: 16rem;
+}
+
+.total{
+    width: fit-content;
+    text-align: right;
+    background-color: var(--color--principal);
+    margin-left: 35rem;
+    font-size: large;
+}
+
+
+.letraTamanio{
+    font-size:xx-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    align-items: center;
+
+}
+
+.letraTamanio p{
+    margin: 0;
+    border: 1px solid rgb(255, 255, 255);
+    width: 37rem;
+    height: fit-content;
+    text-align: center;
+}
+
+:root{
+    --color--principal: #3db0fa;
+    --color--texto: #020202;
+    --color--secundario: #f9f7ff;
+    --color--tercero: #03112b;
+}
