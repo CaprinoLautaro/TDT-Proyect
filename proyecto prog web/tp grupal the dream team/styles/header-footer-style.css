@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+    color--celeste: #3db0fa;
+    color--texto: #020202;
+    color--marfil: #f9f7ff;
+    color--azul: #03112b;
+*/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f9f7ff;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /*si muevo la pag la imagen no se mueve*/
+    background-size: cover;
+}
+/*HEADER*/
+
+.header{
+    background-color: #03112b;
+    width: 100%;
+    box-sizing: border-box; 
+    display: grid;  
+    grid-template-rows: 4fr 1fr;
+}
+/*Barra de navegacion-->elementos*/
+.navBar1_elements{
+    padding: 0.2em;
+    display: grid;
+    grid-template-columns: 1fr 8fr 8fr 0.5fr;
+    grid-template-rows: 100px; 
+    align-items:center;
+    justify-items:center;
+    gap: 2em;
+}
+
+.logo{
+    height: 60px;
+}
+
+/* elemento Buscar*/
+
+.busqueda{
+    display: grid;
+    grid-template-columns: 1fr 8fr 0.5fr;
+    gap: 0.5em;
+    align-items: center;
+    color: #f9f7ff;
+}
+.textoBusqueda{
+    font-size: 1em;
+}
+.inputBusqueda{
+    height: 30px;
+    border-collapse:collapse;
+}
+.boton-lupa{
+    padding: 0;/*le quito el padding al boton*/
+    display: flex;/*centrar la imagen*/
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius:25% ;
+    border-bottom-color:#03112b;
+    border-color:#03112b;  
+    background-color: #03112b;
+    cursor: pointer;
+}
+.lupa-img{
+    height: 25px;
+}
+
+/*botones de inicio y registro*/
+.botones-navBar1{
+    padding: 0;
+    list-style: none;/*saca los puntos de la lista*/
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    gap: 1em 1em; 
+}
+
+.botones-navBar1-Inicio{
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    padding:10px 24px ;
+    border-radius: 2px;
+    color: #f9f7ff;
+    text-decoration: none;
+}
+.botones-navBar1-Inicio:hover{
+    background-color:#52bafbae;
+    border-radius: 2px;
+}
+
+.botones-navBar1-Registro{
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    padding: 10px 24px;
+    background-color:#3db0fa;
+    text-decoration: none;
+    color:#03112b;
+    border-radius: 2%;
+    
+}
+.botones-navBar1-Registro:hover{
+    color: #f9f7ff;
+    border: 3px solid #3deafa; /* Añade un borde con grosor de 2px y color #3db0fa */
+    border-radius: 2%;         /* Mantén el borde ligeramente redondeado */
+    box-sizing: border-box;     /* Asegura que el borde no altere el tamaño del botón */
+    font-weight: 600;
+}
+
+.carrito{
+position: relative;
+}
+.imgCarrito{
+ width: 4em;
+ margin: 0;
+}
+.numero-carrito{
+    background-color:#3db0fa;
+    color: #020202;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 500;
+    
+}
+
+/*2da barra de nav- MENU-*/
+.navBar2{
+    background-color: #3db0fa;
+    opacity: 0.8;
+      
+}
+.navBar2_elements{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.navBar2_elements li{
+     
+    font-size: 20px;
+    list-style: none;
+    
+}
+.navBar2_elements a{
+    color:#03112b;
+    text-decoration: none;
+}
+
+/*FIN HEADER*/
+/*COMIENZO FOOTER*/
+.footer{
+    background-color: #03112b;
+    width: 100%;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    color: #f9f7ff;
+   
+}
+.datos-grupo,.menu-inferior, .redes-sociales{
+    text-align: center;
+}
+/*seccion datos integrantes del grupo*/
+.datos-grupo-lista{
+    margin-top: 1em;
+    align-content: center;
+    list-style: none;
+    text-align: center;
+    color: #f9f7ff;
+    
+}
+/*seccion menu inferior*/
+
+.menu-inferior-lista{
+    margin-top: 1em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.menu-inferior-lista a, .redes-sociales-lista a{ /*los enlaces*/
+    text-decoration: none;
+    color: #f9f7ff;
+    gap:0.5em;
+}
+.menu-inferior-lista a:hover, .redes-sociales-lista a:hover{
+    
+    border-radius: 3%;
+    font-weight: 400;
+    background-color: #3db0fa;
+    color: #03112b;
+}
+
+/*seccion redes sociales*/
+.redes-sociales-lista{
+    margin-top: 1em;
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.redes-sociales-lista img{
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+/*FIN FOOTER*/
+
