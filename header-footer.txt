@@ -53,8 +53,7 @@ TAMBIEN AGREGAR EL ICONO EN EL HEAD PARA QUE APAREZCA EN LA SOLAPA DE LA PAGINA
         </section>
 
     </header>
-
-    </header>
+    
     <footer class="footer">
         <section class="datos-grupo">
             <h3 class="datos-grupo-titulo">Datos </h3>

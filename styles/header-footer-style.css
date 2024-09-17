@@ -124,8 +124,8 @@ body{
 position: relative;
 }
 .imgCarrito{
- width: 4em;
- margin: 0;
+    width: 4em;
+    margin: 0;
 }
 .numero-carrito{
     background-color:#3db0fa;
