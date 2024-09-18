@@ -17,6 +17,11 @@ h3{
     text-align: center;
 }
 /* ---------------ApartadoCarrito y Compra------------------- */
+
+.principal{
+    padding-bottom: 30rem;
+}
+
 .main{
     display: flex;
     justify-content: center;
@@ -27,7 +32,7 @@ h3{
 /* --------------------Carrito------------------------ */
 .carrito-pio{
     width: 42rem;
-    height: 16rem;
+    height: fit-content;
     color: white;
 
     padding: 1rem;
@@ -71,10 +76,16 @@ h3{
 
 .carritoImput button{
     height: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 .carritoImput button:hover{
     background-color: var(--color--principal)
+
 }
 
 /* --------------listaCompra---------- */
@@ -87,15 +98,16 @@ h3{
     border-radius: 1rem;
     border: 1px solid rgb(255, 255, 255);
     width: 42rem;
-    height: 16rem;
+    height: fit-content;
 }
 
 .total{
     width: fit-content;
     text-align: right;
     background-color: var(--color--principal);
-    margin-left: 35rem;
+    margin-left: 32rem;
     font-size: large;
+    margin-top: 10rem;
 }
 
 
@@ -117,3 +129,23 @@ h3{
     text-align: center;
 }
 
+.medios-de-pago{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.medios-de-pago-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+.medios-de-pago-lista img{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    margin: 1rem;
+}

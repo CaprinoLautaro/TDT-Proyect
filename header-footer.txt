@@ -4,7 +4,8 @@ COPIAR ESTO EN LAS DEMAS PAGINAS Y LINKEAR A
 TAMBIEN AGREGAR EL ICONO EN EL HEAD PARA QUE APAREZCA EN LA SOLAPA DE LA PAGINA
 <link rel="shorcut icon" href="../img/icono.ico">
 
-<header class="header">
+
+    <header class="header">
         <!-- 1er barra de navegacion -->
         <section class="navBar-sup">
             <nav class="navBar1">
@@ -40,20 +41,23 @@ TAMBIEN AGREGAR EL ICONO EN EL HEAD PARA QUE APAREZCA EN LA SOLAPA DE LA PAGINA
                 </section>
             </nav>
         </section><!-- aca termina la 1er barra de nav -->
-    
+       
         <!-- 2da BARRA- MENU -->
-        <section class="menu">
-            <div class="lista-menu">
-                <a href="../pages/clases.html">Cursos</a>
-                <a href="./calendario.html">Calendario</a>
-                <a href="./giftCard.html">Gift Card</a>
-                <a href="./formuEmpresas.html">Inscripcion Empresas</a>
-                <a href="./contacto.html">Contacto</a>
-            </div>
+        <section class="navBar-inf">
+            <nav class="navBar2">
+                <ul class="navBar2_elements">
+                    <li><a href="./pag-principal.html">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="./calendario.html">Próximos cursos </a></li>
+                    <li><a href="./giftCard.html">Gift Card</a></li>
+                    <li><a href="./formuEmpresas.html">Inscripcion Empresas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </section>
 
     </header>
-    
+
     <footer class="footer">
         <section class="datos-grupo">
             <h3 class="datos-grupo-titulo">Datos </h3>
@@ -65,18 +69,18 @@ TAMBIEN AGREGAR EL ICONO EN EL HEAD PARA QUE APAREZCA EN LA SOLAPA DE LA PAGINA
             </ul>
         </section>
 
-        <section class="menu-inferior">
+       <section class="menu-inferior">
             <h3>Menu inferior</h3>
             <ul class="menu-inferior-lista">
-                <li><a href="../pages/clases.html"> Clases </a></li>
-                <li><a href="./pages/calendario.html"> Proximos cursos </a></li>
-                <li><a href="./pages/giftCard.html"> Gift Card </a></li>
-                <li><a href="../pages/"> Cursos para empresas </a></li>
-                <li><a href="../pages/formuEmpresas.html"> Contacto </a></li>
+                <li><a href="#"> Clases </a></li>
+                <li><a href="./calendario.html"> Proximos cursos </a></li>
+                <li><a href="./giftCard.html"> Gift Card </a></li>
+                <li><a href="#"> Cursos para empresas </a></li>
+                <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
-        </section>
+       </section>
 
-        <section class="redes-sociales">
+       <section class="redes-sociales">
             <h3>Redes sociales</h3>
             <ul class="redes-sociales-lista">
                 <li>
@@ -94,5 +98,5 @@ TAMBIEN AGREGAR EL ICONO EN EL HEAD PARA QUE APAREZCA EN LA SOLAPA DE LA PAGINA
                     <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
                 </li>
             </ul>
-        </section>
+       </section>
     </footer>

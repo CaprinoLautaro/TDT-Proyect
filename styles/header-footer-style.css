@@ -3,19 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-:root{    
-    --color--celeste: #3db0fa;
-    --color--texto: #020202;
-    --color--marfil: #f9f7ff;
-    --color--azul: #03112b;
-}
-
-
+/*
+    color--celeste: #3db0fa;
+    color--texto: #020202;
+    color--marfil: #f9f7ff;
+    color--azul: #03112b;
+*/
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #f9f7ff;
-    background-image: url(../img/pixelcut-export.jpeg);
+    background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed; /*si muevo la pag la imagen no se mueve*/
@@ -27,6 +24,8 @@ body{
     background-color: #03112b;
     width: 100%;
     box-sizing: border-box; 
+    display: grid;  
+    grid-template-rows: 4fr 1fr;
 }
 /*Barra de navegacion-->elementos*/
 .navBar1_elements{
@@ -124,8 +123,8 @@ body{
 position: relative;
 }
 .imgCarrito{
-    width: 4em;
-    margin: 0;
+ width: 4em;
+ margin: 0;
 }
 .numero-carrito{
     background-color:#3db0fa;
@@ -141,31 +140,25 @@ position: relative;
 }
 
 /*2da barra de nav- MENU-*/
-.menu{
-    background-color: var(--color--celeste);
-    height: fit-content;
+.navBar2{
+    background-color: #3db0fa;
+    opacity: 0.8;
+      
 }
-
-.lista-menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    padding: 1rem 0;
-    gap: 6rem;
-    text-align: center;
+.navBar2_elements{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
-
-
-.lista-menu a{
-    font-weight: bold;
-    color: var(--color--texto);
-    text-transform: uppercase;
+.navBar2_elements li{
+     
+    font-size: 20px;
+    list-style: none;
+    
+}
+.navBar2_elements a{
+    color:#03112b;
     text-decoration: none;
-}
-
-.lista-menu a:hover{
-    background-color: var(--color--azul);
-    color: var(--color--marfil);
 }
 
 /*FIN HEADER*/
@@ -178,6 +171,7 @@ position: relative;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     color: #f9f7ff;
+   
 }
 .datos-grupo,.menu-inferior, .redes-sociales{
     text-align: center;
