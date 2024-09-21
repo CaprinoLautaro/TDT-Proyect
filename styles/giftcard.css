@@ -42,7 +42,7 @@ main{
 
 .giftcard-fondo{
     height: 30rem;
-    width: 30rem;
+    max-width: 30rem;
     background-color: #2f92cf;
     margin: 0 auto;
     background-image: url(../img/Fondo1\ transparente.png);
@@ -205,4 +205,40 @@ main{
 .boton-giftcard:hover{
     cursor: pointer;
     color: var(--color--secundario);
+}
+
+@media screen and  (max-width: 40rem) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        padding: 0;
+    }
+
+    .giftcard-fondo{
+        height: 23rem;
+        width: 23rem;
+    }
+
+    .monto{
+        margin-left: 19rem;
+    }
+
+    .recipient-name{
+        margin-top: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 60rem){
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .giftcard-form{
+        width: 90%;
+        margin: 0 2rem;
+    }
 }

@@ -33,13 +33,12 @@ body{
     width: 25rem;
     height: fit-content;
     background-color: var(--color--secundario);
-    margin: auto;
-    margin-top: 11rem;
-    margin-bottom: 11rem;
+    margin: 10rem auto;
     box-shadow: -1px 10px 65px 33px rgba(0,10,26,0.66);
     padding: 1.3rem 2rem;
     border-top: 0.5rem solid var(--color--principal);
     color: var(--color--texto);
+    align-items: center;
 }
 
 .form-login h3{
@@ -97,6 +96,8 @@ body{
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 425px){
-    body{height: 749px;}
+@media screen and (max-width: 40rem){
+    .form-login{
+        width: 22rem;
+    }
 }

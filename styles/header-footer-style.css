@@ -221,5 +221,46 @@ position: relative;
     vertical-align: middle;
     margin-right: 0.5em;
 }
+
+
 /*FIN FOOTER*/
+
+/* MEDIAS */
+
+
+@media screen and (max-width: 40rem) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar1_elements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar2_elements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 60rem){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar1_elements{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
 
