@@ -1,0 +1,80 @@
+.main{
+    margin: 1em;
+    background-color:rgba(3, 17, 43, 0.8);
+    border-radius: 2em;
+    justify-content: center;   
+}
+:root{
+    --color--celeste: #3db0fa;
+    --color--texto: #020202;
+    --color--marfil: #f9f7ff;
+    --color--azul: #03112b;
+}
+.img-titulo{
+    height: 10rem;
+    opacity: 0.9;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+    padding: 2rem;
+}
+.lista-info{
+    justify-content: center;
+    padding-right: 3rem;
+    
+}
+.lista-info h1{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+}
+.lista-info h3{
+    font-size: 30px;
+    padding-bottom: 1rem;
+    color: #3db0fa;
+    font-weight: bolder;
+}
+
+.lista-info li{
+    align-content: space-between;
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+.foto-boton{
+    padding-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+.foto-boton p{
+    padding-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.foto-info{
+    
+    padding-bottom: 2rem;
+    width: 40rem;
+}
+.boton-formu {
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 0.625rem;
+    background-color: #3db0fa;
+    color: var(--color--texto);
+    font-size: 1.8rem;
+    border-radius: 4%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.boton-formu:hover{
+    background-color: var(--color--celeste);
+    color:var(--color--marfil);
+    border-radius: 4%;         /* Mantén el borde ligeramente redondeado */
+    box-sizing: border-box;     /* Asegura que el borde no altere el tamaño del botón */
+    border: solid #3deafa 0.3rem;
+}

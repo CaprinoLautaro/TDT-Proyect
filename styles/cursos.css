@@ -2,8 +2,16 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:rgba(3, 17, 43, 0.8);
 }
 
+:root{
+    --color--principal: #3db0fa;
+    --color--texto: #020202;
+    --color--secundario: #f9f7ff;
+    --color--tercero: #03112b;
+    
+}
 .titulo{
     margin-top: 2rem;
     text-transform: uppercase;
@@ -13,22 +21,13 @@ main{
     border-radius: 1.5rem;
 }
 
-.container{
+.cursos-grilla{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5rem 10rem;
     padding: 1rem;
     gap: 1rem;
-    background-color: #02020275;
     border-radius: 1rem;
-}
-
-:root{
-    --color--principal: #3db0fa;
-    --color--texto: #020202;
-    --color--secundario: #f9f7ff;
-    --color--tercero: #03112b;
-    
 }
 
 .clase{
@@ -80,7 +79,7 @@ main{
 }
 
 @media screen and (max-width: 40rem) {
-    .container{
+    .cursos-grilla{
         display: flex;
         flex-direction: column;
         margin: 2rem 0.625rem; 
@@ -88,7 +87,7 @@ main{
 }
 
 @media screen and (max-width: 60rem) {
-    .container{
+    .cursos-grilla{
         grid-template-columns: 1fr 1fr;
         margin: 5rem 1rem;
     }

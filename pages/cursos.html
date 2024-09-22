@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shorcut icon" href="../img/icono.ico">
-    <title>The Dream Team page</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/cursos.css">
     <link rel="stylesheet" href="../styles/header-footer-style.css">
-    <link rel="stylesheet" href="../styles/pag-principal-estilo.css">
+    <title>TDT-Cursos</title>
 </head>
-
 <body>
     <header class="header">
         <!-- 1er barra de navegacion -->
@@ -18,7 +17,7 @@
             <nav class="navBar1">
                 <section class="navBar1_elements">
                     <!-- LOGO -->
-                    <a href="./pag-principal.html">
+                    <a href="../index.html">
                         <img class="logo" src="../img/icono.png"  alt="logo">
                     </a>
                     <!-- BUSQUEDA -->
@@ -33,7 +32,7 @@
                     <div >
                         <ul class="botones-navBar1">
                             <li>
-                                <a class="botones-navBar1-Inicio" href="../index.html"> Iniciar Sesion</a>
+                                <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
                             </li>
                             <li>
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
@@ -53,99 +52,69 @@
         <section class="navBar-inf">
             <nav class="navBar2">
                 <ul class="navBar2_elements">
-                    <li><a href="./pag-principal.html">Inicio</a></li>
-                    <li><a href="./clases.html">Cursos</a></li>
+                    
+                    <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                    <li><a href="./formuEmpresas.html">Inscripcion Empresas</a></li>
+                    <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </section>
 
     </header>
-
-    <main class="main">
-        
-
-        <section class="slider">
-
-            <a  class="slider-flechas-izq" href="#"><img src="../img/flechaIzq.png"  alt="flechaIzq"></a>
-            
-            <div class="slider-img">
-                <img class="slider-img-1" src="../img/curso python.jpg" alt="cursoSlider">
-            </div>
-
-            <a class="slider-flechas-der" href="#"><img  src="../img/flechaDer.png" alt="flechaDer"></a>
-
-            
-        </section>
     
-        <section class="pasos-a-seguir">
-            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso1b.png" alt="paso1"></a>
-            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso2b.jpeg" alt="paso2"></a>
-            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso3b.jpeg" alt="paso3"></a>
-        </section>
-
-        <section class="cursos-destacados">
-            <h2>CURSOS DESTACADOS</h2>
-            <div class="cursos-destacados-grilla">
-                
-                <a href="#">
-                    Curso de diseño con CSS
-                    <img src="../img/cursos/curso-css.webp" alt="cur1">
-                    
-                </a>
-                <a href="#">
-                    Curso master de EXCEL
-                    <img src="../img/cursos/curso-excel.webp" alt="cur2">
-                    
-                </a>
-                <a href="#">
-                    Curso HTML Avanzado a Experto
-                    <img src="../img/cursos/curso-html.webp" alt="cur3">
-                    
-                </a>
-                <a href="#">
-                    Curso como ser la GOAT en JAVA
-                    <img src="../img/cursos/curso-java.webp" alt="cur4">
-                    
-                </a>
-                <a href="#">
-                    Curso basico de PHP
-                    <img src="../img/cursos/curso-php.webp" alt="cur5">
-                    
-
-                </a>
-                <a href="#">
-                    Curso domina Python en 3 dias
-                    <img src="../img/cursos/Curso Python.webp" alt="cur6">
-                    
-                </a>
-        </section>
-        
-        <section class="medios-de-pago">
-            <h2>MEDIOS DE PAGO</h2>
-            <div class="medios-de-pago-slider">
-                <a  class=flechas-img href="#"><img src="../img/flechaIzq.png"  alt="flechaIzq"></a>
-                <section>
-                    <ul class="medios-de-pago-lista">
-                        <li> <img src="../img/medios de pago/cdni.jpg" alt="Cuenta dni"></li>
-                        <li><img src="../img/medios de pago/mp.png" alt="Mercado pago"></li>
-                        <li><img src="../img/medios de pago/provnet.jpg" alt="Provincia net"></li>
-                        <li><img src="../img/medios de pago/rappi.png" alt="Rappi pago"></li>
-                    </ul>
-                </section>
-                <a class="flechas-img" href="#"><img  src="../img/flechaDer.png" alt="flechaDer"></a>
-
+    <main>
+        <h1 class="titulo">Cursos</h1>
+        <section class="cursos-grilla">
+            <div class="clase">
+                <img src="../img/cursos/curso-css.webp" alt="Imagen-clase">
+                <h3>Curso de diseño con CSS</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
             </div>
-            
+            <div class="clase">
+                <img src="../img/cursos/curso-excel.webp" alt="Imagen-clase">
+                <h3>Curso master de EXCEL</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
+            <div class="clase">
+                <img src="../img/cursos/curso-html.webp" alt="Imagen-clase">
+                <h3>Curso HTML Avanzado a Experto</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
+            <div class="clase">
+                <img src="../img/cursos/curso-java.webp" alt="Imagen-clase">
+                <h3>Curso como ser la GOAT en JAVA</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
+            <div class="clase">
+                <img src="../img/cursos/curso-php.webp" alt="Imagen-clase">
+                <h3>Curso basico de PHP</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
+            <div class="clase">
+                <img src="../img/cursos/curso python1.jpg" alt="Imagen-clase">
+                <h3>Curso domina Python en 3 dias</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
         </section>
-        <div class="imagen-final">
+        <section class="imagen-final">
             <img class="imagen-final-logo" src="../img/banner ajustado.png" alt="imagen con logo">
-        </div>
-        
+        </section>
     </main>
+
 
     <footer class="footer">
         <section class="datos-grupo">
@@ -161,10 +130,10 @@
     <section class="menu-inferior">
             <h3>Menu inferior</h3>
             <ul class="menu-inferior-lista">
-                <li><a href="./clases.html"> Clases </a></li>
+                <li><a href="./cursos.html"> Cursos </a></li>
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
-                <li><a href="./formuEmpresas.html"> Cursos para empresas </a></li>
+                <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
     </section>
@@ -189,6 +158,5 @@
             </ul>
         </section>
     </footer>
-    
 </body>
 </html>

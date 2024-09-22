@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shorcut icon" href="./img/icono.ico">
+    <link rel="shorcut icon" href="../img/icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../styles/Clases.css">
+    <link rel="stylesheet" href="../styles/inicioSesion.css">
     <link rel="stylesheet" href="../styles/header-footer-style.css">
-    <title>Cursos</title>
+    <title>inicio-sesion</title>
 </head>
-<body>
+<body id="principal">
     <header class="header">
         <!-- 1er barra de navegacion -->
         <section class="navBar-sup">
             <nav class="navBar1">
                 <section class="navBar1_elements">
                     <!-- LOGO -->
-                    <a href="./pag-principal.html">
+                    <a href="../index.html">
                         <img class="logo" src="../img/icono.png"  alt="logo">
                     </a>
                     <!-- BUSQUEDA -->
@@ -32,7 +31,7 @@
                     <div >
                         <ul class="botones-navBar1">
                             <li>
-                                <a class="botones-navBar1-Inicio" href="../index.html"> Iniciar Sesion</a>
+                                <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
                             </li>
                             <li>
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
@@ -47,74 +46,35 @@
                 </section>
             </nav>
         </section><!-- aca termina la 1er barra de nav -->
-       
+    
         <!-- 2da BARRA- MENU -->
         <section class="navBar-inf">
             <nav class="navBar2">
                 <ul class="navBar2_elements">
-                    <li><a href="./pag-principal.html">Inicio</a></li>
-                    <li><a href="./clases.html">Cursos</a></li>
+                    
+                    <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                    <li><a href="./formuEmpresas.html">Inscripcion Empresas</a></li>
+                    <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </section>
 
     </header>
-    
+
     <main>
-        <h1 class="titulo">Cursos</h1>
-        <section class="container">
-            <div class="clase">
-                <img src="../img/cursos/curso-css.webp" alt="Imagen-clase">
-                <h3>Curso de diseño con CSS</h3>
-                <p>Nombre del profesor</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
-            </div>
-            <div class="clase">
-                <img src="../img/cursos/curso-excel.webp" alt="Imagen-clase">
-                <h3>Curso master de EXCEL</h3>
-                <p>Nombre del profesor</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
-            </div>
-            <div class="clase">
-                <img src="../img/cursos/curso-html.webp" alt="Imagen-clase">
-                <h3>Curso HTML Avanzado a Experto</h3>
-                <p>Nombre del profesor</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
-            </div>
-            <div class="clase">
-                <img src="../img/cursos/curso-java.webp" alt="Imagen-clase">
-                <h3>Curso como ser la GOAT en JAVA</h3>
-                <p>Nombre del profesor</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
-            </div>
-            <div class="clase">
-                <img src="../img/cursos/curso-php.webp" alt="Imagen-clase">
-                <h3>Curso basico de PHP</h3>
-                <p>Nombre del profesor</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
-            </div>
-            <div class="clase">
-                <img src="../img/curso python.jpg" alt="Imagen-clase">
-                <h3>Curso domina Python en 3 dias</h3>
-                <p>Nombre del profesor</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
-            </div>
-        </section>
-        <section class="imagen-final">
-            <img class="imagen-final-logo" src="../img/banner ajustado.png" alt="imagen con logo">
+        <section class="form-login">
+            <h3>INICIAR SESION</h3>
+            <form>
+            <input class="controls" type="text" name="Usuario" placeholder="Usuario" required >
+            <input class="controls" type="password" name="Contraseña" placeholder="Contraseña" required >
+            <a href="./pages/pag-principal.html" class="buttons">Ingresar</a>
+            </form>
+            <p><a class="link"  href="./pages/Contrasenia.html">Olvidates tu Contraseña?</a></p>
+            <p>¿No tienes una cuenta? <a class="link" href="./pages/registro.html">Registrate</a></p>
         </section>
     </main>
-
 
     <footer class="footer">
         <section class="datos-grupo">
@@ -127,18 +87,18 @@
             </ul>
         </section>
 
-    <section class="menu-inferior">
+        <section class="menu-inferior">
             <h3>Menu inferior</h3>
             <ul class="menu-inferior-lista">
-                <li><a href="./clases.html"> Clases </a></li>
+                <li><a href="./cursos.html"> Cursos </a></li>
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
-                <li><a href="./formuEmpresas.html"> Cursos para empresas </a></li>
+                <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
-    </section>
+         </section>
 
-    <section class="redes-sociales">
+        <section class="redes-sociales">
             <h3>Redes sociales</h3>
             <ul class="redes-sociales-lista">
                 <li>
@@ -156,8 +116,8 @@
                     <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
                 </li>
             </ul>
-    </section>
-    
+        </section>
     </footer>
+
 </body>
 </html>
