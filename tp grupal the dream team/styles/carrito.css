@@ -157,3 +157,52 @@ main{
     object-fit:contain;
     margin: 1rem;
 }
+@media screen and (max-width: 40rem) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carrito-pio{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 0.625rem;
+        gap: 0.625rem;
+    }
+
+    .carritoImput{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .medios-de-pago-lista{
+        gap: 0.125rem;
+    }
+
+    .medios-de-pago-lista img{
+        margin: 0;
+        padding: 0;
+    }
+
+    .listaCompra{
+        width: 90%;
+        padding: 0.625rem;
+    }
+
+    .letraTamanio p{
+        width: 100%;
+    }
+
+    .total{
+        margin: 5rem auto;
+    }
+}
+
+@media screen and (max-width: 60rem){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+}

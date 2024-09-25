@@ -15,65 +15,185 @@
     height: 10rem;
     opacity: 0.9;
 }
-.info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content:space-between;
-    padding: 2rem;
+.info-curso-empre{
+    position: relative;
+    padding-left: 2rem;;
+    padding-right:2rem;
+    height: 80vh;
+    box-sizing: border-box;
 }
-.lista-info{
-    justify-content: center;
-    padding-right: 3rem;
+.info-curso-empre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-curso-empre-lista{
+    background-color: rgba(234, 221, 191, 0.452);
+    border-radius: 2%;
+    color: #0b2a62;
+    position: absolute;
+    width: 40%;
+    margin: 0.7rem;
+    bottom: 0%;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    max-height: 78vh;
+    box-sizing: border-box;
+}
+.info-curso-empre-lista h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.info-curso-empre-lista h3{
+    color: #020202;
+    padding-top: 1.25rem;
+    font-size: 1.6rem;
+    padding-bottom: 1.25rem;
     
 }
-.lista-info h1{
-    font-size: 40px;
-    font-weight: bolder;
-    padding-bottom: 2rem;
-}
-.lista-info h3{
-    font-size: 30px;
+.info-curso-empre-lista li{
     padding-bottom: 1rem;
-    color: #3db0fa;
-    font-weight: bolder;
+    padding-left: 1.25rem;
+    list-style: none;
+    font-size: 1.5rem ;
 }
 
-.lista-info li{
-    align-content: space-between;
-    padding-bottom: 1rem;
-    font-size: 20px;
-}
-.foto-boton{
-    padding-left: 2rem;
-    gap: 1rem;
-    align-items: center;
-}
-.foto-boton p{
-    padding-bottom: 1rem;
-    padding-bottom: 1rem;
-}
-.foto-info{
+
+.boton-inscripcion {
     
-    padding-bottom: 2rem;
-    width: 40rem;
-}
-.boton-formu {
-    margin: 0.2rem;
-    width: 100%;
-    height: 2rem;
+    width: fit-content;
     justify-content: center;
     align-content: center;
-    text-decoration: none;
-    padding: 0.1rem;
+    padding: 0.6rem 1.5rem;
     background-color: #3db0fa;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #03112b;
     color: #f9f7ff;
-    font-size: 30px;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    align-self: center;
+}
+.boton-inscripcion:hover {
+    color: #f9f7ff;
+    box-sizing: border-box;
 }
 
-.boton-formu:hover{
-    background-color:  #f9f7ff;
-    color:#03112b;
-    border-radius: 2%;         /* Mantén el borde ligeramente redondeado */
-    box-sizing: border-box;     /* Asegura que el borde no altere el tamaño del botón */
+/*celu*/
+@media  screen and (max-width: 40rem) {
+    .main{
+        margin: 0.2rem;
+    }
+    .img-titulo {
+    width: 100%;
+    }
+    .info-curso-empre{
+        margin: 0;
+        padding: 0;
+        width: 100%;   
+    }
+    .info-curso-empre img{
+        width: 100%;
+        border-color: #020202;
+    }
+    .info-curso-empre-lista{
+        margin: 0.31rem;
+        padding: 2rem;
+        width: 97%;
+        height: 100%;
+        object-fit: contain;
+        gap: 0.5rem;
+        
+       
+    }
+    .info-curso-empre-lista h1{
+        font-size: 1.5rem; 
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    .info-curso-empre-lista h3{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    .info-curso-empre-lista li{
+        font-size:1rem ;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    .info-curso-empre-lista a{
+        margin-top: 2rem;
+    }
+
+}
+@media  screen and (max-width:24rem) {
+    .info-curso-empre-lista a{
+        margin-top: 0.5rem;
+    }
+    .info-curso-empre-lista h3{
+        margin-top: 0.5rem;
+    }
     
 }
+
+/*tablet y portatil*/
+@media screen and (min-width: 40rem) and (max-width: 64rem){
+
+    .info-curso-empre-lista{
+        height: 100%;
+        gap: 1 rem;
+        width: 50%;
+        
+    }
+    .info-curso-empre-lista h1{
+        font-size: 1.5rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        
+    }
+    .info-curso-empre-lista h3{
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        margin-top: 0.3rem;
+    }
+    .info-curso-empre-lista li{
+        font-size:1rem ;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+
+    }
+    .info-curso-empre-lista a{
+        margin-top: 0.5rem;
+    }
+}
+@media screen and (min-width: 64.01rem) and (max-width: 90rem){
+    .info-curso-empre-lista{
+        height: 100%;
+        gap: 1.5rem;
+        width: 55%;
+        
+    }
+    .info-curso-empre-lista h1{
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+    }
+    .info-curso-empre-lista h3{
+        font-size: 1.5rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        
+    }
+    .info-curso-empre-lista li{
+        font-size:1.5rem ;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    
+} 
+

@@ -35,21 +35,22 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 2em;
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 .form label{
-    margin-right: 10px;
+    margin-right: 0.7rem;
 }
 .ingreso-datos div{
     display: block;
 }
 .ingreso-datos input{
-   font-size: 20px;
+   font-size: 1.25rem;
    
 }
 .boton-borrar, .boton-agregar{
     width: 100%;
     height: 100%;
+    
 }
 
 .agregar-persona{
@@ -80,9 +81,109 @@ body{
 .inscripcion-boton{
     background-color: #3db0fa;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 1rem;
     border-radius: 5%;
     
 }
+/* --------Responsive Mobile---------- */
+@media screen and (max-width: 40rem) {
+    .titulo{
+        text-align: center;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0.5rem;
+    } 
+
+    .ingreso-datos{
+        display: flex;
+        flex-direction: column;    
+        gap: 2rem;    
+    }
+
+    .agregar-persona {
+        gap: 1.5rem;
+    }
+
+    .reset img{
+        height: 4rem;
+        width: 4rem;
+        
+    }
+
+    .reset {
+        display: flex;
+        align-self: center;
+        margin-right: 3.1rem;
+    }
+}
+
+/* --------Responsive Tablet---------- */
+
+@media screen and (min-width: 40rem) and (max-width: 60rem){
+    .titulo{
+        text-align: center;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0.5rem;
+    } 
+
+    .boton-borrar img{
+        width: 3rem;
+        height: 89rem;
+    }
+
+    .ingreso-datos{
+        display: flex;
+        flex-direction: column;    
+        gap: 2rem;    
+    }
+
+    .reset img{
+        height: 4rem;
+        width: 4rem;
+        
+    }
+
+    .reset {
+        display: flex;
+        align-self: center;
+        margin-right: 3.1rem;
+    }
+ 
+}
+
+/* --------Responsive PC---------- */
+  @media screen and (min-width: 60rem) and (max-width: 81.25rem) {  /*A partir de 1024px en adelante  */
+    .titulo{
+        text-align: center;
+    }
+
+    .form{
+        padding: 0;
+        gap: 0.5rem;
+    } 
+
+    .ingreso-datos{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-left: 3rem;
+        width: 90%;
+        gap: 2rem;     
+    }
+
+    .ingreso-datos input{
+         width: 12rem; 
+
+    }
+}  
 

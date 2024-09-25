@@ -15,9 +15,7 @@
     --color--tercero: #03112b;
 }
 
-body{
 
-}
 
 
 #principal {
@@ -97,6 +95,8 @@ body{
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 425px){
-    body{height: 749px;}
+@media screen and (max-width: 40rem){
+    .form-login{
+        width: 22rem;
+    }
 }

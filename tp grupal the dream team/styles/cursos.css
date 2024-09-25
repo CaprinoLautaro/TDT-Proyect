@@ -43,7 +43,7 @@ main{
 
 .clase img{
     height: 10rem;
-    width: 25rem;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -76,4 +76,19 @@ main{
 .imagen-final-logo{
     width: 100%;
     opacity: 80%;
+}
+
+@media screen and (max-width: 40rem) {
+    .cursos-grilla{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0.625rem; 
+    }
+}
+
+@media screen and (max-width: 60rem) {
+    .cursos-grilla{
+        grid-template-columns: 1fr 1fr;
+        margin: 5rem 1rem;
+    }
 }

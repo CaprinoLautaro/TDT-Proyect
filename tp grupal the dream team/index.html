@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- RESPONSIVE WEB DESIGN -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- RESPONSIVE WEB DESIGN -->
     <link rel="shorcut icon" href="../img/icono.ico">
     <title>The Dream Team page</title>
     
     <link rel="stylesheet" href="../styles/header-footer-style.css">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/cursos.css">
+    
 </head>
 
 <body>
@@ -19,10 +20,15 @@
             <nav class="navBar1">
                 <section class="navBar1_elements">
                     <!-- LOGO -->
+                     <div>
                     <a href="./index.html">
                         <img class="logo" src="../img/icono.png"  alt="logo">
                     </a>
+                </div>
                     <!-- BUSQUEDA -->
+                     <div>
+
+                     
                     <form class="busqueda" method="get" action="https://www.google.com.ar">
                         <p class="textoBusqueda" >Buscar:</p>
                         <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
@@ -30,6 +36,7 @@
                             <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
                         </button>
                     </form>
+                </div>
                     <!-- BOTONES DE INICIO Y REGISTRO -->
                     <div >
                         <ul class="botones-navBar1">
@@ -37,15 +44,17 @@
                                 <a class="botones-navBar1-Inicio" href="./pages/inicioSesion.html"> Iniciar Sesion</a>
                             </li>
                             <li>
-                                <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
+                                <a class="botones-navBar1-Registro" href="./pages/registro.html">Registrarse</a>
                             </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
-                    <a class="carrito" href="./carrito.html">
+                     <div>
+                    <a class="carrito" href="./pages/carrito.html">
                         <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
                         <p class="numero-carrito">0</p>
                     </a>
+                </div>
                 </section>
             </nav>
         </section><!-- aca termina la 1er barra de nav -->
@@ -69,24 +78,30 @@
     <main class="main">
         <section class="slider">
 
-            <a  class="slider-flechas-izq" href="#"><img src="../img/flechaIzq.png"  alt="flechaIzq"></a>
+            <a  class="slider-flechas" href="#"><img src="../img/flechaIzq.png"  alt="flechaIzq"></a>
             
             <div class="slider-img">
                 <img class="slider-img-1" src="../img/curso python.jpg" alt="cursoSlider">
             </div>
 
-            <a class="slider-flechas-der" href="#"><img  src="../img/flechaDer.png" alt="flechaDer"></a>
+            <a class="slider-flechas" href="#"><img  src="../img/flechaDer.png" alt="flechaDer"></a>
 
-            
         </section>
-    
-        <section class="pasos-a-seguir">
-            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso1b.png" alt="paso1"></a>
-            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso2b.jpeg" alt="paso2"></a>
-            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso3b.jpeg" alt="paso3"></a>
+
+        <h2>PASOS A SEGUIR</h2>
+
+        <section class="pasos">
+            
+            <div class="pasos-a-seguir">
+                <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso1b.png" alt="paso1"></a>
+                <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso2b.jpeg" alt="paso2"></a>
+                <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso3b.jpeg" alt="paso3"></a>
+            </div>
+            
         </section>
 
         <h2>CURSOS DESTACADOS</h2>
+
         <section class="cursos-grilla">
             
             <div class="clase">
@@ -94,42 +109,42 @@
                 <h3>Curso de diseño con CSS</h3>
                 <p>Nombre del profesor</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Más información</p></a>
+                <a class="link" href="#">Más información</a>
             </div>
             <div class="clase">
                 <img src="./img/cursos/curso-excel.webp" alt="Imagen-clase">
                 <h3>Curso master de EXCEL</h3>
                 <p>Nombre del profesor</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Más información</p></a>
+                <a class="link" href="#">Más información</a>
             </div>
             <div class="clase">
                 <img src="./img/cursos/curso-html.webp" alt="Imagen-clase">
                 <h3>Curso HTML Avanzado a Experto</h3>
                 <p>Nombre del profesor</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Más información</p></a>
+                <a class="link" href="#">Más información</a>
             </div>
             <div class="clase">
                 <img src="./img/cursos/curso-java.webp" alt="Imagen-clase">
                 <h3>Curso como ser la GOAT en JAVA</h3>
                 <p>Nombre del profesor</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Más información</p></a>
+                <a class="link" href="#">Más información</a>
             </div>
             <div class="clase">
                 <img src="./img/cursos/curso-php.webp" alt="Imagen-clase">
                 <h3>Curso basico de PHP</h3>
                 <p>Nombre del profesor</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Más información</p></a>
+                <a class="link" href="#">Más información</a>
             </div>
             <div class="clase">
                 <img src="./img/curso python1.jpg" alt="Imagen-clase">
                 <h3>Curso domina Python en 3 dias</h3>
                 <p>Nombre del profesor</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
-                <a class="link" href="#"><p>Más información</p></a>
+                <a class="link" href="#">Más información</a>
             </div>
         </section>
         
