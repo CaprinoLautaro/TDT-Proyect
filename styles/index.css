@@ -1,18 +1,20 @@
-:root{
+:root {
     --color--principal: #3db0fa;
     --color--texto: #020202;
     --color--secundario: #f9f7ff;
-    --color--tercero: #03112b; 
+    --color--tercero: #03112b;
 }
+
 /*COMIENZO MAIN*/
-.main{
+.main {
     margin: 1em;
-    background-color:rgba(3, 17, 43, 0.8);
+    background-color: rgba(3, 17, 43, 0.8);
     border-radius: 2em;
-    justify-content: center;   
+    justify-content: center;
 }
+
 /*seccion slider*/
-.slider{
+.slider {
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     justify-content: space-between;
@@ -20,33 +22,36 @@
     padding: 1rem;
     position: relative;
 }
-.slider-img-1{
+
+.slider-img-1 {
     border: 0.125rem solid #020202;
     width: 100%;
 }
+
 /*seccion pasos a seguir*/
-h2{
+h2 {
     text-align: center;
     justify-content: center;
     align-self: center;
     padding-top: 3rem;
-   
+
 }
-.pasos-a-seguir{
-    display:flex;
+
+.pasos-a-seguir {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem ;
+    margin: 3rem;
 }
-    
-.pasos-a-seguir-img img{
+
+.pasos-a-seguir-img img {
     padding: 2rem;
     width: 100%;
-   flex-basis: 20%;
+    flex-basis: 20%;
 }
 
 /*cursos destacados*/
-.cursos-grilla{
+.cursos-grilla {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1rem;
@@ -54,7 +59,7 @@ h2{
     border-radius: 1rem;
 }
 
-.clase{
+.clase {
     padding: 1rem;
     background-color: var(--color--secundario);
     border-radius: 2rem;
@@ -65,13 +70,13 @@ h2{
     border-top: solid var(--color--principal) 0.625rem;
 }
 
-.clase img{
+.clase img {
     height: 10rem;
     width: 100%;
     margin: 0;
 }
 
-.link{
+.link {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -85,25 +90,27 @@ h2{
     justify-content: space-around;
 }
 
-.link:hover{
+.link:hover {
     background-color: var(--color--tercero);
 }
 
 
 
 /*mediosDePago*/
-.medios-de-pago{
+.medios-de-pago {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
-.medios-de-pago-slider{
-    display:flex;
+
+.medios-de-pago-slider {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.medios-de-pago-lista{
-    
+
+.medios-de-pago-lista {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
@@ -111,125 +118,143 @@ h2{
     justify-items: center;
     align-items: center;
 }
-.medios-de-pago-lista img{
+
+.medios-de-pago-lista img {
     padding: 1rem;
     width: 100%;
     object-fit: contain;
 }
 
-.flechas-img img{
+.flechas-img img {
     width: 6rem;
 }
-.imagen-final-logo{
+
+.imagen-final-logo {
     width: 100%;
     opacity: 80%;
 }
 
 /*celu*/
-@media  screen and (max-width:40rem) {
+@media screen and (max-width:40rem) {
 
-    .main{
+    .main {
         margin-left: 0rem;
         width: 100%;
     }
-    .slider{
+
+    .slider {
         width: 100%;
         display: grid;
         grid-template-columns: 0.5fr 9fr 0.5fr;
         justify-content: center;
         align-items: center;
     }
+
     .slider-img-1 {
         width: 100%;
         height: 15rem;
         justify-content: center;
     }
-    .slider-flechas img{
-        width: 5rem; 
+
+    .slider-flechas img {
+        width: 5rem;
     }
-    .pasos-a-seguir{
+
+    .pasos-a-seguir {
         display: flex;
         flex-direction: column;
         margin: 0;
     }
-    .pasos-a-seguir-img{
+
+    .pasos-a-seguir-img {
         width: 100%;
     }
 
-    .cursos-grilla{
+    .cursos-grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0;
         margin: 1rem;
     }
+
     .clase {
         padding: 1rem;
     }
-   
-    .clase img{
+
+    .clase img {
         width: 80%;
         height: auto;
     }
 
-    .medios-de-pago-lista{
+    .medios-de-pago-lista {
         display: grid;
         grid-template-columns: 1fr 1fr;
-       
+
         justify-content: center;
         justify-items: center;
-        align-items: center;  
+        align-items: center;
     }
-    .medios-de-pago-lista img{
+
+    .medios-de-pago-lista img {
         width: 100%;
     }
-    .flechas-img{
+
+    .flechas-img {
         display: none;
     }
 
 }
-@media screen and (max-width:25rem){
-    .slider{
+
+@media screen and (max-width:25rem) {
+    .slider {
         margin: 0;
         padding-left: 0;
-        padding-right:0 ;
+        padding-right: 0;
     }
-   
-    .slider-flechas img{
+
+    .slider-flechas img {
         width: 3rem;
     }
-    .cursos-grilla{
+
+    .cursos-grilla {
         display: flex;
         flex-direction: column;
     }
-    .clase img{
+
+    .clase img {
         width: 100%;
     }
-    .clase p{
+
+    .clase p {
         display: none;
     }
 }
 
 /*tablet y portatil*/
-@media screen and (min-width:40.1rem) and (max-width: 64rem){
+@media screen and (min-width:40.1rem) and (max-width: 64rem) {
 
-    .slider{
+    .slider {
         margin: 0.5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between
     }
-    .slider-flechas img{
+
+    .slider-flechas img {
         width: 5rem;
     }
-    .pasos-a-seguir{
+
+    .pasos-a-seguir {
         margin: 30px;
         display: flex;
         flex-direction: column;
     }
-    .pasos-a-seguir-img img{
+
+    .pasos-a-seguir-img img {
         padding: 0.5rem;
     }
-    .cursos-grilla{
+
+    .cursos-grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -237,24 +262,27 @@ h2{
         margin: 1rem auto;
         width: 90%;
     }
-    .clase{
+
+    .clase {
         padding: 1rem;
         border-radius: 1rem;
         width: 100%;
         gap: 0.5rem;
     }
-    .clase img{
+
+    .clase img {
         width: 100%;
-        
+
     }
-    .medios-de-pago-lista{
+
+    .medios-de-pago-lista {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         object-fit: cover;
     }
-    
-    .medios-de-pago-lista img{
+
+    .medios-de-pago-lista img {
         width: 100%;
         max-width: 20rem;
     }
