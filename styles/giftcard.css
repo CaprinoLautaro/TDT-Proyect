@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    height: 100vh;
+    max-width: 100vw;
+}
+:root{
+    --color--principal: #3db0fa;
+    --color--texto: #020202;
+    --color--secundario: #f9f7ff;
+    --color--tercero: #03112b;
+}
+
+
+main{
+    background-image: url(../img/banner\ sin\ letras.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /*si muevo la pag la imagen no se mueve*/
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 16rem;
+    align-items: center;
+
+}
+
+.giftcard-preview{
+    margin: 2rem;
+}
+
+.giftcard-fondo{
+    height: 30rem;
+    width: 30rem;
+    background-color: #2f92cf;
+    margin: 0 auto;
+    background-image: url(../img/Fondo1\ transparente.png);
+}
+
+
+.monto{
+    margin-left: 22rem;
+    background-color: #020202;
+
+}
+
+.recipient-name{
+    text-align: center;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.giftcard-preview p{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.giftcard-form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    gap: 2rem;
+    background-color: var(--color--secundario);
+    border-radius: 1rem;
+    color: var(--color--texto);
+    padding: 1rem;
+    border-left: solid 0.5rem var(--color--principal);
+}
+
+.giftcard-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nombre-destinatario{
+    height: 2rem;
+    border-radius: 1rem;
+    border: solid var(--color--texto) 0.0800rem;
+    padding: 1rem;
+}
+
+
+.color{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 1rem;
+}
+
+.celeste{
+    background-color: #2f92cf;
+}
+
+.amarillo{
+    background-color: #f5df1f;
+}
+.azul{
+    background-color: var(--color--tercero);
+
+}
+
+.verde{
+    background-color: rgb(6, 197, 6);
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.color-muestras{
+    display: flex;
+    gap: 2rem;
+}
+
+.color-seleccion{
+    display: flex;
+    gap: 2.7rem;
+    padding-left: 0.3rem;
+}
+
+.tamanio-muestra{
+    display: flex;
+    gap: 1rem;
+}
+
+.tamanio-seleccion{
+    display: flex;
+    gap: 2.5rem;
+    padding-left: 1rem;
+}
+
+.monto-numero{
+    padding: 0.6rem 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.monto-texto{
+    height: 0.5rem;
+    border-radius: 1rem;
+    border: solid var(--color--texto) 0.0800rem;
+    padding: 1rem;
+}
+
+.posicion-muestra img{
+    height: 3.1rem;
+    width: 3.1rem;
+}
+
+.posicion-muestra {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.posicion-seleccion{
+    padding-left: 1rem;
+    display: flex;
+    gap: 4.9rem;
+}
+
+.fondo-muestra{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.fondo-muestra img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.fondo-seleccion{
+    display: flex;
+    padding-left: 1rem;
+    gap: 3.7rem;
+}
+
+
+.boton-giftcard{
+    width: 10rem;
+    background-color: var(--color--principal);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.boton-giftcard:hover{
+    cursor: pointer;
+    color: var(--color--secundario);
+}

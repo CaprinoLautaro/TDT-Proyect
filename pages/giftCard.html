@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../styles/giftcard.css">
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
+
+    <title>GiftCards</title>
+</head>
+<body>
+    <header class="header">
+        <!-- 1er barra de navegacion -->
+        <section class="navBar-sup">
+            <nav class="navBar1">
+                <section class="navBar1_elements">
+                    <!-- LOGO -->
+                    <a href="./pag-principal.html">
+                        <img class="logo" src="../img/icono.png"  alt="logo">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="busqueda" method="get" action="https://www.google.com.ar">
+                        <p class="textoBusqueda" >Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
+                        <button  class="boton-lupa" type="submit" >
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
+                        </button>
+                    </form>
+                    <!-- BOTONES DE INICIO Y REGISTRO -->
+                    <div >
+                        <ul class="botones-navBar1">
+                            <li>
+                                <a class="botones-navBar1-Inicio" href="../index.html"> Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CARRITO DE COMPRAS -->
+                    <a class="carrito" href="./carrito.html">
+                        <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
+                        <p class="numero-carrito">0</p>
+                    </a>
+                </section>
+            </nav>
+        </section><!-- aca termina la 1er barra de nav -->
+       
+        <!-- 2da BARRA- MENU -->
+        <section class="navBar-inf">
+            <nav class="navBar2">
+                <ul class="navBar2_elements">
+                    <li><a href="./pag-principal.html">Inicio</a></li>
+                    <li><a href="./clases.html">Cursos</a></li>
+                    <li><a href="./calendario.html">Próximos cursos </a></li>
+                    <li><a href="./giftCard.html">Gift Card</a></li>
+                    <li><a href="./formuEmpresas.html">Inscripcion Empresas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <main class="container">
+        <section class="giftcard-preview">
+            <div class="giftcard-fondo">
+                <div class="giftcard-content">
+                    <p class="monto">$XX.XX</p>
+                    <div  class="recipient-name">
+                        <p>GIFT CARD PARA:</p>
+                        <h2>Nombre del destinatario</h2>
+                    </div>
+
+                </div>
+            </div>
+            <p>Vista previa de resultado de personalizacion</p>
+        </section>
+
+        <section class="giftcard-form">
+            <h2>Personaliza tu giftCard</h2>
+            <form class="form">
+                <input type="text" id="recipiente" name="recipiente" placeholder="Nombre del destinatario" class="nombre-destinatario">
+                
+                <h3>Color</h3>
+                <div class="color-muestras">
+                    <div class="celeste color"></div>
+                    <div class="amarillo color"></div>
+                    <div class="azul color"></div>
+                    <div class="verde color"></div>
+                    <div class="aqua color"></div>
+                </div>
+
+                <div class="color-seleccion">
+                    <input type="radio" checked>
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+
+                <h3>Tamaño de fuente</h3>
+
+                <div class="tamanio-muestra">
+                    <p>16px</p>
+                    <p>32px</p>
+                    <p>48px</p>
+                    <p>64px</p>
+                    <p>80px</p>
+                </div>
+
+                <div class="tamanio-seleccion">
+                    <input type="radio" >
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio" checked> 
+                    <input type="radio">
+                </div>
+
+                <div class="monto-numero">               
+                    <label for="Monto">Monto$:</label>
+                    <input type="number" class="monto-texto">
+                </div>
+
+                <h3>Ubicacion del precio</h3>
+
+                <div class="posicion-muestra">
+                    <img src="../img/Posicion arriba.png" alt="posicion arriba">
+                    <img src="../img/Posicion abajo.png" alt="posicion arriba">
+                    <img src="../img/Posicion centro.png" alt="posicion arriba">
+                </div>
+
+                <div class="posicion-seleccion">
+                    <input type="radio" checked>
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+
+                <h3>Fondo</h3>
+
+                <div class="fondo-muestra">
+                    <img src="../img/Fondo1.png" alt="Fondo1">
+                    <img src="../img/Fondo2.png" alt="Fondo2">
+                </div>
+
+                <div class="fondo-seleccion">
+                    <input type="radio" checked>
+                    <input type="radio">
+                </div>
+
+                <input type="submit" name="ingresar" value="CONFIRMAR" class="boton-giftcard">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="datos-grupo">
+            <h3 class="datos-grupo-titulo">Datos </h3>
+            <ul class="datos-grupo-lista">
+                <li>Lautaro Caprino - DNI: 47164463</li>
+                <li>Lucas Agustín García - DNI: 46288646</li> 
+                <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
+                <li>Ramiro Matias Bruzon - DNI: 37990199</li>
+            </ul>
+        </section>
+
+       <section class="menu-inferior">
+            <h3>Menu inferior</h3>
+            <ul class="menu-inferior-lista">
+                <li><a href="./clases.html"> Clases </a></li>
+                <li><a href="./calendario.html"> Proximos cursos </a></li>
+                <li><a href="./giftCard.html"> Gift Card </a></li>
+                <li><a href="./formuEmpresas.html"> Cursos para empresas </a></li>
+                <li><a href="./contacto.html"> Contacto </a></li>
+            </ul>
+       </section>
+
+       <section class="redes-sociales">
+            <h3>Redes sociales</h3>
+            <ul class="redes-sociales-lista">
+                <li>
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg" alt="instagram">Instagram 
+                    </a>
+                </li>
+                <li>  
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg" alt="X">X/Twitter</a>
+                </li>
+                <li>
+                    
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
+                </li>
+            </ul>
+       </section>
+    </footer>
+
+
+</body>
+</html>
