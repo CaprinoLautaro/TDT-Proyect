@@ -1,7 +1,13 @@
 
+*{
+    text-decoration: none;
+}
+
+
 body{
     color: var(--color--texto);
     box-sizing: border-box;
+
 }
 
 :root{
@@ -99,6 +105,24 @@ a{
     font-weight: bold;
     text-transform: uppercase;
 }
+@media screen and (max-width: 60rem){
+    .calendar-container{
+        width: 100%;
+        
+    }
+
+
+    .calendar{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(7, minmax(3rem, 1fr));
+        grid-template-rows: 5rem;
+        grid-auto-rows: 6rem;
+        
+    }
+    
+}
+
 
 @media screen and (max-width: 40rem){
     main{
@@ -112,7 +136,7 @@ a{
     .calendar{
         display: grid;
         width: 90%;
-        grid-template-columns: repeat(7, minmax(3.5rem, 1fr));
+        grid-template-columns: repeat(7, minmax(3.7rem, 1fr));
         grid-template-rows: 3rem;
         grid-auto-rows: 6rem;
         
@@ -131,14 +155,24 @@ a{
 
 }
 
-@media screen and (max-width: 60rem){
+@media screen and (max-width: 23.4375rem){
     .calendar{
         display: grid;
-        width: 100%;
-        grid-template-columns: repeat(7, minmax(3rem, 1fr));
-        grid-template-rows: 5rem;
-        grid-auto-rows: 6rem;
-        
+        width: 90%;
+        grid-template-columns: repeat(7, minmax(3.3rem, 1fr));
+        grid-template-rows: 3rem;
     }
-    
+
 }
+
+@media screen and (max-width: 20rem){
+    .calendar{
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(7, minmax(2.8rem, 1fr));
+        grid-template-rows: 3rem;
+    }
+
+}
+
+
