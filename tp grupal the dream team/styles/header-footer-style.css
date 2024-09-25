@@ -113,6 +113,7 @@ body{
 }
 .botones-navBar1-Registro:hover{
     color: #f9f7ff;
+    border: 3px solid #3deafa; /* Añade un borde con grosor de 2px y color #3db0fa */
     border-radius: 2%;         /* Mantén el borde ligeramente redondeado */
     box-sizing: border-box;     /* Asegura que el borde no altere el tamaño del botón */
     font-weight: 600;
@@ -122,8 +123,8 @@ body{
 position: relative;
 }
 .imgCarrito{
- width: 4em;
- margin: 0;
+    width: 4em;
+    margin: 0;
 }
 .numero-carrito{
     background-color:#3db0fa;
@@ -158,10 +159,6 @@ position: relative;
 .navBar2_elements a{
     color:#03112b;
     text-decoration: none;
-}
-.navBar2_elements a:hover{
-    background-color: #f9f7ff;
-    color:#03112b;
 }
 
 /*FIN HEADER*/
@@ -224,7 +221,12 @@ position: relative;
     vertical-align: middle;
     margin-right: 0.5em;
 }
+
+
 /*FIN FOOTER*/
+
+/* MEDIAS */
+
 
 @media screen and (max-width: 40rem) {
     .footer{
@@ -237,7 +239,6 @@ position: relative;
         display: flex;
         flex-direction: column;
     }
-    
 
     .navBar1_elements{
         display: flex;
@@ -263,4 +264,4 @@ position: relative;
         width: 100%;
     }
 }
-    
+
