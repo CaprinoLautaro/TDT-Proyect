@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Formulario de Contacto</title>
     <link rel="shorcut icon" href="../img/icono.ico">
-    <title>Formulario para Empresas</title>
 
-    <link rel="stylesheet" href="../styles/formuEmpresas.css">
+    <link rel="stylesheet" href="../styles/contacto.css"/>
     <link rel="stylesheet" href="../styles/header-footer-style.css">
 </head>
+
 <body>
     <header class="header">
         <!-- 1er barra de navegacion -->
@@ -57,7 +57,7 @@
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
                     <li><a href="./formuEmpresas.html">Inscripcion Empresas</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </section>
@@ -65,69 +65,43 @@
     </header>
 
     <main class="main">
-        <h1>PHYTON - Introducción a la programación</h1>
-        <h2>Para empresas</h2>
-        <h3>Formulario de inscripción</h3>
-        <section class="ingreso-datos">
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
+    <div class="titulo">
+        <h1>Contacto</h1>
+        <h2>Formulario de Contacto</h2>
+    </div>
 
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
+    <div class="contacto-formulario-container">
+        <div class="formulario">
+        <h3>Complete el Formulario:</h3>
 
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div> 
-        </section>
-        <div class="agregar-persona">
-            <button>
-                <img class="boton-agregar" src="../img/iconos/mas.png" alt="agregar mas personas">
-            </button>
-            <p>Agregar persona</p>
-        </div>
-        
-        <div class="inscripcion">
-            
-            <p class="inscripcion-precio"> VALOR DEL CURSO $20000.-</p>
-            <p class="inscripcion-boton">Inscribirse</p>
-        </div>
+    <form>
+        <input type="text" name="name" id="name" placeholder="Nombre" required/>
+        <input type="text" name="last_name" id="last_name" placeholder="Apellido" required/>
+        <input type="email" name="email" id="email" placeholder="E-Mail" required/>
+        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono (opcional)"/>
+        <textarea name="consulta" id="consulta" placeholder="Detalle su consulta" required></textarea>
+        <!-- <input type="text" name="consulta" id="consulta" placeholder="Detalle su consulta" required/> -->
 
-        
+        <button type="submit" class="button">Envíar</button>
+
+    </form>
+    </div>
+
+    <div class="contacto-info">
+        <h2>Datos de Contacto</h2>
+        <img id="imagenContacto" src="../img/contacto img/contacto.png" width="50%" height="50%"/> 
+        <p>Nombre de la Empresa</p>
+        <p>Dirección: yVaElTercero912, Madrid, España</p>
+        <p>Teléfono: +9122018</p>
+        <p>Email: contacto@empresa.com</p>
+    </div>
+    </div>
+
+    <div class="mapa">
+        <h2 id="ubi">Ubicación de la Empresa</h2>
+        <img src="../img/contacto img/ubicacionEmpresa.jpeg" width="50%" height="60%" alt="ubicacionDeLaEmpresaDesdeGoogleMaps"/>
+    </div>
+
     </main>
 
     <footer class="footer">
@@ -148,7 +122,7 @@
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
                 <li><a href="#"> Cursos para empresas </a></li>
-                <li><a href="./contacto.html"> Contacto </a></li>
+                <li><a href="#"> Contacto </a></li>
             </ul>
        </section>
 
@@ -172,6 +146,5 @@
             </ul>
        </section>
     </footer>
-    
 </body>
 </html>

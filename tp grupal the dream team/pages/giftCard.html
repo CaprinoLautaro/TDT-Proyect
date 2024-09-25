@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shorcut icon" href="../img/icono.ico">
-    <title>Formulario para Empresas</title>
-
-    <link rel="stylesheet" href="../styles/formuEmpresas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../styles/giftcard.css">
     <link rel="stylesheet" href="../styles/header-footer-style.css">
+
+    <title>GiftCards</title>
 </head>
 <body>
     <header class="header">
@@ -64,70 +67,95 @@
 
     </header>
 
-    <main class="main">
-        <h1>PHYTON - Introducción a la programación</h1>
-        <h2>Para empresas</h2>
-        <h3>Formulario de inscripción</h3>
-        <section class="ingreso-datos">
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
+    <main class="container">
+        <section class="giftcard-preview">
+            <div class="giftcard-fondo">
+                <div class="giftcard-content">
+                    <p class="monto">$XX.XX</p>
+                    <div  class="recipient-name">
+                        <p>GIFT CARD PARA:</p>
+                        <h2>Nombre del destinatario</h2>
+                    </div>
 
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
+                </div>
             </div>
-
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div> 
+            <p>Vista previa de resultado de personalizacion</p>
         </section>
-        <div class="agregar-persona">
-            <button>
-                <img class="boton-agregar" src="../img/iconos/mas.png" alt="agregar mas personas">
-            </button>
-            <p>Agregar persona</p>
-        </div>
-        
-        <div class="inscripcion">
-            
-            <p class="inscripcion-precio"> VALOR DEL CURSO $20000.-</p>
-            <p class="inscripcion-boton">Inscribirse</p>
-        </div>
 
-        
+        <section class="giftcard-form">
+            <h2>Personaliza tu giftCard</h2>
+            <form class="form">
+                <input type="text" id="recipiente" name="recipiente" placeholder="Nombre del destinatario" class="nombre-destinatario">
+                
+                <h3>Color</h3>
+                <div class="color-muestras">
+                    <div class="celeste color"></div>
+                    <div class="amarillo color"></div>
+                    <div class="azul color"></div>
+                    <div class="verde color"></div>
+                    <div class="aqua color"></div>
+                </div>
+
+                <div class="color-seleccion">
+                    <input type="radio" checked>
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+
+                <h3>Tamaño de fuente</h3>
+
+                <div class="tamanio-muestra">
+                    <p>16px</p>
+                    <p>32px</p>
+                    <p>48px</p>
+                    <p>64px</p>
+                    <p>80px</p>
+                </div>
+
+                <div class="tamanio-seleccion">
+                    <input type="radio" >
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio" checked> 
+                    <input type="radio">
+                </div>
+
+                <div class="monto-numero">               
+                    <label for="Monto">Monto$:</label>
+                    <input type="number" class="monto-texto">
+                </div>
+
+                <h3>Ubicacion del precio</h3>
+
+                <div class="posicion-muestra">
+                    <img src="../img/Posicion arriba.png" alt="posicion arriba">
+                    <img src="../img/Posicion abajo.png" alt="posicion arriba">
+                    <img src="../img/Posicion centro.png" alt="posicion arriba">
+                </div>
+
+                <div class="posicion-seleccion">
+                    <input type="radio" checked>
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+
+                <h3>Fondo</h3>
+
+                <div class="fondo-muestra">
+                    <img src="../img/Fondo1.png" alt="Fondo1">
+                    <img src="../img/Fondo2.png" alt="Fondo2">
+                </div>
+
+                <div class="fondo-seleccion">
+                    <input type="radio" checked>
+                    <input type="radio">
+                </div>
+
+                <input type="submit" name="ingresar" value="CONFIRMAR" class="boton-giftcard">
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
@@ -172,6 +200,7 @@
             </ul>
        </section>
     </footer>
-    
+
+
 </body>
 </html>

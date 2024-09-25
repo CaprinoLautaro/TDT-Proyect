@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shorcut icon" href="../img/icono.ico">
-    <title>Formulario para Empresas</title>
-
-    <link rel="stylesheet" href="../styles/formuEmpresas.css">
+    <title>The Dream Team page</title>
+    
     <link rel="stylesheet" href="../styles/header-footer-style.css">
+    <link rel="stylesheet" href="../styles/pag-principal-estilo.css">
 </head>
+
 <body>
     <header class="header">
         <!-- 1er barra de navegacion -->
@@ -52,7 +53,7 @@
         <section class="navBar-inf">
             <nav class="navBar2">
                 <ul class="navBar2_elements">
-                    <li><a href="./pag-principal.html">Inicio</a></li>
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="#">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
@@ -65,68 +66,79 @@
     </header>
 
     <main class="main">
-        <h1>PHYTON - Introducción a la programación</h1>
-        <h2>Para empresas</h2>
-        <h3>Formulario de inscripción</h3>
-        <section class="ingreso-datos">
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
-
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
-
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div> 
-        </section>
-        <div class="agregar-persona">
-            <button>
-                <img class="boton-agregar" src="../img/iconos/mas.png" alt="agregar mas personas">
-            </button>
-            <p>Agregar persona</p>
-        </div>
         
-        <div class="inscripcion">
-            
-            <p class="inscripcion-precio"> VALOR DEL CURSO $20000.-</p>
-            <p class="inscripcion-boton">Inscribirse</p>
-        </div>
 
+        <section class="slider">
+
+            <a  class="slider-flechas-izq" href="#"><img src="../img/flechaIzq.png"  alt="flechaIzq"></a>
+            
+            <div class="slider-img">
+                <img class="slider-img-1" src="../img/curso python.jpg" alt="cursoSlider">
+            </div>
+
+            <a class="slider-flechas-der" href="#"><img  src="../img/flechaDer.png" alt="flechaDer"></a>
+
+            
+        </section>
+     
+        <section class="pasos-a-seguir">
+           
+            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso1b.png" alt="paso1"></a>
+            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso1b.png" alt="paso2"></a>
+            <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso1b.png" alt="paso3"></a>
+        </section>
+
+       <section class="cursos-destacados">
+            <h2>CURSOS DESTACADOS</h2>
+            <div class="cursos-destacados-grilla">
+                
+                <a href="#">
+                    <img src="../img/cursos/cur1.jpg" alt="cur1">
+                   curso 1
+                </a>
+                <a href="#">
+                    <img src="../img/cursos/cursos2.jpg" alt="cur2">
+                    Curso 2
+                </a>
+                <a href="#">
+                    <img src="../img/cursos/cur3.webp" alt="cur3">
+                    Curso 3
+                </a>
+                <a href="#">
+                    <img src="../img/cursos/cur4.png" alt="cur4">
+                    Curso 4
+                </a>
+                <a href="#">
+                    <img src="../img/cursos/cur5.jpg" alt="cur5">
+                    Curso 5
+
+                </a>
+                <a href="#">
+                    <img src="../img/cursos/cur6.jpg" alt="cur6">
+                    Curso 6
+                </a>
+       </section>
+        
+        <section class="medios-de-pago">
+            <h2>MEDIOS DE PAGO</h2>
+            <div class="medios-de-pago-slider">
+                <a  class=flechas-img href="#"><img src="../img/flechaIzq.png"  alt="flechaIzq"></a>
+                <section>
+                    <ul class="medios-de-pago-lista">
+                        <li> <img src="../img/medios de pago/cdni.jpg" alt="Cuenta dni"></li>
+                        <li><img src="../img/medios de pago/mp.png" alt="Mercado pago"></li>
+                        <li><img src="../img/medios de pago/provnet.jpg" alt="Provincia net"></li>
+                        <li><img src="../img/medios de pago/rappi.png" alt="Rappi pago"></li>
+                    </ul>
+                </section>
+                <a class="flechas-img" href="#"><img  src="../img/flechaDer.png" alt="flechaDer"></a>
+
+            </div>
+            
+        </section>
+        <div class="imagen-final">
+            <img class="imagen-final-logo" src="../img/banner ajustado.png" alt="imagen con logo">
+        </div>
         
     </main>
 

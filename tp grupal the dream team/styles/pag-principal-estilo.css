@@ -1,0 +1,91 @@
+
+/*COMIENZO MAIN*/
+.main{
+    margin: 1em;
+    background-color:rgba(3, 17, 43, 0.8);
+    border-radius: 2em;
+    justify-content: center;   
+}
+/*seccion slider*/
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+.slider-img-1{
+    border: 2px solid #020202;
+    width: 100%;
+}
+/*seccion pasos a seguir*/
+.pasos-a-seguir{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em ;
+}
+    
+.pasos-a-seguir-img img{
+    padding: 2rem;
+    width: 100%;
+   flex-basis: 20%;
+}
+/*cursos-destacados*/
+.cursos-destacados{
+    text-align: center;
+    padding-bottom: 2rem;
+    
+   
+}
+.cursos-destacados-grilla{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: space-between;
+    border-color: #f9f7ff;
+
+}
+.cursos-destacados-grilla a{
+    text-decoration: none;
+    color: #f9f7ff;
+
+}
+.cursos-destacados-grilla img{
+    padding:2rem;
+    width: 100%;
+    height: 100%;
+}
+
+/*mediosDePago*/
+.medios-de-pago{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.medios-de-pago-slider{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.medios-de-pago-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+.medios-de-pago-lista img{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    margin: 1rem;
+}
+.imagen-final-logo{
+    width: 100%;
+    opacity: 80%;
+}
+
+

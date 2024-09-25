@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
     <link rel="shorcut icon" href="../img/icono.ico">
-    <title>Formulario para Empresas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../styles/calendario.css">
+    <link rel="stylesheet" href="../styles/header-footer-style.css"> 
 
-    <link rel="stylesheet" href="../styles/formuEmpresas.css">
-    <link rel="stylesheet" href="../styles/header-footer-style.css">
+    <title>Calendario</title>
 </head>
 <body>
     <header class="header">
@@ -64,70 +68,55 @@
 
     </header>
 
-    <main class="main">
-        <h1>PHYTON - Introducción a la programación</h1>
-        <h2>Para empresas</h2>
-        <h3>Formulario de inscripción</h3>
-        <section class="ingreso-datos">
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
-
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
-
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div> 
-        </section>
-        <div class="agregar-persona">
-            <button>
-                <img class="boton-agregar" src="../img/iconos/mas.png" alt="agregar mas personas">
-            </button>
-            <p>Agregar persona</p>
+    <main class="calendar-container">
+        <div class="calendar-header">
+            <h1>OCTUBRE</h1>
+            <p>2024</p>
         </div>
-        
-        <div class="inscripcion">
-            
-            <p class="inscripcion-precio"> VALOR DEL CURSO $20000.-</p>
-            <p class="inscripcion-boton">Inscribirse</p>
+        <div class="calendar">
+            <span class="day-name">DOM</span>
+            <span class="day-name">LUN</span>
+            <span class="day-name">MAR</span>
+            <span class="day-name">MIE</span>
+            <span class="day-name">JUE</span>
+            <span class="day-name">VIE</span>
+            <span class="day-name">SAB</span>
+            <div class="day day-disabled">29</div>
+            <div class="day day-disabled">30</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9 <a href="https://www.youtube.com/watch?v=Dr3TxFQlT9Y" class="task">IMPORTANTE</a></div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22 <section class="task">Curso bartender</section></div>
+            <div class="day">23</div>
+            <div class="day">24 <section class="task">Curso diseño viedeojuegos</section></div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30 <section class="task">Nueva seccion</section></div>
+            <div class="day">31</div>
+            <div class="day day-disabled">1</div>
+            <div class="day day-disabled">2</div>
         </div>
-
-        
     </main>
 
     <footer class="footer">
@@ -141,18 +130,18 @@
             </ul>
         </section>
 
-       <section class="menu-inferior">
+        <section class="menu-inferior">
             <h3>Menu inferior</h3>
             <ul class="menu-inferior-lista">
                 <li><a href="#"> Clases </a></li>
-                <li><a href="./calendario.html"> Proximos cursos </a></li>
+                <li><a href="#"> Calendario </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
                 <li><a href="#"> Cursos para empresas </a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
-       </section>
+        </section>
 
-       <section class="redes-sociales">
+        <section class="redes-sociales">
             <h3>Redes sociales</h3>
             <ul class="redes-sociales-lista">
                 <li>
@@ -165,13 +154,12 @@
                 <li>
                     
                     <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber">Youtube</a>
-                </li>
+                    </li>
                 <li>
                     <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
-                </li>
+                    </li>
             </ul>
-       </section>
+        </section>
     </footer>
     
 </body>
-</html>

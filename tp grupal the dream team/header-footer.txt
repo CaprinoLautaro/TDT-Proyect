@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+COPIAR ESTO EN LAS DEMAS PAGINAS Y LINKEAR A 
+<link rel="stylesheet" href="../styles/header-footer-style.css">    
+    
+TAMBIEN AGREGAR EL ICONO EN EL HEAD PARA QUE APAREZCA EN LA SOLAPA DE LA PAGINA
+<link rel="shorcut icon" href="../img/icono.ico">
 
-    <link rel="shorcut icon" href="../img/icono.ico">
-    <title>Formulario para Empresas</title>
 
-    <link rel="stylesheet" href="../styles/formuEmpresas.css">
-    <link rel="stylesheet" href="../styles/header-footer-style.css">
-</head>
-<body>
     <header class="header">
         <!-- 1er barra de navegacion -->
         <section class="navBar-sup">
@@ -64,72 +58,6 @@
 
     </header>
 
-    <main class="main">
-        <h1>PHYTON - Introducción a la programación</h1>
-        <h2>Para empresas</h2>
-        <h3>Formulario de inscripción</h3>
-        <section class="ingreso-datos">
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
-
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div>
-
-            <div >
-                <form class="form" method="get" action="#">
-                    <label for="name">Nombre: </label> 
-                    <input type="text"name="name" id="name" placeholder="Ingrese su nombre"/>
-                    <label for="surname">Apellido: </label> 
-                    <input type="text"name="surname" id="surname" placeholder="Ingrese su apellido"/>
-                    <label for="dni">DNI: </label>
-                    <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-                    
-                        <button type="reset">
-                            <img class="boton-borrar" src="../img/iconos/eliminar.png" alt="eliminar datos">
-                        </button>
-                </form>
-            </div> 
-        </section>
-        <div class="agregar-persona">
-            <button>
-                <img class="boton-agregar" src="../img/iconos/mas.png" alt="agregar mas personas">
-            </button>
-            <p>Agregar persona</p>
-        </div>
-        
-        <div class="inscripcion">
-            
-            <p class="inscripcion-precio"> VALOR DEL CURSO $20000.-</p>
-            <p class="inscripcion-boton">Inscribirse</p>
-        </div>
-
-        
-    </main>
-
     <footer class="footer">
         <section class="datos-grupo">
             <h3 class="datos-grupo-titulo">Datos </h3>
@@ -172,6 +100,3 @@
             </ul>
        </section>
     </footer>
-    
-</body>
-</html>

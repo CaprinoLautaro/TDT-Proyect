@@ -22,8 +22,7 @@ body{
     padding: 2rem;
     border-radius: 2%;
     margin: 2rem;
-    background-color:#03112b ;
-    opacity: 0.8;
+    background-color:rgba(3, 17, 43, 0.8);
 }
 .ingreso-datos{
     padding: 2rem;
