@@ -113,7 +113,6 @@ body{
 }
 .botones-navBar1-Registro:hover{
     color: #f9f7ff;
-    border: 3px solid #3deafa; /* Añade un borde con grosor de 2px y color #3db0fa */
     border-radius: 2%;         /* Mantén el borde ligeramente redondeado */
     box-sizing: border-box;     /* Asegura que el borde no altere el tamaño del botón */
     font-weight: 600;
@@ -159,6 +158,10 @@ position: relative;
 .navBar2_elements a{
     color:#03112b;
     text-decoration: none;
+}
+.navBar2_elements a:hover{
+    background-color: #f9f7ff;
+    color:#03112b;
 }
 
 /*FIN HEADER*/
@@ -223,3 +226,41 @@ position: relative;
 }
 /*FIN FOOTER*/
 
+@media screen and (max-width: 40rem) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .navBar1_elements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar2_elements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 60rem){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar1_elements{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+    
