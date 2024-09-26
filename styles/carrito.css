@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 
 :root{
     --color--principal: #3db0fa;
@@ -95,6 +92,7 @@ h3{
 .listaCompra{
     padding: 1rem;
     background-color: var(--color--tercero);
+    border: 1px solid white; 
     color: white;
     border-radius: 1rem;
     border: 1px solid rgb(255, 255, 255);
@@ -106,11 +104,9 @@ h3{
     width: fit-content;
     text-align: right;
     background-color: var(--color--principal);
-    margin-left: 30rem;
+    margin-left: 32rem;
     font-size: large;
     margin-top: 10rem;
-    padding: 1rem;
-    font-weight: bold;
 }
 
 
@@ -153,18 +149,22 @@ h3{
     margin: 1rem;
 }
 
+/* --------Responsive Mobile---------- */
 @media screen and (max-width: 40rem) {
+    .titulo{
+        margin: 1rem 0;
+        text-align: center;
+    }
+
     .main{
         display: flex;
         flex-direction: column;
+        gap: 3rem;
     }
 
     .carrito-pio{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
         padding: 0.625rem;
-        gap: 0.625rem;
+        width: 90%;
     }
 
     .carritoImput{
@@ -172,33 +172,157 @@ h3{
         flex-direction: column;
     }
 
-
     .medios-de-pago-lista{
+        margin-top: 1rem;
         gap: 0.125rem;
     }
 
     .medios-de-pago-lista img{
-        margin: 0;
         padding: 0;
+        margin: 0;
     }
 
     .listaCompra{
-        width: 90%;
         padding: 0.625rem;
+        width: 90%;
+    }
+
+    .letraTamanio{
+        margin-top: 2rem;
     }
 
     .letraTamanio p{
-        width: 100%;
+        width: 90%;
     }
 
     .total{
-        margin: 5rem auto;
+        margin-top: 2rem;
+        margin-left: 15rem;
+    }
+
+    .principal{
+        padding-bottom: 3rem;
     }
 }
 
-@media screen and (max-width: 60rem){
+/* --------Responsive Tablet---------- */
+
+ @media screen and (min-width: 40rem) and (max-width: 60rem){
+    .titulo{
+        margin: 1rem 0;
+        text-align: center;
+    }
+
     .main{
         display: flex;
         flex-direction: column;
+        gap: 3rem;
+    }
+
+    .carrito-pio{
+        padding: 0.625rem;
+        width: 90%;
+    }
+
+    .carritoImput{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .medios-de-pago-lista{
+        margin-top: 1rem;
+        gap: 0.125rem;
+    }
+
+    .medios-de-pago-lista img{
+        padding: 0;
+        margin: 0;
+    }
+
+    .listaCompra{
+        padding: 0.625rem;
+        width: 90%;
+    }
+
+    .letraTamanio{
+        margin-top: 2rem;
+    }
+
+    .letraTamanio p{
+        width: 90%;
+    }
+
+    .total{
+        margin-top: 2rem;
+        margin-left: 15rem;
+    }
+
+    .principal{
+        padding-bottom: 3rem;
+    }
+} 
+
+/* --------Responsive PC---------- */
+@media screen and (min-width: 60rem) { /* A partir de 1024px en adelante */
+
+    .titulo{
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: row; /* Recupera la disposición original en filas */
+        justify-content: center; /* Ajusta los elementos al centro */
+        gap: 7rem; /* Restablece el gap entre los elementos */
+    }
+
+    .carrito-pio{
+        padding: 0.625rem;
+        width: 90%;
+        margin-left: 2rem;
+
+    }
+
+    .carritoImput{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .medios-de-pago-lista{
+        margin-top: 1rem;
+        gap: 0.125rem;
+    }
+
+    .medios-de-pago-lista img{
+        padding: 0;
+        margin: 0;
+    }
+
+    .carrito-pio, .listaCompra {
+        width: 42rem; /* Restablece el ancho original */
+    }
+
+    .listaCompra{
+        padding: 0.625rem;
+        width: 90%;
+        margin-right: 2rem;
+    }
+
+    .letraTamanio{
+        margin-top: 2rem;
+    }
+
+    .letraTamanio p{
+        width: 90%;
+    }
+
+    .total{
+        margin-top: 2rem;
+        margin-left: 32rem;
+    }
+
+    .principal{
+        padding-bottom: 3rem;
     }
 }

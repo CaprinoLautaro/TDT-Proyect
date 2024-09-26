@@ -116,7 +116,7 @@
         margin: 0.31rem;
         padding: 2rem;
         width: 97%;
-        height: 100%;
+        height: 90%;
         object-fit: contain;
         gap: 0.5rem;
 
@@ -222,4 +222,22 @@
         padding-bottom: 0.2rem;
     }
 
+}
+
+@media screen and (max-height: 60rem) {
+    .info-curso-empre-lista h1 {
+        font-size: 2rem;
+    }
+
+    .info-curso-empre-lista h3{
+        font-size: 1rem;
+    }
+
+    .info-curso-empre-lista li{
+        font-size: 1rem;
+    }
+
+    .info-curso-empre-lista a{
+        font-size: 2rem;
+    }
 }
