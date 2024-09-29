@@ -47,8 +47,10 @@
 }
 
 #imagenContacto{
+    padding-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
+    width: 16rem;
 }
 
 /* Ajusta los estilos para que el formulario y la información de contacto se alineen */
@@ -112,80 +114,81 @@
     --color--secundario: #f9f7ff;
     --color--tercero: #03112b;
 }
+
 /* --------Responsive Mobile---------- */
 
-@media screen and (max-width: 40rem) {
+    @media screen and (max-width: 40rem) {
 
-    .titulo {
-    margin-left: 0; /* Sin margen en móviles */
-    text-align: center; /* Centrar título en móviles */
-    }
+        .titulo {
+        margin-left: 0; /* Sin margen en móviles */
+        text-align: center; /* Centrar título en móviles */
+        }
 
-    .contacto-formulario-container {
-    flex-direction: column; /* Cambia a columna en dispositivos móviles */
-    width: 100%;
-    }
+        .contacto-formulario-container {
+        flex-direction: column; /* Cambia a columna en dispositivos móviles */
+        width: 100%;
+        }
 
-    .formulario, .contacto-info {
-    width: 100%; /* Toma el 100% del ancho en móviles */
-    margin-left: 0; /* Sin margen en móviles */
-    margin-right: 0;
-    }
+        .formulario, .contacto-info {
+        width: 100%; /* Toma el 100% del ancho en móviles */
+        margin-left: 0; /* Sin margen en móviles */
+        margin-right: 0;
+        }
 
-    .mapa img {
-    width: 100%; /* Imagen del mapa ocupa todo el ancho */
-    height: auto; /* Mantiene la proporción */
+        .mapa img {
+        width: 100%; /* Imagen del mapa ocupa todo el ancho */
+        height: auto; /* Mantiene la proporción */
+        }
     }
-}
 
 /* --------Responsive Tablet---------- */
 
 @media screen and (min-width: 40rem) and (max-width: 60rem){
+   
+    .titulo {
+        margin-left: 0; /* Sin margen en móviles */
+        text-align: center; /* Centrar título en móviles */
+        }
 
-.titulo {
-    margin-left: 0; /* Sin margen en móviles */
-    text-align: center; /* Centrar título en móviles */
-    }
+        .contacto-formulario-container {
+        flex-direction: column; /* Cambia a columna en dispositivos móviles */
+        width: 100%;
+        }
 
-    .contacto-formulario-container {
-    flex-direction: column; /* Cambia a columna en dispositivos móviles */
-    width: 100%;
-    }
+        .formulario, .contacto-info {
+        width: 100%; /* Toma el 100% del ancho en móviles */
+        margin-left: 0; /* Sin margen en móviles */
+        margin-right: 0;
+        }
 
-    .formulario, .contacto-info {
-    width: 100%; /* Toma el 100% del ancho en móviles */
-    margin-left: 0; /* Sin margen en móviles */
-    margin-right: 0;
-    }
-
-    .mapa img {
-    width: 100%; /* Imagen del mapa ocupa todo el ancho */
-    height: auto; /* Mantiene la proporción */
-    }
+        .mapa img {
+        width: 100%; /* Imagen del mapa ocupa todo el ancho */
+        height: auto; /* Mantiene la proporción */
+        }
 }
 
 /* --------Responsive compu---------- */
 
 @media screen and (max-width: 64rem) {
+   
+    .titulo {
+        margin-left: 0; /* Sin margen en móviles */
+        text-align: center; /* Centrar título en móviles */
+        }
 
-.titulo {
-    margin-left: 0; /* Sin margen en móviles */
-    text-align: center; /* Centrar título en móviles */
-    }
+        .contacto-formulario-container {
+        flex-direction: column; /* Cambia a columna en dispositivos móviles */
+        width: 100%;
+        }
 
-    .contacto-formulario-container {
-    flex-direction: column; /* Cambia a columna en dispositivos móviles */
-    width: 100%;
-    }
+        .formulario, .contacto-info {
+        width: 100%; /* Toma el 100% del ancho en móviles */
+        margin-left: 0; /* Sin margen en móviles */
+        margin-right: 0;
+        }
 
-    .formulario, .contacto-info {
-    width: 100%; /* Toma el 100% del ancho en móviles */
-    margin-left: 0; /* Sin margen en móviles */
-    margin-right: 0;
-    }
-
-    .mapa img {
-    width: 100%; /* Imagen del mapa ocupa todo el ancho */
-    height: auto; /* Mantiene la proporción */
-    }
+        .mapa img {
+        width: 100%; /* Imagen del mapa ocupa todo el ancho */
+        height: auto; /* Mantiene la proporción */
+        }
 }

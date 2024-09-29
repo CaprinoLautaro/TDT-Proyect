@@ -1,6 +1,13 @@
+
+*{
+    text-decoration: none;
+}
+
+
 body{
     color: var(--color--texto);
     box-sizing: border-box;
+
 }
 
 :root{
@@ -35,14 +42,14 @@ a{
 .calendar-hearder h1{
     font-size: 1.1rem;
     margin: 0;
-
+    
 }
 
 .calendar-header p{
     font-size: 0.8rem;
     margin: 0.3rem;
     font-weight: bold;
-
+    
 }
 
 .calendar{
@@ -99,18 +106,23 @@ a{
     text-transform: uppercase;
 }
 @media screen and (max-width: 60rem){
+    .calendar-container{
+        width: 100%;
+        
+    }
+
+
     .calendar{
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(7, minmax(2.9rem, 1fr));
+        grid-template-columns: repeat(7, minmax(3rem, 1fr));
         grid-template-rows: 5rem;
         grid-auto-rows: 6rem;
+        
     }
-    .calendar-container{
-        width: 100%;
-    }
-
+    
 }
+
 
 @media screen and (max-width: 40rem){
     main{
@@ -119,17 +131,15 @@ a{
 
     .calendar-container{
         width: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
     .calendar{
         display: grid;
         width: 90%;
-        grid-template-columns: repeat(7, minmax(3.4rem, 1fr));
+        grid-template-columns: repeat(7, minmax(3.7rem, 1fr));
         grid-template-rows: 3rem;
         grid-auto-rows: 6rem;
-
+        
     }
 
     .task{
@@ -142,19 +152,27 @@ a{
         display: none;
     }
 
+
 }
+
+@media screen and (max-width: 23.4375rem){
+    .calendar{
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(7, minmax(3.3rem, 1fr));
+        grid-template-rows: 3rem;
+    }
+
+}
+
 @media screen and (max-width: 20rem){
     .calendar{
         display: grid;
-        width: 100%;
-        grid-template-columns: repeat(7, minmax(2.7rem, 1fr));
-        grid-template-rows: 5rem;
-        grid-auto-rows: 6rem;
-
+        width: 90%;
+        grid-template-columns: repeat(7, minmax(2.8rem, 1fr));
+        grid-template-rows: 3rem;
     }
-    
+
 }
-
-
 
 

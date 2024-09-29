@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 /*
     color--celeste: #3db0fa;
@@ -11,24 +10,18 @@
 */
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     color: #f9f7ff;
-    background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed; /*si muevo la pag la imagen no se mueve*/
-    background-size: cover;
 }
 /*HEADER*/
 
 .header{
     background-color: #03112b;
     width: 100%;
-    box-sizing: border-box; 
-    display: grid;  
-    grid-template-rows: 4fr 1fr;
+    box-sizing: border-box;   
 }
 /*Barra de navegacion-->elementos*/
-.navBar1_elements{
+.navBar_elements{
     padding: 0.2em;
     display: grid;
     grid-template-columns: 1fr 8fr 8fr 0.5fr;
@@ -44,7 +37,7 @@ body{
 
 /* elemento Buscar*/
 
-.busqueda{
+.form-busqueda{
     display: grid;
     grid-template-columns: 1fr 8fr 0.5fr;
     gap: 0.5em;
@@ -75,35 +68,37 @@ body{
 }
 
 /*botones de inicio y registro*/
-.botones-navBar1{
+.botones-sesion{
     padding: 0;
     list-style: none;/*saca los puntos de la lista*/
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-transform: uppercase;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 700;/*el grosor directamente al elemento, no al padre*/
     gap: 1em 1em; 
+    
+   
 }
 
-.botones-navBar1-Inicio{
+.botonInicio{
     justify-content: center;
     align-content: center;
-    
+    display: grid;
     padding:10px 24px ;
     border-radius: 2px;
     color: #f9f7ff;
     text-decoration: none;
 }
-.botones-navBar1-Inicio:hover{
+.botonInicio:hover{
     background-color:#52bafbae;
     border-radius: 2px;
 }
 
-.botones-navBar1-Registro{
+.botonRegistro{
     justify-content: center;
     align-content: center;
-    
+    display: grid;
     padding: 10px 24px;
     background-color:#3db0fa;
     text-decoration: none;
@@ -111,7 +106,7 @@ body{
     border-radius: 2%;
     
 }
-.botones-navBar1-Registro:hover{
+.botonRegistro:hover{
     color: #f9f7ff;
     border: 3px solid #3deafa; /* Añade un borde con grosor de 2px y color #3db0fa */
     border-radius: 2%;         /* Mantén el borde ligeramente redondeado */
@@ -123,8 +118,8 @@ body{
 position: relative;
 }
 .imgCarrito{
-    width: 4em;
-    margin: 0;
+ width: 4em;
+ margin: 0;
 }
 .numero-carrito{
     background-color:#3db0fa;
@@ -139,29 +134,20 @@ position: relative;
     
 }
 
-/*2da barra de nav- MENU-*/
-.navBar2{
-    background-color: #3db0fa;
-    opacity: 0.8;
-      
-}
-.navBar2_elements{
-    display: flex;
-    justify-content: space-around;
+/*FIN HEADER*/
+
+/*COMIENZO MAIN*/
+.main{
+    background-image: url(../img/banner\ sin\ letras.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /*si muevo la pag la imagen no se mueve*/
+    background-size: cover;
+    justify-content: center;
     align-content: center;
 }
-.navBar2_elements li{
-     
-    font-size: 20px;
-    list-style: none;
-    
-}
-.navBar2_elements a{
-    color:#03112b;
-    text-decoration: none;
-}
 
-/*FIN HEADER*/
+
 /*COMIENZO FOOTER*/
 .footer{
     background-color: #03112b;
@@ -221,82 +207,5 @@ position: relative;
     vertical-align: middle;
     margin-right: 0.5em;
 }
-
-
 /*FIN FOOTER*/
-
-/* MEDIAS */
-
-/*celular*/
-@media screen and (max-width: 40rem) {
-    
-    .footer{
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-
-    }
-    .header{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navBar1_elements{
-       display:flex;
-       flex-direction: column;
-       justify-content: center;
-       align-content: center;
-       padding: 0.5rem;
-       gap: 0.5rem;
-    }
-    .busqueda{
-        display: none;
-    }
- 
-    .botones-navBar1{
-        grid-row:2;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 0;
-        padding: 0.2rem;
-    }
-
-    .botones-navBar1-Inicio{
-        width: 48%;
-        padding:10px 0;
-    }
-
-    .navBar2_elements{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-   
-}
-/*tablet*/
-@media screen and (min-width: 40.01rem) and (max-width: 64rem){
-    .header{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navBar1_elements{
-       display: flex;
-       justify-content: space-around;
-        width: 100%;
-        gap: 0.5rem;
-    }
-    .busqueda{
-        display: none;
-    }
-    .navBar2_elements{
-        
-       gap: 0.5rem;
-    }
-    .navBar2_elements a{
-        font-size: 1.1rem;
-    }
-}
 

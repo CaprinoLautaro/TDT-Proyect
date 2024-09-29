@@ -42,7 +42,7 @@ main{
 
 .giftcard-fondo{
     height: 30rem;
-    width: 30rem;
+    max-width: 30rem;
     background-color: #2f92cf;
     margin: 0 auto;
     background-image: url(../img/Fondo1\ transparente.png);
@@ -206,6 +206,7 @@ main{
     cursor: pointer;
     color: var(--color--secundario);
 }
+
 @media screen and  (max-width: 40rem) {
     .container{
         display: flex;

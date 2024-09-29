@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 /*
     color--celeste: #3db0fa;
@@ -9,66 +11,60 @@
     color--azul: #03112b;
 */
 
-
-/*COMIENZO MAIN*/ /*empiezo yo (Rama)*/
 .main{
     margin: 1em;
     background-color:rgba(3, 17, 43, 0.8);
     border-radius: 2em;
-    justify-content: center;  
+    justify-content: center;
     align-content: center; 
 }
 
-.curso-python{
-    display: flex;
-    justify-content: space-around;
+.curso-python{/*seccion*/
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 3rem;
+    justify-content: center;
+    justify-items: center;
+}
+.curso-python-div1{/*1er div de la descripcion*/
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.curso-python-div1 h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    
 }
 
-.curso-python img{
-    display: flex;
-    justify-content: space-between;
-    width: 46rem;
-    height: 14rem;
-    margin-top: 8rem;
-    margin-left: 4rem;
-}
 
-.curso-python h4{
-    padding-left: 3rem;
-}
-
-.texto-curso-python{
+.texto-curso-python{/*segunda div*/
     display: flex;
     flex-direction: column;
     text-decoration:none;
     color: white;
-    margin-top: 3rem;
-    margin-right: 2rem;
+    width: 80%;
+    box-sizing: border-box;
+    height: fit-content;
+    gap: 1.5rem;
+    margin: auto auto;
+}
+.texto-curso-python h1{
+    font-size: 2rem;
 }
 
-.texto-curso-python ul{
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 0.2rem;
-}
-
-.texto-curso-python li{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 2rem;
-}
 .boton-inscripcion {
-    
+    margin-top: 2rem;
+    display: flex;
     width: fit-content;
     justify-content: center;
     align-content: center;
     padding: 0.6rem 1.5rem;
     background-color: #3db0fa; 
+
     text-transform: uppercase;
     text-decoration: none;
     color: #03112b;
@@ -76,18 +72,20 @@
     font-size: 1.6rem;
     align-self: center;
 }
-.boton-inscripcion :hover {
+.boton-inscripcion:hover {
     color: #f9f7ff;
     box-sizing: border-box;
 }
+
 
 /*profesor*/
 .apartado-profesor{
     display: flex;
     justify-content: center;
-    width: 100rem;
+    width: 90%;
     margin-top: 3rem;
     margin-left: 4rem;
+    height: fit-content;
 }
 .apartado-profesor img{
     height: 15rem;
@@ -96,7 +94,13 @@
     color: white;
     margin-left: 3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 4rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.texto-profesor p{
+    padding: 0.5rem;
+    width: 100%;
 }
 
 .estrellitas{
@@ -236,79 +240,169 @@
     color: #fff;
 }
 
-
+/*celular*/
 @media screen and (max-width:40rem){
-    /*SECCION DESC CURSO*/
-    .pagina-python{
-        margin:0.5rem;
-        width: 100%;
-    }
-    .curso-python{
+   .curso-python{
+    margin: 0;
+    padding:0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+   .curso-python-div1{
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    gap: 0.2rem;
+   }
+   .curso-python-div-img img{
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0.5rem;
+   }
+   .curso-python-div1 h1{
+    font-size: 2rem;
+   }
+   .texto-curso-python{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+   .texto-curso-python h4{
+    margin: 0;
+    padding: 0;
+   }
+
+    .mas-cursos{
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         margin: 0;
-        padding: 0.6rem;
-        align-items: center;
-        justify-content: start;
-       
     }
-    .curso-python img{
+
+    .apartado-profesor{
+        display: flex;
+        flex-direction: column;
         margin: 0;
-        width: 25rem;
-        height: auto;  
+        width: 100%;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .imagen-profesor{
+        width: 100%;
+    }
+    .texto-profesor{
+        margin: 0;
+        align-items: center;
+    }
+
+    .texto-profesor p{
+        text-align: center;
+    }
+
+
+    .curso-python img{
+        margin: 2.5rem auto;
+        width: 90%;
+        height: 10rem;
     }
 
     .texto-curso-python{
-        margin: 0;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .texto-curso-python h4{
+        padding: 1rem;
+    }
+    .contenido p{
+        display: none;
+    }
+
+}
+
+/*tablet*/
+@media screen and (min-width:40.01rem) and (max-width:64rem){
+    main{
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .curso-python{
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
-    /*CONTENIDO CLASE*/
-    .contenidos-por-clase{
-        margin: 0.5rem;
-        width:100%
-    }
-    .contenidos-por-clase h2{
-        font-size: 1rem;
-        margin: 0;
-        padding: 0.5rem;
-        justify-self: center;
-    }
-    .contenido-acordeon{
-        width: 90%;
-        padding: 1rem;
-    }
-     .acordeon label{
-        width: 98%;
-        
-    }
- 
-    /*PROFESOR*/
-    .apartado-profesor{
+    .mas-cursos{
+        display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 0 auto;
+        align-items: center;
+        width: 65%;
     }
 
-    .apartado-profesor img{
-        width: 30%;
+    .apartado-profesor{
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        margin-top: 5rem;
     }
 
     .texto-profesor{
-        width: 30%;
-        font-size: 0.8rem;
-        margin-left: 1rem;
+        margin: 0;
+        align-items: center;
     }
 
-    .mas-cursos{
-        flex-direction: column;
-        margin: 0 ;
-        justify-content: center;
-    }
-
-    .curso-css{
-        width: 25rem;   
+    .texto-profesor p{
+        text-align: center;
     }
 
 
-    
+    .curso-python img{
+        margin: 2.5rem auto;
+        width: 90%;
+        height: 20rem;
+    }
+
+    .texto-curso-python{
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .texto-curso-python h4{
+        padding: 1rem;
+    }
+
+    .curso-css figure img{
+        height: 26rem;
+    }
+}
+/*notebook*/
+/*portatil*/
+@media screen and (min-width: 64.01rem) and (max-width: 90rem){
+    .curso-python{
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .curso-python-div-img{
+        width: 100%;
+    }
+    .curso-python-div1 h1{
+        font-size: 2rem;
+    }
+    .texto-curso-python{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
 }

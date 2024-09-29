@@ -1,189 +1,222 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-    /*
+
+/*
     color--celeste: #3db0fa;
     color--texto: #020202;
     color--marfil: #f9f7ff;
     color--azul: #03112b;
 */
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #f9f7ff;
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed; /*si muevo la pag la imagen no se mueve*/
+    background-attachment: fixed;
+    /*si muevo la pag la imagen no se mueve*/
     background-size: cover;
 }
+
 /*HEADER*/
-.main{
+.main {
     padding: 2rem;
     border-radius: 2%;
     margin: 2rem;
-    background-color:rgba(3, 17, 43, 0.8);
+    background-color: rgba(3, 17, 43, 0.8);
 }
-.ingreso-datos{
+
+.ingreso-datos {
     padding: 2rem;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-   
+
 }
-.form{
+
+.form {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2em;
     font-size: 1.1rem;
 }
-.form label{
+
+.form label {
     margin-right: 0.7rem;
 }
-.ingreso-datos div{
+
+.ingreso-datos div {
     display: block;
 }
-.ingreso-datos input{
-   font-size: 1.25rem;
-   
-}
-.boton-borrar, .boton-agregar{
-    width: 100%;
-    height: 100%;
-    
+
+.ingreso-datos input {
+    font-size: 1.25rem;
+
 }
 
-.agregar-persona{
+.botones {
+    width: 9rem;
+    padding: 0;
+    /*le quito el padding al boton*/
     display: flex;
-    justify-content: start;
+    /*centrar la imagen*/
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botones img {
+    width: 5.5rem;
+}
+
+.agregar-persona {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.ingreso-datos button,.agregar-persona button{
+
+.ingreso-datos button,
+.agregar-persona button {
     width: 5%;
     border: none;
     background: none;
     padding: 0;
 }
-.inscripcion{
+
+.inscripcion {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    
+    align-items: center;
+
 }
+
 .inscripcion-precio {
     background-color: #f9f7ff;
     color: #03112b;
-    font-weight: bold; 
-    padding: 0.5rem;
+    font-weight: bold;
+    padding: 0.5rem; 
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
-.inscripcion-boton{
+
+.inscripcion-boton {
     background-color: #3db0fa;
     font-weight: bold;
     font-size: 1.25rem;
     padding: 1rem;
     border-radius: 5%;
-    
+
 }
+
 /* --------Responsive Mobile---------- */
 @media screen and (max-width: 40rem) {
-    .titulo{
+    .titulo {
         text-align: center;
     }
 
-    .form{
+    .form {
         display: flex;
         flex-direction: column;
         padding: 0;
         gap: 0.5rem;
-    } 
-
-    .ingreso-datos{
-        display: flex;
-        flex-direction: column;    
-        gap: 2rem;    
     }
 
-    .agregar-persona {
+    .ingreso-datos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    .botones {
+        display: flex;
+        align-self: center;
+        width: 4rem;
+    }
+
+    .botones img {
+        width: 3rem;
+    }
+
+    .inscripcion {
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
     }
 
-    .reset img{
-        height: 4rem;
-        width: 4rem;
-        
-    }
 
-    .reset {
-        display: flex;
-        align-self: center;
-        margin-right: 3.1rem;
-    }
 }
 
 /* --------Responsive Tablet---------- */
 
-@media screen and (min-width: 40rem) and (max-width: 60rem){
-    .titulo{
+@media screen and (min-width: 40rem) and (max-width: 60rem) {
+    .titulo {
         text-align: center;
     }
 
-    .form{
+    .form {
+
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
         padding: 0;
         gap: 0.5rem;
-    } 
-
-    .boton-borrar img{
-        width: 3rem;
-        height: 89rem;
     }
 
-    .ingreso-datos{
-        display: flex;
-        flex-direction: column;    
-        gap: 2rem;    
-    }
 
-    .reset img{
-        height: 4rem;
-        width: 4rem;
-        
-    }
-
-    .reset {
-        display: flex;
+    .botones {
         align-self: center;
-        margin-right: 3.1rem;
     }
- 
+
+    .botones img {
+        width: 3rem;
+    }
+
+    .ingreso-datos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
 }
 
 /* --------Responsive PC---------- */
-  @media screen and (min-width: 60rem) and (max-width: 81.25rem) {  /*A partir de 1024px en adelante  */
-    .titulo{
+@media screen and (min-width: 60rem) and (max-width: 81.25rem) {
+
+    /*A partir de 1024px en adelante  */
+    .titulo {
         text-align: center;
     }
 
-    .form{
+    .form {
         padding: 0;
         gap: 0.5rem;
-    } 
+    }
 
-    .ingreso-datos{
+    .botones {
+        align-self: center;
+    }
+
+    .botones img {
+        width: 4rem;
+    }
+
+    .ingreso-datos {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         margin-left: 3rem;
         width: 90%;
-        gap: 2rem;     
+        gap: 2rem;
     }
 
-    .ingreso-datos input{
-         width: 12rem; 
+    .ingreso-datos input {
+        width: 12rem;
 
     }
-}  
-
+}
