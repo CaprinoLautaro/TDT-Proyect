@@ -307,6 +307,7 @@
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
+        width: 70%;
     }
 
     .apartado-profesor{
