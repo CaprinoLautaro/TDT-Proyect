@@ -168,6 +168,11 @@ h2 {
 
     .pasos-a-seguir-img {
         width: 100%;
+        padding: 0;
+    }
+
+    .pasos-a-seguir-img img {
+        padding: 0.8rem;
     }
 
     .cursos-grilla {
@@ -203,6 +208,10 @@ h2 {
         display: none;
     }
 
+    .clase p {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:25rem) {
@@ -230,7 +239,7 @@ h2 {
     }
 }
 
-/*tablet y portatil*/
+/*tablet */
 @media screen and (min-width:40.1rem) and (max-width: 64rem) {
 
     .slider {
@@ -252,6 +261,7 @@ h2 {
 
     .pasos-a-seguir-img img {
         padding: 0.5rem;
+
     }
 
     .cursos-grilla {
@@ -268,6 +278,10 @@ h2 {
         border-radius: 1rem;
         width: 100%;
         gap: 0.5rem;
+    }
+
+    .clase p {
+        display: none;
     }
 
     .clase img {

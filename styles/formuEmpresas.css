@@ -96,9 +96,10 @@ body {
     background-color: #f9f7ff;
     color: #03112b;
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 0.5rem; 
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 
 .inscripcion-boton {
@@ -107,8 +108,6 @@ body {
     font-size: 1.25rem;
     padding: 1rem;
     border-radius: 5%;
-    text-decoration: none;
-    color: white;
 
 }
 
