@@ -84,7 +84,7 @@ body{
 
 .buttons{
     width: 100%;
-    height: 2.4rem;
+    height: fit-content;
     background-color: var(--color--principal);
     border: none;
     color: var(--color--secundario);

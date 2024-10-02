@@ -177,7 +177,7 @@ h2 {
 
     .cursos-grilla {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         padding: 0;
         margin: 1rem;
     }
@@ -187,7 +187,7 @@ h2 {
     }
 
     .clase img {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
