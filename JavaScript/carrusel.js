@@ -4,6 +4,8 @@ let imagenes = ['img/cursos/curso python1.jpg','img/cursos/curso-java.webp','img
 let linksImg = ['pages/pagina-python.html','pages/pagina-java.html','pages/pagina-html.html','pages/pagina-css.html','pages/pagina-php.html'];
 
 let contador = 0;
+const intervaloTiempo = 3000
+
 
 function carrousel(contenedor){
             contenedor.addEventListener('click', e => {
@@ -33,16 +35,30 @@ function carrousel(contenedor){
         img.onclick = function(){
             window.location.href = linksImg[contador];
                 };
-
-
             });
 }       
 
+function carruselEnMovimiento(){
+    let img = document.querySelector('.contenedor img');
+
+    setInterval(() => {
+        contador = (contador + 1) % imagenes.length;
+        img.src = imagenes[contador];
+
+
+        img.onclick = function(){
+            window.location.href = enlaces[contador];
+
+        };
+
+
+    }, intervaloTiempo);
+}
 
 document.addEventListener("DOMContentLoaded", () => {
             let contenedor = document.querySelector('.contenedor');
 
             carrousel(contenedor);
 
-
+            carruselEnMovimiento();
     })
