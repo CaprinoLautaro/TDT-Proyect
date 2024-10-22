@@ -22,6 +22,11 @@
     
 }
 
+.contenedor :hover{
+    transform:  scale(1.01);
+
+}
+
 #imagen-python{
     display: flex;
     justify-content: center;
