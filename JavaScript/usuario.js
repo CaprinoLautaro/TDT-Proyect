@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function (){
     });
 
     confirmDeleteButton.addEventListener("click", function(){
-        localStorage.removeItem(loggeduser);
+        localStorage.removeItem(loggedUser);
         sessionStorage.removeItem("loggedUser");
         window.location.href = './registro.html';
-    })
+    });
 });
