@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,24 @@
     <link rel="stylesheet" href="../styles/header-footer-style.css">
     <title>inicio-sesion</title>
 </head>
+
 <body id="principal">
 
     <main>
         <section class="form-login">
-            <h3>INICIAR SESION</h3>
-            <form>
-            <input class="controls" type="text" name="Usuario" placeholder="Usuario" required >
-            <input class="controls" type="password" name="Contraseña" placeholder="Contraseña" required >
-            <a href="../index.html" class="buttons">Ingresar</a>
+            <h3 id="formTittle">INICIAR SESION</h3>
+            <form action="" method="post" id="loginForm" >
+                        <input class="controls" type="text" placeholder="Usuario" id="loginName">
+                        <input class="controls" type="password"  placeholder="Contraseña" id="loginPassword">
+                    <button type="submit" class="buttons">Ingresar</button>
             </form>
-            <p><a class="link"  href="./contrasenia.html">Olvidates tu Contraseña?</a></p>
+            <button type="submit"  id="logoutButton" class="buttons logout-button">CERRAR SESION</button>
+            <p class="warnings" id="loginWarnings"></p>
             <p>¿No tienes una cuenta? <a class="link" href="./registro.html">Registrate</a></p>
         </section>
     </main>
 
-
+    <script src="../JavaScript/InicioSesion.js"></script>
 </body>
+
 </html>

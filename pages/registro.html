@@ -17,19 +17,19 @@
     <main>
         <section class="form-login">
             <h3>REGISTRARTE</h3>
-            <form>
-                <input class="controls" type="text" name="Usuario" placeholder="Usuario" required>
-                <input class="controls" type="email" name="Mail" placeholder="Mail" required>
-                <input class="controls" type="password" name="Contraseña" placeholder="Contraseña" required>
-                <input class="controls" type="password" name="Confirmar Contraseña" placeholder="Confirmar Contraseña"
-                    required>
-                <a href="../index.html" class="buttons"> REGISTRATE</a>
+            <form action="" method="post" id="registerForm">
+                        <input class="controls" type="text"  placeholder="Usuario"  id="registerName" >
+                        <input class="controls" type="email" placeholder="Mail"  id="registerEmail" >
+                        <input class="controls" type="password"  placeholder="Contraseña"  id="registerPassword" >
+                    <button type="submit" class="buttons"> REGISTRATE</button>
             </form>
-            <p>¿Ya tenés una cuenta? <a class="link" href="./inicioSesion.html">Iniciar sesion</a></p>
-            <p>¿Quieres ir a la página principal?<a class="link" href="../index.html">Click aqui</a></p>
+            <p class="warnings" id="warnings"></p>
+            <p class="volver-inicio">¿Ya tenés una cuenta? <a class="link" href="./inicioSesion.html">Iniciar sesion</a></p>
         </section>
     </main>
 
+
+    <script src="../JavaScript/Registro.js"></script>
 </body>
 
 </html>

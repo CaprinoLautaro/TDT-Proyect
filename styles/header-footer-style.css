@@ -124,6 +124,10 @@ body {
 
 }
 
+.botones-navBar1-cuenta{
+    display: none;
+}
+
 .botones-navBar1-Registro:hover {
     color: #f9f7ff;
     border: 3px solid #3deafa;
@@ -299,6 +303,8 @@ body {
         width: 48%;
         padding: 10px 0;
     }
+
+
 
     .navBar2_elements {
         display: flex;
