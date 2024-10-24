@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function (){
     });
 
     logoutButton.addEventListener("click", function(){
-        sessionStorage.removeIton("loggedUser");
+        sessionStorage.removeIten("loggedUser");
         window.location.href = './inicioSesion.html';
     });
 
