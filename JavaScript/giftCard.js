@@ -27,7 +27,7 @@ function cambiarMonto(){
 //cambiar el color del texto
 const colorTxtGift=document.querySelectorAll('input[name="seleccion-color-txt"]');
 const textoGift= document.querySelector('.texto-tarjeta');
-const fechaYhora=document.querySelector('.fechaYhora');
+const mensaje=document.querySelector('.mensajeEsp');
 
 function cambiarColorTxt(event){
     let colorTxt;//este va a cambiar segun lo que seleccione
@@ -38,31 +38,31 @@ function cambiarColorTxt(event){
             // el window.getComputedStyle devuelve un objeto de declaracion de css,
             // asi obtiene los estilos aplicados.. en este caso seleccionamos su background
             colorTxt=window.getComputedStyle(document.querySelector('.celeste')).backgroundColor;
-            fechaYhora.style.backgroundColor = '#03112b';
+            mensaje.style.backgroundColor = '#03112b';
             break;
         case 'amarillo-txt':
                 colorTxt=window.getComputedStyle(document.querySelector('.amarillo')).backgroundColor;
-                fechaYhora.style.backgroundColor = '#03112b';
+                mensaje.style.backgroundColor = '#03112b';
                 break;  
         case 'azul-txt':
             colorTxt=window.getComputedStyle(document.querySelector('.azul')).backgroundColor;
-            fechaYhora.style.backgroundColor = '#2f92cf';
+            mensaje.style.backgroundColor = '#2f92cf';
             break;
         case 'verde-txt':
                 colorTxt=window.getComputedStyle(document.querySelector('.verde')).backgroundColor;
-                fechaYhora.style.backgroundColor = '#03112b';
+                mensaje.style.backgroundColor = '#03112b';
                 break; 
         case 'aqua-txt':
             colorTxt=window.getComputedStyle(document.querySelector('.aqua')).backgroundColor;
-            fechaYhora.style.backgroundColor = '#03112b';
+            mensaje.style.backgroundColor = '#03112b';
             break;
         case 'blanco-txt':
                 colorTxt=window.getComputedStyle(document.querySelector('.blanco')).backgroundColor;
-                fechaYhora.style.backgroundColor = '#03112b';
+                mensaje.style.backgroundColor = '#03112b';
                 break;  
     }
     textoGift.style.color=colorTxt;
-    fechaYhora.style.color=colorTxt;
+    mensaje.style.color=colorTxt;
     
 }
 //--cambiar tamaño del nombre de la tarjetaa
@@ -102,14 +102,14 @@ const ubicacion=document.querySelectorAll('input[name="seleccion-posicion"]');
 
 function cambiarUbicacion(event) {
     //los reestablezco primero
-    fechaYhora.style.top = ''; 
-    fechaYhora.style.bottom = '';
+    mensaje.style.top = ''; 
+    mensaje.style.bottom = '';
 
     if (event.target.id === 'arriba') {
-        fechaYhora.style.top = '0.2rem'; 
+        mensaje.style.top = '0.2rem'; 
        
     } else if (event.target.id === 'abajo') {
-        fechaYhora.style.top = '27.8rem'; 
+        mensaje.style.top = '27.8rem'; 
     }
 }
 

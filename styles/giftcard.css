@@ -32,18 +32,18 @@ body{
     height: 30rem;
     width: 30rem;
     max-width: 30rem;
-    background-color: #2f92cfcd;
+    background-color: #0765a0;
     margin: 2rem;
     background-image: url(../img/Fondo1\ transparente.png);
     position: relative; 
 }
 
-.fechaYhora {
+.mensajeEsp {
     background-color:#03112b;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: absolute;
     top: 0.2rem;
-    right: 0;
+    right: 0.2rem;
 }
 
 
