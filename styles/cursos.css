@@ -21,6 +21,24 @@ main{
     border-radius: 1.5rem;
 }
 
+.opciones-cursos{
+    text-align: center;
+    margin: 0.625rem;
+    display: flex;
+}
+
+.opcion{
+    cursor: pointer;
+    padding: 0.625rem 1.25rem ;
+    margin: 0 0.625rem;
+    border-bottom: 0.125rem solid transparent;
+}
+
+.opcion.seleccionada{
+    color: var(--color--principal);
+    border-bottom:  0.125rem solid var(--color--principal);
+}
+
 .cursos-grilla{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -76,6 +94,10 @@ main{
 .imagen-final-logo{
     width: 100%;
     opacity: 80%;
+}
+
+.oculto{
+    display: none;
 }
 
 @media screen and (max-width: 40rem) {

@@ -69,7 +69,11 @@
     
     <main>
         <h1 class="titulo">Cursos</h1>
-        <section class="cursos-grilla">
+        <div class="opciones-cursos">
+            <span class="opcion seleccionada opcionOnline">Cursos Online</span>
+            <span class="opcion opcionPresencial">Cursos Pressenciales</span>
+        </div>
+        <section class="cursos-grilla cursos-Online">
             <div class="clase">
                 <img src="../img/cursos/curso-css.webp" alt="Imagen-clase">
                 <h3>Curso de diseño con CSS</h3>
@@ -113,9 +117,36 @@
                 <a class="link" href="./pagina-python.html"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
             </div>
         </section>
+
+        <section class="cursos-grilla cursos-Presenciales oculto">
+            <div class="clase">
+                <img src="../img/cursos/curso-css.webp" alt="Imagen-clase">
+                <h3>Curso de diseño con CSS</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="./pagina-css.html"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
+            <div class="clase">
+                <img src="../img/cursos/curso-excel.webp" alt="Imagen-clase">
+                <h3>Curso master de EXCEL</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="./pagina-excel.html"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
+            <div class="clase">
+                <img src="../img/cursos/curso-html.webp" alt="Imagen-clase">
+                <h3>Curso HTML Avanzado a Experto</h3>
+                <p>Nombre del profesor</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus beatae ipsum veritatis. Consectetur, optio?</p>
+                <a class="link" href="./pagina-html.html"><p>Comprar $1200</p><img src="../img/carrito de compras.png" alt="carrito-compras"></a>
+            </div>
+        </section>
+        
         <section class="imagen-final">
             <img class="imagen-final-logo" src="../img/banner ajustado.png" alt="imagen con logo">
         </section>
+
+
     </main>
 
 
@@ -164,5 +195,6 @@
 
     <script src="../JavaScript/main.js"></script>
     <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
+    <script src="../JavaScript/cursosSeleccion.js"></script>
 </body>
 </html>
