@@ -13,4 +13,4 @@ document.addEventListener("DOMContentLoaded", function(){
         registerLink.style.display = "block";
         userInfoLink.style.display = "none";
     }
-})
+});

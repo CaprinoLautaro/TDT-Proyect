@@ -141,6 +141,9 @@ body {
 
 .carrito {
     position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .imgCarrito {
