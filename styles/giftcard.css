@@ -109,7 +109,7 @@ body{
     background-color: #2f92cf;
 }
 .celeste2{
-    background-color: #0765a0a1;
+    background-color: #0765a0;
 }
 
 
@@ -120,7 +120,7 @@ body{
     background-color:#03112b;
 }
 .azul2{
-    background-color:#073282c8;
+    background-color:#073282f9;
 }
 
 .verde{
@@ -137,13 +137,13 @@ body{
     
 }
 .violeta{
-    background-color: rgba(128, 0, 128, 0.601);
+    background-color: rgba(128, 0, 128, 0.966);
 }
 .verdeO{
-    background-color: rgba(0, 100, 0, 0.603);
+    background-color: rgb(0, 100, 0);
 }
 .rosa{
-    background-color: rgba(238, 21, 94, 0.571);
+    background-color: rgb(238, 21, 93);
 }
 
 
