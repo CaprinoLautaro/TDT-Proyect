@@ -4,7 +4,7 @@ function resetearSeleccion(){
     document.querySelector('.monto').textContent = '$ ---';
     document.querySelector('.giftcard-content').style.backgroundColor = '';
     document.querySelector('.texto-tarjeta').style.color = ''; 
-    document.querySelector('.texto-tarjeta').style.fontSize = 'initial';
+    document.querySelector('.texto-tarjeta-nombre').style.fontSize = '3rem';
 };
 
 // Cambiar el nombre del destinatario en la vista previa
