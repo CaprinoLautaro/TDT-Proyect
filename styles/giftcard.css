@@ -7,7 +7,6 @@
     text-decoration: none;
 }
 
-
 body{
     height: 100vh;
     max-width: 100vw;
@@ -18,58 +17,61 @@ body{
     --color--secundario: #f9f7ff;
     --color--tercero: #03112b;
 }
-
-
-main{
-    background-image: url(../img/banner\ sin\ letras.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed; /*si muevo la pag la imagen no se mueve*/
-    background-size: cover;
-}
-
+/*aca empieza el main*/
 .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5rem 16rem;
+    display: flex;
+    flex-direction:row;
+    margin-top: 2rem;
+    justify-content: center;
     align-items: center;
-
+    align-content: center;
 }
+/*vista de la tarjeta*/
 
-.giftcard-preview{
-    margin: 2rem;
-}
-
-.giftcard-fondo{
+.giftcard-content{
     height: 30rem;
+    width: 30rem;
     max-width: 30rem;
-    background-color: #2f92cf;
-    margin: 0 auto;
+    background-color: #2f92cfcd;
+    margin: 2rem;
     background-image: url(../img/Fondo1\ transparente.png);
+    position: relative; 
+}
+
+.fechaYhora {
+    background-color:#03112b;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
 }
 
 
-.monto{
-    margin-left: 22rem;
-    background-color: #020202;
-
-}
-
-.recipient-name{
+.texto-tarjeta{
     text-align: center;
     margin-top: 10rem;
     text-transform: uppercase;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.giftcard-preview p{
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 1rem;
-    font-size: 1rem;
+.texto-tarjeta-nombre {
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.vistaPrev {
+    position: absolute;
+    bottom: -2rem; /* Ajusta este valor para mover la vista previa fuera del fondo */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent; /* Sin fondo */
+    font-style: italic;
+}
+
+
+/*form de edicion de la giftCard*/
 .giftcard-form{
     display: flex;
     flex-direction: column;
@@ -97,7 +99,6 @@ main{
     padding: 1rem;
 }
 
-
 .color{
     height: 1.5rem;
     width: 1.5rem;
@@ -107,13 +108,19 @@ main{
 .celeste{
     background-color: #2f92cf;
 }
+.celeste2{
+    background-color: #0765a0a1;
+}
+
 
 .amarillo{
     background-color: #f5df1f;
 }
 .azul{
-    background-color: var(--color--tercero);
-
+    background-color:#03112b;
+}
+.azul2{
+    background-color:#03112bab;
 }
 
 .verde{
@@ -123,13 +130,29 @@ main{
 .aqua{
     background-color: aqua;
 }
+.blanco{
+    background-color: white;
+    border-color: #020202;
+    border:solid 0.1rem;
+    
+}
+.violeta{
+    background-color: rgba(128, 0, 128, 0.601);
+}
+.verdeO{
+    background-color: rgba(0, 100, 0, 0.603);
+}
+.rosa{
+    background-color: rgba(238, 21, 94, 0.571);
+}
 
-.color-muestras{
+
+.color-muestras-txt, .color-muestras-fondo{
     display: flex;
     gap: 2rem;
 }
 
-.color-seleccion{
+.color-seleccion-txt, .color-seleccion-fondo{
     display: flex;
     gap: 2.7rem;
     padding-left: 0.3rem;
@@ -192,6 +215,11 @@ main{
     gap: 3.7rem;
 }
 
+.botones{
+    display: flex;
+    justify-content: space-around;
+    
+}
 
 .boton-giftcard{
     width: 10rem;
@@ -213,6 +241,7 @@ main{
         flex-direction: column;
         align-items: center;    
         padding: 0;
+        margin:0.5rem;
     }
 
     .giftcard-fondo{
@@ -220,21 +249,31 @@ main{
         width: 23rem;
     }
 
-    .monto{
-        margin-left: 19rem;
+    .giftcard-content{
+        max-width: 18rem;
+        
     }
-
-    .recipient-name{
-        margin-top: 6rem;
+    .vistaPrev{
+        text-align: center;
+        font-size: smaller;
+    }
+    .color-muestras-txt{
+        gap: 1rem;
+    }
+    .color-seleccion-txt{
+        gap: 1.7rem;
     }
 
 }
 
-@media screen and (max-width: 60rem){
+@media screen and (min-width:40.01rem) and (max-width: 64rem){
     .container{
         display: flex;
         flex-direction: column;
         padding: 2rem 0;
+    }
+    .giftcard-content{
+       width: 30rem; 
     }
 
     .giftcard-form{

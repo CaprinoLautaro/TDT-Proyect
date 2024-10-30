@@ -4,19 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../styles/header-footer-style.css">
-    <link rel="stylesheet" href="../styles/cursoEmpre.css">
-
     <link rel="shorcut icon" href="../img/icono.ico">
-
-
-
-    <title>TDT - Cursos Empresas</title>
-
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
+    <link rel="stylesheet" href="../styles/pagina-usuario.css">
+    <title>Usuario</title>
 </head>
 
 <body>
+
     <header class="header">
         <!-- 1er barra de navegacion -->
         <section class="navBar-sup">
@@ -69,52 +64,41 @@
         </section>
 
     </header>
-    <main class="main">
-        <img class="img-titulo" src="../img/tdt empresas.jpeg" alt="tdtempresas">
 
-        <section class="info-curso-empre">
-            <img src="../img/cursoEmpre.jpg" alt="fondoCurso">
-
-            <div class="info-curso-empre-info">
-                <h1> Desarrolla las habilidades de tu equipo y llevalas al máximo gracias a nuestros cursos para
-                    Empresas</h1>
-                <div class="info-curso-empre-lista">
-                    <h2>¿Por qué elegirnos?</h2>
-                    <ul>
-                        <li>- Acceso ilimitado a todos nuestos cursos en cualquier momento y lugar</li>
-                        <li>- Crea equipos más seguros y productivos</li>
-                        <li>- Certificación oficial</li>
-                        <li>- Cursos para todos los roles y niveles </li>
-                        <li>- Aprendizaje personalizado para todo tu equipo</li>
-                    </ul>
+    <main>
+        <section class="container">
+            <div clas="info-titulo">
+                <h2 class="titulo">BIENVENIDO A TU CUENTA </h2>
+                <h2 class="titulo nombre-usuario" id="nameOfUser"></h2>
+            </div>
+            <div class="info-cuenta">
+                <div class="info-name">
+                    <p class="texto"> Nombre de la cuenta : </p>
+                    <p class="texto" id="nameOfUserText"></p>
                 </div>
+                <div class="info-name">
+                    <p class="texto"> mail del usuario :</p>
+                    <p class="texto" id="mailOfUser"></p>
+                </div>
+            </div>
 
+            <p class="texto"> DISFRUTE DE SU ESTADIA POR LA ACADEMIA </p>
+
+            <div class="lista-botones">
+                <button class="boton" id="logoutButton"> Cerrar Sesion </button>
+                <button class="boton" id="eliminateButton"> Eliminar cuenta </button>
             </div>
         </section>
 
-        <section class="inscripcion">
-            <h3>Planes para empresas</h3>
-            <div class="radioButtons">
-                <label>
-                    <input name="plan" type="radio" value="estandar" checked>
-                    Estandar- Equipo de 2 a 10 personas
-                </label>
-                <br><!-- ESTO HACE QUE ESTE UNA DEBAJO DE LA OTRA, SALTO DE LINEA -->
-                <label>
-                    <input name="plan" type="radio" value="full">
-                    Full- Equipo de mas de 20 personas
-                </label>
-
-            </div>
-            <div class="boton-inscripcion">
-                <a href="./formuEmpresas.html">Formulario para empresas</a>
+        <div class="modal modal-js">
+            <div class="modal-content">
+                <h3>¿Estas seguro de eliminar tu cuenta?</h3>
+                <p>Esta accion no se puede deshacer.</p>
+                <button class="modal-button confirm confirmDelete-js">Si, eliminar</button>
+                <button class="modal-button cancel cancelDelete-js"> cancelar </button>
             </div>
 
-
-        </section>
-
-
-
+        </div>
     </main>
 
 
@@ -165,6 +149,7 @@
         </section>
     </footer>
 
+    <script src="../JavaScript/usuario.js"></script>
 </body>
 
 </html>

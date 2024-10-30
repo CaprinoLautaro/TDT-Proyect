@@ -14,19 +14,82 @@
 }
 
 /*seccion slider*/
-.slider {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    justify-content: space-between;
+.contenedor{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    position: relative;
+    height: 40rem;
+    
 }
 
-.slider-img-1 {
-    border: 0.125rem solid #020202;
-    width: 100%;
+.contenedor :hover{
+    transform:  scale(1.01);
 }
+
+#imagen-python{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.boton-adelante{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height:70px ;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color:#fff;
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+.boton-atras{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height:70px ;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color:#fff;
+    box-shadow: 0 0 10px rgba(255,255,255,.6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+.boton-adelante:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+
+.boton-atras:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+
+.boton-atras{
+    left: 10%;
+    top :calc(50% - 70px);
+}
+
+.boton-adelante{
+    right: 10%;
+    top: calc(50% - 70px);
+
+
+}/*slider end */
+
 
 /*seccion pasos a seguir*/
 h2 {
@@ -170,13 +233,14 @@ h2 {
         width: 100%;
         padding: 0;
     }
-    .pasos-a-seguir-img img{
+
+    .pasos-a-seguir-img img {
         padding: 0.8rem;
     }
 
     .cursos-grilla {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         padding: 0;
         margin: 1rem;
     }
@@ -186,7 +250,7 @@ h2 {
     }
 
     .clase img {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
@@ -206,6 +270,7 @@ h2 {
     .flechas-img {
         display: none;
     }
+
     .clase p {
         display: none;
     }
@@ -259,7 +324,7 @@ h2 {
 
     .pasos-a-seguir-img img {
         padding: 0.5rem;
-        
+
     }
 
     .cursos-grilla {
@@ -277,6 +342,7 @@ h2 {
         width: 100%;
         gap: 0.5rem;
     }
+
     .clase p {
         display: none;
     }

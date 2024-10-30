@@ -20,7 +20,7 @@
 .info-curso-empre {
     position: relative;
     padding-left: 2rem;
-    
+
     padding-right: 2rem;
     height: 100%;
     box-sizing: border-box;
@@ -30,7 +30,7 @@
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    
+
 }
 
 .info-curso-empre-info {
@@ -73,25 +73,27 @@
     font-size: 1.2rem;
 }
 
-.inscripcion{
-   padding: 2rem;
+.inscripcion {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
     gap: 1.5rem;
 }
 
-.radioButtons label{
-    font-size: 1.2rem ;
+.radioButtons label {
+    font-size: 1.2rem;
     display: inline-block;
     padding-left: 2rem;
     padding-bottom: 1rem;
 }
-.boton-inscripcion{
-    display:flex ;
+
+.boton-inscripcion {
+    display: flex;
     justify-content: center;
     align-content: center;
 }
+
 .boton-inscripcion a {
 
     width: fit-content;
@@ -136,7 +138,7 @@
         border-color: #020202;
     }
 
-    .info-curso-empre-info{
+    .info-curso-empre-info {
         display: flex;
         margin: 0;
         padding: 0.5rem;
@@ -154,7 +156,7 @@
     }
 
     .info-curso-empre-lista h2 {
-        
+
         font-size: 1.2rem;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
@@ -170,7 +172,7 @@
 
 /*tablet */
 @media screen and (min-width: 40.01rem) and (max-width: 64rem) {
-    .info-curso-empre{
+    .info-curso-empre {
         padding: 0.5rem;
         max-height: fit-content;
     }
@@ -185,14 +187,15 @@
         padding: 1rem;
         padding-bottom: 0;
         gap: 1rem;
-        
+
     }
 
     .info-curso-empre-info h1 {
-        padding-top:0.5rem ;
+        padding-top: 0.5rem;
         font-size: 1.9rem;
     }
-    .info-curso-empre-lista{
+
+    .info-curso-empre-lista {
         padding-bottom: 2rem;
     }
 
@@ -208,6 +211,7 @@
     }
 
 }
+
 /*portatil*/
 @media screen and (min-width: 64.01rem) and (max-width: 90rem) {
     .info-curso-empre-info {
