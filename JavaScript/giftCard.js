@@ -89,10 +89,15 @@ function cambiarTamaño(event){
         case 'px48':
             tamanio='3rem';
             break;
+        case 'px56':
+            tamanio='3.5rem';
+            break;
     }
 textoTamaño.style.fontSize = tamanio;
 };
 
+
+//cambio de ubicacion de la fecha y hora
 const ubicacion=document.querySelectorAll('input[name="seleccion-posicion"]');
 
 function cambiarUbicacion(event) {
@@ -106,6 +111,45 @@ function cambiarUbicacion(event) {
     } else if (event.target.id === 'abajo') {
         fechaYhora.style.top = '27.8rem'; 
     }
+}
+
+//cambiar el color del texto
+const colorFondoGift=document.querySelectorAll('input[name="seleccion-color-fondo"]');
+const fondoGift= document.querySelector('.giftcard-content');
+
+
+function cambiarColorFondo(event){
+    let colorFondo;//este va a cambiar segun lo que seleccione
+    const seleccion=event.target.id;
+
+    switch(seleccion){
+        case 'azul-fondo':
+            // el window.getComputedStyle devuelve un objeto de declaracion de css,
+            // asi obtiene los estilos aplicados.. en este caso seleccionamos su background
+            colorFondo=window.getComputedStyle(document.querySelector('.azul2')).backgroundColor;
+            
+            break;
+        case 'violeta-fondo':
+                colorFondo=window.getComputedStyle(document.querySelector('.violeta')).backgroundColor;
+                
+                break;  
+        case 'celeste-fondo':
+            colorFondo=window.getComputedStyle(document.querySelector('.celeste2')).backgroundColor;
+            
+            break;
+        case 'verdeO-fondo':
+                colorFondo=window.getComputedStyle(document.querySelector('.verdeO')).backgroundColor;
+                
+                break; 
+        case 'rosa-fondo':
+            colorFondo=window.getComputedStyle(document.querySelector('.rosa')).backgroundColor;
+            
+            break;
+          
+    }
+    fondoGift.style.backgroundColor=colorFondo;
+    
+    
 }
 
 //--ACA LLAMO A LAS FUNCTION --
@@ -126,6 +170,10 @@ tamanio.forEach((radio) => {
 
 ubicacion.forEach((radio) => {
     radio.addEventListener('change', cambiarUbicacion);
+});
+colorFondoGift.forEach(radio => {
+    radio.addEventListener('change', cambiarColorFondo);
+    //cambia por la seleccion del switch, funcion creada para cambiar el color del texto
 });
     
     
