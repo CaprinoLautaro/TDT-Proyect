@@ -52,11 +52,17 @@ main{
     padding: 2rem;
     background-color: var(--color--secundario);
     border-radius: 2rem;
+    gap: 1rem;
+    border-top: solid var(--color--principal) 0.625rem;
+}
+
+.clase-contenido{
     display: flex;
     flex-direction: column;
     color: var(--color--texto);
-    gap: 1rem;
-    border-top: solid var(--color--principal) 0.625rem;
+    gap: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .clase img{
@@ -66,6 +72,7 @@ main{
 }
 
 .link{
+    width: 90%;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -73,10 +80,12 @@ main{
     background-color: var(--color--principal);
     padding: 1rem;
     border-radius: 1rem;
+    margin: 0 auto;
     margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .link:hover{
@@ -113,4 +122,8 @@ main{
         grid-template-columns: 1fr 1fr;
         margin: 5rem 1rem;
     }
+}
+
+.oculto{
+    display: none;
 }

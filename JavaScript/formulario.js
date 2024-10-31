@@ -56,6 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 </div>
 
+                    <div>
+                        <label for="telefono"> Tel: </label>
+                        <input type="number" name="telefono" placeholder="Ingrese su Telefono">
+                    </div>
+
                 <button class="botones eliminarPersonaBtn" type="reset">
                     <img src="../img/iconos/eliminar.png" alt="eliminar datos">
                 </button>
@@ -90,9 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const nombre = persona.querySelector('input[name="name"]').value;
             const apellido = persona.querySelector('input[name="surname"]').value;
             const dni = persona.querySelector('input[name="dni"]').value;
+            const telefono = persona.querySelector('input[name="telefono"]').value;
 
             if(nombre && apellido && dni){
-                modalBody.innerHTML += `<p>Nombre : ${nombre}, Apellido: ${apellido}, DNI : ${dni} </p>`
+                modalBody.innerHTML += `<p>Nombre : ${nombre}, Apellido: ${apellido}, DNI : ${dni}, Tel: ${telefono} </p>`
             }
         });
 
