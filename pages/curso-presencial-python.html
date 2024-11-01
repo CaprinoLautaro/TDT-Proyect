@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shorcut icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../styles/pagina-python.css">
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
+
+    <title>Curso De Introduccion A Python</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- 1er barra de navegacion -->
+        <section class="navBar-sup">
+            <nav class="navBar1">
+                <section class="navBar1_elements">
+                    <!-- LOGO -->
+                    <a href="../index.html">
+                        <img class="logo" src="../img/icono.png" alt="logo">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="busqueda" method="get" action="https://www.google.com.ar">
+                        <p class="textoBusqueda">Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search">
+                        <button class="boton-lupa" type="submit">
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar">
+                        </button>
+                    </form>
+                    <!-- BOTONES DE INICIO Y REGISTRO -->
+                    <div>
+                        <ul class="botones-navBar1">
+                            <li>
+                                <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CARRITO DE COMPRAS -->
+                    <a class="carrito" href="./carrito.html">
+                        <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
+                        <p class="numero-carrito">0</p>
+                    </a>
+                </section>
+            </nav>
+        </section><!-- aca termina la 1er barra de nav -->
+
+        <!-- 2da BARRA- MENU -->
+        <section class="navBar-inf">
+            <nav class="navBar2">
+                <ul class="navBar2_elements">
+
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="./calendario.html">Próximos cursos </a></li>
+                    <li><a href="./giftCard.html">Gift Card</a></li>
+                    <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+    <!--aca es python -->
+    <main class="main">
+        <section class="pagina-python">
+            <section class="curso-python">
+
+                <div class="curso-python-div1">
+                    <img class="curso-python-div-img" src="../img/presenciales/Curso Python.webp" alt="curso-python-imagen">
+                    <h1>Curso De Python - PRESENCIAL</h1>
+                    <h2> Valor por persona: $4500.00</h2>
+                    <h3>Tiempo De Dedicacion Necesario: 120 hs </h3>
+                </div>
+
+
+                <div class="texto-curso-python">
+
+                    <h1> Descripcion Del Curso:</h1>
+
+                    <h4> Curso de Python - Presencial: aprende los fundamentos de programación con Python.
+                        Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de
+                        datos.
+                        <br>
+                        ¡Empieza a codificar y desarrolla tus habilidades tecnológicas.
+                    </h4>
+                    <h2>Requisitos Previos : </h2>
+                    <p>Computadora personal</p>
+                    <p>Conocimientos basicos de Inglés y Matemática</p>
+                    <p> Ganas de aprender</p>
+                    <p> Conocimiento basico de informatica</p>
+                    <p> IDE : Visual studio code </p>
+                    <a class="boton-inscripcion" href="./formuEmpresas.html" target=“_blank”>COMPLETAR FORMULARIO </a>
+
+                </div>
+            </section>
+
+
+            <!--CONTENIDOS POR CLASE-->
+            <section class="contenidos-por-clase">
+                <h2>CONTENIDO POR CLASE :</h2>
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                    <label for="btn-acordeon1">
+                        Introduccion :
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>
+                            En esta sección, se presentarán los fundamentos de la programación y la importancia de
+                            Python en el
+                            desarrollo tecnológico. Los estudiantes aprenderán sobre el entorno de programación y las
+                            herramientas necesarias para
+                            comenzar a codificar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                    <label for="btn-acordeon2">
+                        Unidad 1: Variables y Tipos de Datos
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>
+                            Los participantes explorarán los conceptos de variables y tipos de datos en Python.
+                            Se cubrirán temas como la declaración de variables, asignación de valores y
+                            los diferentes tipos de datos, incluyendo enteros, flotantes, cadenas y booleanos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                    <label for="btn-acordeon3">
+                        Unidad 2: Estructuras de Control
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>
+                            En esta unidad, se estudiarán las estructuras de control que permiten tomar decisiones en el
+                            código.
+                            Se explicarán las sentencias condicionales (if, elif, else) y los bucles (for y while),
+                            proporcionando ejemplos prácticos para su aplicación
+                        </p>
+                    </div>
+                </div>
+
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                    <label for="btn-acordeon4">
+                        Unidad 3: Funciones
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>
+                            Los estudiantes aprenderán sobre la definición y el uso de funciones en Python.
+                            Se abordará la importancia de las funciones para estructurar el código,
+                            así como la creación de funciones personalizadas y el manejo de parámetros y retornos.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+       <!--Profesor-->
+<section class="apartado-profesor">
+    <img class="imagen-profesor" src="../img/presenciales/severus.webp" alt="profesor-severus-snape">
+    <section class="texto-profesor">
+        <h3><strong>Severus Snape:</strong></h3>
+        <div class="estrellitas">
+            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+        </div>
+        <p>Severus Snape, una figura enigmática y de una habilidad incomparable en el mundo de la magia, trae ahora su conocimiento al mundo de la programación con un enfoque en Python. Con una formación impresionante en Pociones y Defensa Contra las Artes Oscuras, Snape aplica su rigurosidad y disciplina en cada clase, guiando a los estudiantes a profundizar en el código como solo él sabe hacerlo. Este curso de Python no solo aborda los fundamentos técnicos, sino que desafía a los participantes a encontrar soluciones elegantes y, a veces, complejas.</p>
+        <p>Con una presencia magnética y un estilo de enseñanza que inspira tanto respeto como curiosidad, Severus es especialmente reconocido por su habilidad para llevar a los estudiantes a un nivel avanzado, desentrañando los misterios de la programación. Su enfoque meticuloso y su pasión por el conocimiento profundo han hecho de Snape un maestro único y esencial para aquellos que desean llevar sus habilidades de programación más allá de lo convencional.</p>
+    </section>
+</section>
+            </section>
+
+
+            <!--MAS CURSOS-->
+            <div class="mas-cursos">
+                <div class="curso-css">
+                    <figure>
+                        <img src="../img/cursos/curso-css.webp" alt="imagen-curso-css">
+                    </figure>
+                    <div class="contenido">
+                        <h2>Curso De CSS </h2>
+                        <p>
+                            Domina CSS3 (Desde cero a master) Curso 100% Practico [Flexbox, CSS GRID, Animaciones en
+                            CSS3, BEM, Responsive, TAILWIN]
+                        </p>
+                        <a href="./pagina-css.html">Ir Al Curso.</a>
+                    </div>
+                </div>
+                <div class="curso-css">
+                    <figure>
+                        <img src="../img/cursos/curso-html.webp" alt="imagen-curso-html">
+                    </figure>
+                    <div class="contenido">
+                        <h2>Curso De HTML </h2>
+                        <p>
+                            Aprende HTML 5 y crea tus primeras páginas web paso a paso con decenas de ejercicios.
+                            Empieza en el desarrollo web aquí
+                        </p>
+                        <a href="./pagina-html.html">Ir Al Curso.</a>
+                    </div>
+                </div>
+                <div class="curso-css">
+                    <figure>
+                        <img src="../img/cursos/curso-java.webp" alt="imagen-curso-java">
+                    </figure>
+                    <div class="contenido">
+                        <h2>Curso De JAVA </h2>
+                        <p>
+                            El mejor curso Java con aplicaciones del mundo real (Escritorio, Web y Full Stack) Spring,
+                            Hibernate, Jakarta EE y más!
+                        </p>
+                        <a href="./pagina-java.html">Ir Al Curso.</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!--aca termina python -->
+    <footer class="footer">
+        <section class="datos-grupo">
+            <h3 class="datos-grupo-titulo">Datos </h3>
+            <ul class="datos-grupo-lista">
+                <li>Lautaro Caprino - DNI: 47164463</li>
+                <li>Lucas Agustín García - DNI: 46288646</li>
+                <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
+                <li>Ramiro Matias Bruzon - DNI: 37990199</li>
+            </ul>
+        </section>
+
+        <section class="menu-inferior">
+            <h3>Menu inferior</h3>
+            <ul class="menu-inferior-lista">
+                <li><a href="./cursos.html"> Cursos </a></li>
+                <li><a href="./calendario.html"> Proximos cursos </a></li>
+                <li><a href="./giftCard.html"> Gift Card </a></li>
+                <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
+                <li><a href="./contacto.html"> Contacto </a></li>
+            </ul>
+        </section>
+
+        <section class="redes-sociales">
+            <h3>Redes sociales</h3>
+            <ul class="redes-sociales-lista">
+                <li>
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg"
+                            alt="instagram">Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg"
+                            alt="X">X/Twitter</a>
+                </li>
+                <li>
+
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg"
+                            alt="Youtuber">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg"
+                            alt="mail">Gwyn@lordOfCinder.com</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+<script src="../JavaScript/cursoPres.js"
+
+</body>

@@ -59,6 +59,10 @@ body{
 .texto-tarjeta-nombre {
     font-size: 3rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-wrap: break-word; /* Permite que las palabras se dividan */
+    word-break: break-word; /* Divide palabras largas si es necesario */
+    overflow-wrap: break-word; /* Soporte adicional */
+    white-space: normal; /* Permite múltiples líneas */
 }
 
 .vistaPrev {
