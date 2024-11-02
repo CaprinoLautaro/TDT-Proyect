@@ -105,9 +105,6 @@ main{
     opacity: 80%;
 }
 
-.oculto{
-    display: none;
-}
 
 @media screen and (max-width: 40rem) {
     .cursos-grilla{

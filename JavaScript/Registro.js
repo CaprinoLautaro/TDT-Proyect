@@ -38,7 +38,8 @@ const parrafo = document.getElementById("warnings");
             pass: pass,
             cursosComprados: [],
             giftCards: [],
-            curssossPresenciales: []
+            cursosPresenciales: [],
+            contadorCarrito: 0
         };
         localStorage.setItem(nombre, JSON.stringify(userData));
         window.location.href = "./inicioSesion.html";

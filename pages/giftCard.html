@@ -75,94 +75,108 @@
     </header>
 
     <main class="container">
-        <section class="giftcard-preview">
-            <div class="giftcard-fondo">
-                <div class="giftcard-content">
-                    <p class="monto">$XX.XX</p>
-                    <div class="recipient-name">
-                        <p>GIFT CARD PARA:</p>
-                        <h2>Nombre del destinatario</h2>
-                    </div>
-
-                </div>
+    
+        <section class="giftcard-content">
+            <div>
+                <p class="mensajeEsp">- UN REGALO ESPECIAL PARA VOS - </p>
             </div>
-            <p>Vista previa de resultado de personalizacion</p>
+            <div class="texto-tarjeta">
+                <p>GIFT CARD PARA:</p>
+                <h2 class="texto-tarjeta-nombre">----nombre----</h2>
+                <p>Por un valor de:</p>
+                <h2 class="monto">$ ---</h2>
+            </div>
+            <p class="vistaPrev">-vista previa de la giftCard-</p>
         </section>
-
-        <section class="giftcard-form">
+        
+        <section class="giftcard-form"> 
             <h2>Personaliza tu giftCard</h2>
             <form class="form">
                 <input type="text" id="recipiente" name="recipiente" placeholder="Nombre del destinatario"
                     class="nombre-destinatario" required>
 
-                <h3>Color</h3>
-                <div class="color-muestras">
-                    <div class="celeste color"></div>
-                    <div class="amarillo color"></div>
-                    <div class="azul color"></div>
-                    <div class="verde color"></div>
-                    <div class="aqua color"></div>
+                <h3>Color del texto</h3>
+                <div class="color-muestras-txt">
+                    <label for="celeste-txt" class="celeste color"></label>
+                    <label for="amarillo-txt" class="amarillo color"></label>
+                    <label for="azul-txt" class="azul color"></label>
+                    <label for="verde-txt" class="verde color"></label>
+                    <label for="aqua-txt" class="aqua color"></label>
+                    <label for="blanco-txt" class="blanco color"></label>
                 </div>
 
-                <div class="color-seleccion">
-                    <input type="radio" name="seleccion-color" checked>
-                    <input type="radio" name="seleccion-color">
-                    <input type="radio" name="seleccion-color">
-                    <input type="radio" name="seleccion-color">
-                    <input type="radio" name="seleccion-color">
+                <div class="color-seleccion-txt">
+                    <input type="radio" id="celeste-txt" name="seleccion-color-txt">
+                    <input type="radio" id="amarillo-txt" name="seleccion-color-txt">
+                    <input type="radio" id="azul-txt" name="seleccion-color-txt">
+                    <input type="radio" id="verde-txt" name="seleccion-color-txt">
+                    <input type="radio" id="aqua-txt" name="seleccion-color-txt">
+                    <input type="radio" id="blanco-txt" name="seleccion-color-txt" checked>
+
                 </div>
 
                 <h3>Tamaño de fuente</h3>
 
                 <div class="tamanio-muestra">
-                    <p>16px</p>
-                    <p>32px</p>
-                    <p>48px</p>
-                    <p>64px</p>
-                    <p>80px</p>
+                    <label for="px16"><p>16px</p></label>
+                    <label for="px24"><p>24px</p></label>
+                    <label for="px32"> <p>32px</p></label>
+                    <label for="px40"><p>40px</p></label>
+                    <label for="px48"><p>48px</p></label>
+                    <label for="px56"><p>56px</p></label>
                 </div>
 
                 <div class="tamanio-seleccion">
-                    <input type="radio" name="seleccion-tamanio">
-                    <input type="radio" name="seleccion-tamanio">
-                    <input type="radio" name="seleccion-tamanio">
-                    <input type="radio" checked name="seleccion-tamanio">
-                    <input type="radio" name="seleccion-tamanio">
+                    <input type="radio"id="px16" name="seleccion-tamanio">
+                    <input type="radio" id="px24" name="seleccion-tamanio">
+                    <input type="radio" id="px32" name="seleccion-tamanio">
+                    <input type="radio" id="px40"  name="seleccion-tamanio">
+                    <input type="radio"id="px48"  name="seleccion-tamanio" checked>
+                    <input type="radio" id="px56"  name="seleccion-tamanio">
                 </div>
 
                 <div class="monto-numero">
-                    <label for="Monto">Monto$:</label>
-                    <input type="number" class="monto-texto" required>
+                    <label for="monto">Monto $:</label>
+                    <input type="number" id="monto" class="monto-texto" required>
                 </div>
 
-                <h3>Ubicacion del precio</h3>
+                <h3>Ubicacion del mensaje especial</h3>
 
                 <div class="posicion-muestra">
-                    <img src="../img/Posicion arriba.png" alt="posicion arriba">
-                    <img src="../img/Posicion abajo.png" alt="posicion arriba">
-                    <img src="../img/Posicion centro.png" alt="posicion arriba">
+                    <label for="arriba"><img src="../img/Posicion arriba.png" alt="posicion arriba"></label>
+                    <label for="abajo"><img src="../img/Posicion abajo.png" alt="posicion abajo"></label>
+                    
                 </div>
 
                 <div class="posicion-seleccion">
-                    <input type="radio" checked name="seleccion-posicion">
-                    <input type="radio" name="seleccion-posicion">
-                    <input type="radio" name="seleccion-posicion">
+                    <input type="radio" id="arriba" name="seleccion-posicion" value="arriba" checked>
+                    <input type="radio" id="abajo" name="seleccion-posicion" value="abajo">
+                    
                 </div>
 
-                <h3>Fondo</h3>
+                <h3>Color del fondo</h3>
 
-                <div class="fondo-muestra">
-                    <img src="../img/Fondo1.png" alt="Fondo1">
-                    <img src="../img/Fondo2.png" alt="Fondo2">
+                <div class="color-muestras-fondo">
+                    <label for="azul-fondo" class="azul2 color"></label>
+                    <label for="violeta-fondo" class="violeta color"></label>
+                    <label for="celeste-fondo" class="celeste2 color"></label>
+                    <label for="verdeO-fondo" class="verdeO  color"></label>
+                    <label for="rosa-fondo" class="rosa color"></label>
                 </div>
 
-                <div class="fondo-seleccion">
-                    <input type="radio" checked name="seleccion-fondo">
-                    <input type="radio" name="seleccion-fondo">
+                <div class="color-seleccion-fondo">
+                    <input type="radio" id="azul-fondo" name="seleccion-color-fondo" >
+                    <input type="radio" id="violeta-fondo" name="seleccion-color-fondo">
+                    <input type="radio" id="celeste-fondo" name="seleccion-color-fondo"checked>
+                    <input type="radio" id="verdeO-fondo" name="seleccion-color-fondo">
+                    <input type="radio" id="rosa-fondo" name="seleccion-color-fondo">
                 </div>
-
-                <input type="submit" name="ingresar" value="CONFIRMAR" class="boton-giftcard">
-            </form>
+                <div class="botones">
+                    <input type="reset" name="resetear" value="RESETEAR" class="boton-giftcard" onclick="resetearSeleccion()">
+                    <input type="submit" name="ingresar" value="CONFIRMAR" class="boton-giftcard">
+            
+                </div>
+                </form>
         </section>
     </main>
 
@@ -215,6 +229,8 @@
 
     <script src="../JavaScript/main.js"></script>
     <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
+    <script src="../JavaScript/giftCard.js"></script>
+    <script src="../JavaScript/Comprar.js"></script>
 </body>
 
 </html>
