@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const cursoElemento = this.closest(".clase");
             const titulo = cursoElemento.querySelector(".Titulo").innerText; // Verifica el selector
             const valor = cursoElemento.querySelector(".precio").innerText.replace('$', '');
-            const modalidad = cursoElemento.querySelector(".Modalidad").innerText.replace('Cursada : ', '');
+            const modalidad = cursoElemento.querySelector(".Modalidad").innerText.replace('Modalidad : ', '');
 
             if (userData) {
                 // Agregar el curso a cursosComprados

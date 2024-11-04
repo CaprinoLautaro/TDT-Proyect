@@ -93,8 +93,8 @@ document.addEventListener("DOMContentLoaded", function() {
             valor: 20,
             descripcion: " Curso de Python - Presencial: aprende los fundamentos de programación con Python. Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de datos.",
             profesor: "Severus Snape",
-            imagen: "../img/presenciales/curso-office.webp",
-            enlace: "./curso-presencial-office.html",
+            imagen: "../img/presenciales/Curso Python.webp",
+            enlace: "./curso-presencial-python.html",
             modalidad: "presencial"
         }
         
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="${curso.enlace}" class="clase-contenido">
             <img src="${curso.imagen}" alt="Imagen-clase">
             <h3 class="Titulo">${curso.titulo}</h3>
-            <p class="Modalidad"> Cursada : ${curso.modalidad} </p>
+            <p class="Modalidad"> Modalidad : ${curso.modalidad} </p>
             <p>${curso.profesor}</p>
             <p class="descripcion"> ${curso.descripcion}</p>
         </a>
@@ -118,13 +118,25 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>`;
 
 
-        if (curso.modalidad == "online") {
-
             contenedorCursosOnline.innerHTML += cursoHTML;
-        } else if (curso.modalidad == "presencial") {
 
-            contenedorCursosPresenciales.innerHTML += cursoHTML;
-        }
     });
 
+    cursosPresenciales.forEach(curso => {
+        const cursoHTML =
+            `<div class="clase">
+        <a href="${curso.enlace}" class="clase-contenido">
+            <img src="${curso.imagen}" alt="Imagen-clase">
+            <h3 class="Titulo">${curso.titulo}</h3>
+            <p class="Modalidad"> Modalidad : ${curso.modalidad} </p>
+            <p>${curso.profesor}</p>
+            <p class="descripcion"> ${curso.descripcion}</p>
+        </a>
+        <button class="link inscribirse" >
+            <p>Inscribirse</p> <img src="../img/carrito de compras.png" alt="carrito-compras">
+        </button>
+    </div>`;
+
+    contenedorCursosPresenciales.innerHTML += cursoHTML;
+    });
 });
