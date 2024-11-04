@@ -40,6 +40,9 @@
                             <li>
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
                             </li>
+                            <li>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./usuario.html"> Mi Cuenta</a>
+                            </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
@@ -59,7 +62,7 @@
                     <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                    <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
+                   
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -68,11 +71,11 @@
     </header>
 
     <main class="main">
-        <img class="img-titulo" src="../img/tdt empresas.jpeg" alt="tdtempresas ">
-        <h3>Formulario de inscripción</h3>
+        
+        <h1>Formulario de inscripción</h1>
 
         <section class="ingreso-datos">
-            <div>
+            <article class="personasForm">
                 <form class="form" method="get" action="#">
                     <div>
                         <label for="name">Nombre: </label>
@@ -88,70 +91,23 @@
                     <div>
                         <label for="dni">DNI: </label>
                         <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-
                     </div>
-
-                    <button class="botones" type="reset">
+                    
+                    <div>
+                        <label for="telefono"> Tel: </label>
+                        <input type="number" name="telefono" placeholder="Ingrese su Telefono">
+                    </div>
+                    <button class="botones eliminarPersonaBtn" type="reset">
                         <img src="../img/iconos/eliminar.png" alt="eliminar datos">
                     </button>
                 </form>
-            </div>
-
-            <div>
-                <form class="form" method="get" action="#">
-                    <div>
-                        <label for="name">Nombre: </label>
-                        <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
-
-                    </div>
-                    <div>
-                        <label for="surname">Apellido: </label>
-                        <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido" />
-
-                    </div>
-
-                    <div>
-                        <label for="dni">DNI: </label>
-                        <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-
-                    </div>
-
-                    <button class="botones" type="reset">
-                        <img src="../img/iconos/eliminar.png" alt="eliminar datos">
-                    </button>
-                </form>
-            </div>
-
-            <div>
-                <form class="form" method="get" action="#">
-                    <div>
-                        <label for="name">Nombre: </label>
-                        <input type="text" name="name" id="name" placeholder="Ingrese su nombre" />
-
-                    </div>
-                    <div>
-                        <label for="surname">Apellido: </label>
-                        <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido" />
-
-                    </div>
-
-                    <div>
-                        <label for="dni">DNI: </label>
-                        <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
-
-                    </div>
-
-                    <button class="botones" type="reset">
-                        <img src="../img/iconos/eliminar.png" alt="eliminar datos">
-                    </button>
-                </form>
-            </div>
+            </article>
 
         </section>
 
         <section class="agregar-persona">
             <div>
-                <button class="botones">
+                <button class="botones AgregarPersona">
                     <img src="../img/iconos/mas.png" alt="agregar mas personas">
                 </button>
             </div>
@@ -162,9 +118,22 @@
         </section>
 
         <div class="inscripcion">
+            <span class="inscripcion-precio">TOTAL INSCRIPCION: $<span class="totalInscripcion">0.00</span></span>
+            <button  class="inscripcion-boton">Inscribirse</button>
+        </div>
 
-            <p class="inscripcion-precio"> VALOR DEL PLAN SELECCIONADO U$S-------MENSUAL</p>
-            <a href="./carrito.html"  class="inscripcion-boton">Inscribirse</a>
+        <div class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-inscripciones">
+                    <h2>Incripcion completa</h2>
+                    <div class="modal-body"></div>
+                    <p class="modal-total"></p>
+                    <button class="inscripcion-boton confirmarInscripcion">Confirmar Inscripcion</button>
+                </div>
+
+            </div>
         </div>
 
 
@@ -187,7 +156,7 @@
                 <li><a href="./cursos.html"> Cursos </a></li>
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
-                <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
+                
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
         </section>
@@ -217,6 +186,10 @@
         </section>
     </footer>
 
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
+    <script src="../JavaScript/formulario.js"></script>
+    <script src="../JavaScript/Comprar.js"></script>
 </body>
 
 </html>

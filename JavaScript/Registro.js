@@ -35,7 +35,11 @@ const parrafo = document.getElementById("warnings");
         const userData ={
             nombre: nombre,
             email: email,
-            pass: pass
+            pass: pass,
+            cursosComprados: [],
+            giftCards: [],
+            cursosPresenciales: [],
+            contadorCarrito: 0
         };
         localStorage.setItem(nombre, JSON.stringify(userData));
         window.location.href = "./inicioSesion.html";

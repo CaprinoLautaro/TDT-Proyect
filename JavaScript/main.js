@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
     const loggedUser = sessionStorage.getItem("loggedUser");
-    const loginLink = document.getElementById("loginLink");
-    const registerLink = document.getElementById("registerLink");
-    const userInfoLink = document.getElementById("userInfoLink");
+    const loginLink = document.querySelector(".botones-navBar1-Inicio");
+    const registerLink = document.querySelector(".botones-navBar1-Registro");
+    const userInfoLink = document.querySelector(".botones-navBar1-cuenta");
 
     if(loggedUser){
         loginLink.style.display = "none";
@@ -13,4 +13,4 @@ document.addEventListener("DOMContentLoaded", function(){
         registerLink.style.display = "block";
         userInfoLink.style.display = "none";
     }
-})
+});

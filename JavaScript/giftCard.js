@@ -175,8 +175,3 @@ colorFondoGift.forEach(radio => {
     radio.addEventListener('change', cambiarColorFondo);
     //cambia por la seleccion del switch, funcion creada para cambiar el color del texto
 });
-    
-    
-       
-
-    

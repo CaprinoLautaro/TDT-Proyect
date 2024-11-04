@@ -21,6 +21,24 @@ main{
     border-radius: 1.5rem;
 }
 
+.opciones-cursos{
+    text-align: center;
+    margin: 0.625rem;
+    display: flex;
+}
+
+.opcion{
+    cursor: pointer;
+    padding: 0.625rem 1.25rem ;
+    margin: 0 0.625rem;
+    border-bottom: 0.125rem solid transparent;
+}
+
+.opcion.seleccionada{
+    color: var(--color--principal);
+    border-bottom:  0.125rem solid var(--color--principal);
+}
+
 .cursos-grilla{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -34,11 +52,17 @@ main{
     padding: 2rem;
     background-color: var(--color--secundario);
     border-radius: 2rem;
+    gap: 1rem;
+    border-top: solid var(--color--principal) 0.625rem;
+}
+
+.clase-contenido{
     display: flex;
     flex-direction: column;
     color: var(--color--texto);
-    gap: 1rem;
-    border-top: solid var(--color--principal) 0.625rem;
+    gap: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .clase img{
@@ -48,6 +72,7 @@ main{
 }
 
 .link{
+    width: 90%;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -55,10 +80,12 @@ main{
     background-color: var(--color--principal);
     padding: 1rem;
     border-radius: 1rem;
+    margin: 0 auto;
     margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .link:hover{
@@ -78,6 +105,7 @@ main{
     opacity: 80%;
 }
 
+
 @media screen and (max-width: 40rem) {
     .cursos-grilla{
         display: flex;
@@ -91,4 +119,8 @@ main{
         grid-template-columns: 1fr 1fr;
         margin: 5rem 1rem;
     }
+}
+
+.oculto{
+    display: none;
 }
