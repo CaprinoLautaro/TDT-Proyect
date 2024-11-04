@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
     <link rel="stylesheet" href="../styles/carrito.css">
     <link rel="stylesheet" href="../styles/header-footer-style.css">
-    
+
     <link rel="shorcut icon" href="../img/icono.ico">
 </head>
+
 <body>
 
     <header class="header">
@@ -18,18 +20,18 @@
                 <section class="navBar1_elements">
                     <!-- LOGO -->
                     <a href="../index.html">
-                        <img class="logo" src="../img/icono.png"  alt="logo">
+                        <img class="logo" src="../img/icono.png" alt="logo">
                     </a>
                     <!-- BUSQUEDA -->
                     <form class="busqueda" method="get" action="https://www.google.com.ar">
-                        <p class="textoBusqueda" >Buscar:</p>
-                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
-                        <button  class="boton-lupa" type="submit" >
-                            <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
+                        <p class="textoBusqueda">Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search">
+                        <button class="boton-lupa" type="submit">
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar">
                         </button>
                     </form>
                     <!-- BOTONES DE INICIO Y REGISTRO -->
-                    <div >
+                    <div>
                         <ul class="botones-navBar1">
                             <li>
                                 <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
@@ -38,28 +40,29 @@
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
                             </li>
                             <li>
-                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./usuario.html"> Mi Cuenta</a>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro"
+                                    href="./usuario.html"> Mi Cuenta</a>
                             </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
                     <a class="carrito" href="./carrito.html">
-                        <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
+                        <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
                         <p class="numero-carrito">0</p>
                     </a>
                 </section>
             </nav>
         </section><!-- aca termina la 1er barra de nav -->
-    
+
         <!-- 2da BARRA- MENU -->
         <section class="navBar-inf">
             <nav class="navBar2">
                 <ul class="navBar2_elements">
-                    
+
                     <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                    <li><a href="./formuEmpresas.html">Cursos para Empresas</a></li>
+
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -69,24 +72,25 @@
 
 
     <main>
-    <section class="principal">
+        <section class="principal">
 
-        
-        <div class="titulo">
-            <h2>Apartado de Carrito</h2>
-        </div>
 
-        <section class="main">
-            <section class="carrito-pio">
-                <h3>Complete los datos y seleccione un método de pago</h3>
-                <form class="carritoImput">
-                    <input type="text" name="numTarjeta" id="numTarjeta" placeholder="Número de tarjeta" required/>
-                    <input type="number" name="mesExpiracion" id="mesExpiracion" placeholder="Mes de expiración" required/>
-                    <input type="number" name="anio" id="anio" placeholder="Año" required/>
-                    <input type="text" name="cvv" id="cvv" placeholder="CVV" required/>
-                    <button type="submit" class="button">Completar compra</button>
-                </form>
-                <div class="medios-de-pago-slider"></div>
+            <div class="titulo">
+                <h2>Apartado de Carrito</h2>
+            </div>
+
+            <section class="main">
+                <section class="carrito-pio">
+                    <h3>Complete los datos y seleccione un método de pago</h3>
+                    <form class="carritoImput">
+                        <input type="text" name="numTarjeta" id="numTarjeta" placeholder="Número de tarjeta" required />
+                        <input type="number" name="mesExpiracion" id="mesExpiracion" placeholder="Mes de expiración"
+                            required />
+                        <input type="number" name="anio" id="anio" placeholder="Año" required />
+                        <input type="text" name="cvv" id="cvv" placeholder="CVV" required />
+                        <button type="submit" class="button">Completar compra</button>
+                    </form>
+                    <div class="medios-de-pago-slider"></div>
                     <section>
                         <ul class="medios-de-pago-lista">
                             <li> <img src="../img/medios de pago/cdni.jpg" alt="Cuenta dni"></li>
@@ -95,22 +99,22 @@
                             <li><img src="../img/medios de pago/rappi.png" alt="Rappi pago"></li>
                         </ul>
                     </section>
-    
-                </div>
 
-            </section>
+                    </div>
 
-            <section class="listaCompra">
-                <h3>Elementos agregados a su carrito de compra:</h3>
-                <div class="letraTamanio">
-                    <p>EL CARRITO SE ENCUENTRA VACIO</p>
-                </div>
-        
+                </section>
+
+                <section class="listaCompra">
+                    <h3>Elementos agregados a su carrito de compra:</h3>
+                    <div class="letraTamanio">
+                        <p>EL CARRITO SE ENCUENTRA VACIO</p>
+                    </div>
+
                     <p class="total">Total:0</p>
-            </section>
+                </section>
 
+            </section>
         </section>
-    </section>
     </main>
 
     <footer class="footer">
@@ -118,7 +122,7 @@
             <h3 class="datos-grupo-titulo">Datos </h3>
             <ul class="datos-grupo-lista">
                 <li>Lautaro Caprino - DNI: 47164463</li>
-                <li>Lucas Agustín García - DNI: 46288646</li> 
+                <li>Lucas Agustín García - DNI: 46288646</li>
                 <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
                 <li>Ramiro Matias Bruzon - DNI: 37990199</li>
             </ul>
@@ -139,26 +143,31 @@
             <h3>Redes sociales</h3>
             <ul class="redes-sociales-lista">
                 <li>
-                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg" alt="instagram">Instagram 
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg"
+                            alt="instagram">Instagram
                     </a>
                 </li>
-                <li>  
-                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg" alt="X">X/Twitter</a>
+                <li>
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg"
+                            alt="X">X/Twitter</a>
                 </li>
                 <li>
-                    
-                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber">Youtube</a>
+
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg"
+                            alt="Youtuber">Youtube</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg"
+                            alt="mail">Gwyn@lordOfCinder.com</a>
                 </li>
             </ul>
         </section>
     </footer>
-    
+
 
     <script src="../JavaScript/main.js"></script>
     <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
     <script src="../JavaScript/Comprar.js"></script>
 </body>
+
 </html>

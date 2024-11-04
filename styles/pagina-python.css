@@ -44,10 +44,10 @@
     text-transform: uppercase;
 
 }
-.curso-python-div-img{
-    max-height: 20rem;
-}
 
+.curso-python-div-img {
+    max-width: 44rem;
+}
 
 .texto-curso-python {
     /*segunda div*/
@@ -74,7 +74,6 @@
     align-content: center;
     padding: 0.6rem 1.5rem;
     background-color: #3db0fa;
-    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #03112b;

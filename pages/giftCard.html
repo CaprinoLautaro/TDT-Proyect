@@ -45,14 +45,15 @@
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
                             </li>
                             <li>
-                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./usuario.html"> Mi Cuenta</a>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro"
+                                    href="./usuario.html"> Mi Cuenta</a>
                             </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
                     <a class="carrito" href="./carrito.html">
                         <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
-                        <p class="numero-carrito"></p>
+                        <p class="numero-carrito">0</p>
                     </a>
                 </section>
             </nav>
@@ -66,7 +67,7 @@
                     <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                    <li><a href="./formuEmpresas.html">Cursos para Empresas</a></li>
+
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -74,8 +75,9 @@
 
     </header>
 
+
     <main class="container">
-    
+
         <section class="giftcard-content">
             <div>
                 <p class="mensajeEsp">- UN REGALO ESPECIAL PARA VOS - </p>
@@ -88,8 +90,8 @@
             </div>
             <p class="vistaPrev">-vista previa de la giftCard-</p>
         </section>
-        
-        <section class="giftcard-form"> 
+
+        <section class="giftcard-form">
             <h2>Personaliza tu giftCard</h2>
             <form class="form">
                 <input type="text" id="recipiente" name="recipiente" placeholder="Nombre del destinatario"
@@ -118,21 +120,33 @@
                 <h3>Tamaño de fuente</h3>
 
                 <div class="tamanio-muestra">
-                    <label for="px16"><p>16px</p></label>
-                    <label for="px24"><p>24px</p></label>
-                    <label for="px32"> <p>32px</p></label>
-                    <label for="px40"><p>40px</p></label>
-                    <label for="px48"><p>48px</p></label>
-                    <label for="px56"><p>56px</p></label>
+                    <label for="px16">
+                        <p>16px</p>
+                    </label>
+                    <label for="px24">
+                        <p>24px</p>
+                    </label>
+                    <label for="px32">
+                        <p>32px</p>
+                    </label>
+                    <label for="px40">
+                        <p>40px</p>
+                    </label>
+                    <label for="px48">
+                        <p>48px</p>
+                    </label>
+                    <label for="px56">
+                        <p>56px</p>
+                    </label>
                 </div>
 
                 <div class="tamanio-seleccion">
-                    <input type="radio"id="px16" name="seleccion-tamanio">
+                    <input type="radio" id="px16" name="seleccion-tamanio">
                     <input type="radio" id="px24" name="seleccion-tamanio">
                     <input type="radio" id="px32" name="seleccion-tamanio">
-                    <input type="radio" id="px40"  name="seleccion-tamanio">
-                    <input type="radio"id="px48"  name="seleccion-tamanio" checked>
-                    <input type="radio" id="px56"  name="seleccion-tamanio">
+                    <input type="radio" id="px40" name="seleccion-tamanio">
+                    <input type="radio" id="px48" name="seleccion-tamanio" checked>
+                    <input type="radio" id="px56" name="seleccion-tamanio">
                 </div>
 
                 <div class="monto-numero">
@@ -145,13 +159,13 @@
                 <div class="posicion-muestra">
                     <label for="arriba"><img src="../img/Posicion arriba.png" alt="posicion arriba"></label>
                     <label for="abajo"><img src="../img/Posicion abajo.png" alt="posicion abajo"></label>
-                    
+
                 </div>
 
                 <div class="posicion-seleccion">
                     <input type="radio" id="arriba" name="seleccion-posicion" value="arriba" checked>
                     <input type="radio" id="abajo" name="seleccion-posicion" value="abajo">
-                    
+
                 </div>
 
                 <h3>Color del fondo</h3>
@@ -165,18 +179,19 @@
                 </div>
 
                 <div class="color-seleccion-fondo">
-                    <input type="radio" id="azul-fondo" name="seleccion-color-fondo" >
+                    <input type="radio" id="azul-fondo" name="seleccion-color-fondo">
                     <input type="radio" id="violeta-fondo" name="seleccion-color-fondo">
-                    <input type="radio" id="celeste-fondo" name="seleccion-color-fondo"checked>
+                    <input type="radio" id="celeste-fondo" name="seleccion-color-fondo" checked>
                     <input type="radio" id="verdeO-fondo" name="seleccion-color-fondo">
                     <input type="radio" id="rosa-fondo" name="seleccion-color-fondo">
                 </div>
                 <div class="botones">
-                    <input type="reset" name="resetear" value="RESETEAR" class="boton-giftcard" onclick="resetearSeleccion()">
+                    <input type="reset" name="resetear" value="RESETEAR" class="boton-giftcard"
+                        onclick="resetearSeleccion()">
                     <button class="boton-giftcard confirmarGiftCard"> CONFIRMAR </button>
-            
+
                 </div>
-                </form>
+            </form>
         </section>
     </main>
 
