@@ -37,7 +37,11 @@ const parrafo = document.getElementById("warnings");
             email: email,
             pass: pass,
             cursosComprados: [],
-            giftCards: [],
+            giftCardsCompradas: [],
+            giftCardsUsuario: {
+                Monto: 400,
+                Codigo: 1
+            },
             cursosPresenciales: [],
             contadorCarrito: 0
         };
@@ -46,5 +50,3 @@ const parrafo = document.getElementById("warnings");
     }
 
 });
-
-
