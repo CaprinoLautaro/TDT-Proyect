@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const cursos = [
         {
             titulo: "Curso De Introduccion A css",
@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     const cursosPresenciales = [
-        
-        
+
+
         {
             titulo: "Curso De photoshop e ilustrator",
             valor: 20,
@@ -79,25 +79,24 @@ document.addEventListener("DOMContentLoaded", function() {
         },
 
         {
-            titulo: "Curso De curso-office",
+            titulo: "Curso De Office",
             valor: 20,
-            descripcion: "Este curso te guiará en el dominio de herramientas de diseño gráfico esenciales, permitiéndote crear y editar gráficos profesionales. Desde la edición de imágenes en Photoshop hasta la creación de ilustraciones en Illustrator, este curso es ideal para aquellos que desean aprender y perfeccionar sus habilidades en diseño visual.",
-            profesor: "Albus Dumbledore",
+            descripcion: "Aprende a dominar herramientas esenciales de Microsoft Office, desde Word y Excel hasta PowerPoint, optimizando tu productividad y mejorando tus habilidades en el manejo de datos y presentaciones. Este curso es ideal para quienes buscan eficacia en el entorno laboral.", profesor: "Albus Dumbledore",
             imagen: "../img/presenciales/curso-office.webp",
             enlace: "./curso-presencial-office.html",
             modalidad: "presencial"
         },
 
         {
-            titulo: "Curso De Python",
+            titulo: "Curso De Python (Presencial)",
             valor: 20,
-            descripcion: " Curso de Python - Presencial: aprende los fundamentos de programación con Python. Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de datos.",
+            descripcion: "Curso de Python: aprende a programar desde cero y domina los fundamentos de Python. Ideal para principiantes, cubrirá conceptos esenciales como variables, estructuras de control, funciones y manejo de datos. Este curso es perfecto para aquellos que desean iniciarse en el mundo de la programación y aplicar sus conocimientos en proyectos prácticos.",
             profesor: "Severus Snape",
             imagen: "../img/presenciales/Curso Python.webp",
-            enlace: "./curso-presencial-python.html",
+            enlace: "./curso-presencial-office.html",
             modalidad: "presencial"
         }
-        
+
     ]
     const contenedorCursosOnline = document.querySelector(".cursos-Online");
     const contenedorCursosPresenciales = document.querySelector(".cursos-Presenciales");
@@ -108,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="${curso.enlace}" class="clase-contenido">
             <img src="${curso.imagen}" alt="Imagen-clase">
             <h3 class="Titulo">${curso.titulo}</h3>
-            <p class="Modalidad"> Modalidad : ${curso.modalidad} </p>
+            <p class="Modalidad"> Cursada : ${curso.modalidad} </p>
             <p>${curso.profesor}</p>
             <p class="descripcion"> ${curso.descripcion}</p>
         </a>
@@ -118,25 +117,30 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>`;
 
 
-            contenedorCursosOnline.innerHTML += cursoHTML;
+        if (curso.modalidad == "online") {
 
+            contenedorCursosOnline.innerHTML += cursoHTML;
+        }
     });
 
     cursosPresenciales.forEach(curso => {
-        const cursoHTML =
-            `<div class="clase">
-        <a href="${curso.enlace}" class="clase-contenido">
-            <img src="${curso.imagen}" alt="Imagen-clase">
-            <h3 class="Titulo">${curso.titulo}</h3>
-            <p class="Modalidad"> Modalidad : ${curso.modalidad} </p>
-            <p>${curso.profesor}</p>
-            <p class="descripcion"> ${curso.descripcion}</p>
-        </a>
-        <button class="link inscribirse" >
-            <p>Inscribirse</p> <img src="../img/carrito de compras.png" alt="carrito-compras">
-        </button>
-    </div>`;
+        const cursoHTML = `
+            <div class="clase">
+                <a href="${curso.enlace}" class="clase-contenido">
+                    <img src="${curso.imagen}" alt="Imagen-clase">
+                    <h3 class="Titulo">${curso.titulo}</h3>
+                    <p class="Modalidad"> Cursada : ${curso.modalidad} </p>
+                    <p>${curso.profesor}</p>
+                    <p class="descripcion"> ${curso.descripcion}</p>
+                </a>
+                <button class="link comprar">
+                    <p>Comprar </p> <p class="precio">$${curso.valor}</p><img src="../img/carrito de compras.png" alt="carrito-compras">
+                </button>
+            </div>`;
 
-    contenedorCursosPresenciales.innerHTML += cursoHTML;
+        if (curso.modalidad === "presencial") {
+            contenedorCursosPresenciales.innerHTML += cursoHTML;
+        }
     });
+
 });
