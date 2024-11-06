@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    color--celeste: #3db0fa;
+    color--texto: #020202;
+    color--marfil: #f9f7ff;
+    color--azul: #03112b;
+*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f9f7ff;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /*si muevo la pag la imagen no se mueve*/
+    background-size: cover;
+}
+
+/*HEADER*/
+.main {
+    padding: 2rem;
+    border-radius: 2%;
+    margin: 2rem;
+    background-color: rgba(3, 17, 43, 0.8);
+}
+
+.ingreso-datos {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    font-size: 1.1rem;
+}
+
+.form label {
+    margin-right: 0.7rem;
+}
+
+.ingreso-datos div {
+    display: block;
+}
+
+.ingreso-datos input {
+    font-size: 1.25rem;
+
+}
+
+.botones {
+    width: 9rem;
+    padding: 0;
+    /*le quito el padding al boton*/
+    display: flex;
+    /*centrar la imagen*/
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botones img {
+    width: 5.5rem;
+}
+
+.agregar-persona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingreso-datos button,
+.agregar-persona button {
+    width: 5%;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.inscripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.inscripcion-precio {
+    background-color: #f9f7ff;
+    color: #03112b;
+    font-weight: bold;
+    padding: 0.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.inscripcion-boton {
+    background-color: #3db0fa;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 5%;
+
+}
+
+/* --------Responsive Mobile---------- */
+@media screen and (max-width: 40rem) {
+    .titulo {
+        text-align: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0.5rem;
+    }
+
+    .ingreso-datos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    .botones {
+        display: flex;
+        align-self: center;
+        width: 4rem;
+    }
+
+    .botones img {
+        width: 3rem;
+    }
+
+    .inscripcion {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+
+}
+
+/* --------Responsive Tablet---------- */
+
+@media screen and (min-width: 40rem) and (max-width: 60rem) {
+    .titulo {
+        text-align: center;
+    }
+
+    .form {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        gap: 0.5rem;
+    }
+
+
+    .botones {
+        align-self: center;
+    }
+
+    .botones img {
+        width: 3rem;
+    }
+
+    .ingreso-datos {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+}
+
+/* --------Responsive PC---------- */
+@media screen and (min-width: 60rem) and (max-width: 81.25rem) {
+
+    /*A partir de 1024px en adelante  */
+    .titulo {
+        text-align: center;
+    }
+
+    .form {
+        padding: 0;
+        gap: 0.5rem;
+    }
+
+    .botones {
+        align-self: center;
+    }
+
+    .botones img {
+        width: 4rem;
+    }
+
+    .ingreso-datos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3rem;
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .ingreso-datos input {
+        width: 12rem;
+
+    }
+}
