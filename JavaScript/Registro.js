@@ -39,7 +39,7 @@ const parrafo = document.getElementById("warnings");
             cursosComprados: [],
             giftCardsCompradas: [],
             giftCardsUsuario: {
-                Monto: 400,
+                Monto: 3000,
                 Codigo: "A5BG67"
             },
             cursosPresenciales: [],
