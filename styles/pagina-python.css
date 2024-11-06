@@ -45,7 +45,7 @@
 
 }
 
-.curso-python-div-img{
+.curso-python-div-img {
     max-width: 44rem;
 }
 
@@ -74,13 +74,13 @@
     align-content: center;
     padding: 0.6rem 1.5rem;
     background-color: #3db0fa;
-
     text-transform: uppercase;
     text-decoration: none;
     color: #03112b;
     font-weight: bolder;
     font-size: 1.6rem;
     align-self: center;
+    cursor: pointer;
 }
 
 .boton-inscripcion:hover {

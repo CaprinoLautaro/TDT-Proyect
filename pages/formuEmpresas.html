@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="../styles/formuEmpresas.css">
     <link rel="stylesheet" href="../styles/header-footer-style.css">
-    <link rel="stylesheet" href="../styles/cursoEmpre.css">
 </head>
 
 <body>
@@ -41,14 +40,15 @@
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
                             </li>
                             <li>
-                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./usuario.html"> Mi Cuenta</a>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro"
+                                    href="./usuario.html"> Mi Cuenta</a>
                             </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
                     <a class="carrito" href="./carrito.html">
                         <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
-                        
+                        <p class="numero-carrito"></p>
                     </a>
                 </section>
             </nav>
@@ -62,7 +62,7 @@
                     <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                   
+
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -71,9 +71,7 @@
     </header>
 
     <main class="main">
-        
-        <h1>Formulario de inscripción</h1>
-
+        <h3>Formulario de inscripción: </h3><h3 class="titulo-curso"></h3>
         <section class="ingreso-datos">
             <article class="personasForm">
                 <form class="form" method="get" action="#">
@@ -92,7 +90,7 @@
                         <label for="dni">DNI: </label>
                         <input type="number" name="dni" id="dni" placeholder="Ingrese su dni">
                     </div>
-                    
+
                     <div>
                         <label for="telefono"> Tel: </label>
                         <input type="number" name="telefono" placeholder="Ingrese su Telefono">
@@ -118,8 +116,8 @@
         </section>
 
         <div class="inscripcion">
-            <span class="inscripcion-precio">TOTAL INSCRIPCION: $<span class="totalInscripcion">0.00</span></span>
-            <button  class="inscripcion-boton">Inscribirse</button>
+            <span class="inscripcion-precio">TOTAL INSCRIPCION: $<span class="totalInscripcion">20</span></span>
+            <button class="inscripcion-boton">Inscribirse</button>
         </div>
 
         <div class="modal">
@@ -156,7 +154,7 @@
                 <li><a href="./cursos.html"> Cursos </a></li>
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
-                
+                <li><a href="./formuEmpresas.html">Cursos para Empresas</a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
         </section>

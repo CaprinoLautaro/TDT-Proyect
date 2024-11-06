@@ -1,27 +1,27 @@
-
-:root{
+:root {
     --color--principal: #3db0fa;
     --color--texto: #020202;
     --color--secundario: #f9f7ff;
     --color--tercero: #03112b;
 }
 
-.titulo{
+.titulo {
     color: white;
     text-transform: uppercase;
     margin-left: 11.5%;
 }
 
-h3{
+h3 {
     text-align: center;
 }
+
 /* ---------------ApartadoCarrito y Compra------------------- */
 
-.principal{
+.principal {
     padding-bottom: 30rem;
 }
 
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ h3{
 }
 
 /* --------------------Carrito------------------------ */
-.carrito-pio{
+.carrito-pio {
     width: 42rem;
     height: fit-content;
     color: white;
@@ -40,40 +40,39 @@ h3{
     border: 1px solid #ffffff;
 }
 
-.carritoImput{
+.carritoImput {
     gap: 1.5rem;
     display: grid;
-    grid-template: 
-    "numTarjeta numTarjeta numTarjeta" auto
-    "mesExpiracion anio cvv" auto 
-    "button button button";
+    grid-template:
+        "numTarjeta numTarjeta numTarjeta" auto
+        "mesExpiracion anio cvv" auto "button button button";
 
-    #numTarjeta{
+    #numTarjeta {
         grid-area: numTarjeta;
     }
 
-    #mesExpiracion{
+    #mesExpiracion {
         grid-area: mesExpiracion;
     }
 
-    #anio{
+    #anio {
         grid-area: anio;
     }
 
-    #cvv{
+    #cvv {
         grid-area: cvv;
     }
 
-    .button{
+    .button {
         grid-area: button;
     }
 }
 
-.carritoImput input{
+.carritoImput input {
     height: 2rem;
 }
 
-.carritoImput button{
+.carritoImput button {
     height: 3rem;
     font-weight: bold;
     font-size: 1rem;
@@ -82,45 +81,73 @@ h3{
     cursor: pointer;
 }
 
-.carritoImput button:hover{
+.carritoImput button:hover {
     background-color: var(--color--principal)
+}
 
+.codigo-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.codigo-desc input {
+    height: 2rem;
+}
+
+
+.codigo-desc button {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.codigo-desc button:hover {
+    background-color: var(--color--principal)
 }
 
 /* --------------listaCompra---------- */
 
-.listaCompra{
+.listaCompra {
     padding: 1rem;
     background-color: var(--color--tercero);
-    border: 1px solid white; 
+    border: 1px solid white;
     color: white;
     border-radius: 1rem;
     border: 1px solid rgb(255, 255, 255);
     width: 42rem;
     height: fit-content;
+    
 }
 
-.total{
+.total {
+    padding: 0.5rem;
     width: fit-content;
-    text-align: right;
+    text-align: center;
     background-color: var(--color--principal);
-    margin-left: 32rem;
+    color: #020202;
     font-size: large;
-    margin-top: 10rem;
+    margin-top: 1rem;
+
 }
 
 
-.letraTamanio{
-    font-size:xx-large;
+.letraTamanio {
+    font-size: xx-large;
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    gap: 1.7rem;
+    gap: 1rem;
     align-items: center;
 
 }
 
-.letraTamanio p{
+.letraTamanio p {
     margin: 0;
     border: 1px solid rgb(255, 255, 255);
     width: 37rem;
@@ -128,12 +155,13 @@ h3{
     text-align: center;
 }
 
-.medios-de-pago{
+.medios-de-pago {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
-.medios-de-pago-lista{
+
+.medios-de-pago-lista {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
@@ -141,13 +169,15 @@ h3{
     justify-items: center;
     align-items: center;
 }
-.medios-de-pago-lista img{
+
+.medios-de-pago-lista img {
     padding: 1rem;
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
     margin: 1rem;
 }
+
 .curso-item {
     display: flex;
     flex-direction: column;
@@ -158,7 +188,7 @@ h3{
     border-radius: 0.5rem;
     width: 100%;
     box-sizing: border-box;
-   
+
 }
 
 .division-contenedor {
@@ -176,11 +206,13 @@ h3{
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    background-color: #3db1fa90;
 }
 
 .curso-item h7 {
     font-size: 1.2rem;
 }
+
 .curso-item h8 {
     padding: 1rem;
     font-size: 1.2rem;
@@ -197,11 +229,10 @@ h3{
     text-align: center;
 }
 
-
-
 .eliminar-curso {
+    padding: 0.5rem;
     background-color: #f9f7ff;
-    color:#03112b;
+    color: #03112b;
     cursor: pointer;
     font-size: 1rem;
     margin-top: 0.2rem;
@@ -210,56 +241,53 @@ h3{
 
 /* --------Responsive Mobile---------- */
 @media screen and (max-width: 40rem) {
-    .titulo{
+    .titulo {
         margin: 1rem 0;
         text-align: center;
     }
 
-    .main{
+    .main {
         display: flex;
         flex-direction: column;
         gap: 3rem;
     }
 
-    .carrito-pio{
+    .carrito-pio {
         padding: 0.625rem;
         width: 90%;
     }
 
-    .carritoImput{
+    .carritoImput {
         display: flex;
         flex-direction: column;
     }
 
-    .medios-de-pago-lista{
+    .medios-de-pago-lista {
         margin-top: 1rem;
         gap: 0.125rem;
     }
 
-    .medios-de-pago-lista img{
+    .medios-de-pago-lista img {
         padding: 0;
         margin: 0;
     }
 
-    .listaCompra{
+    .listaCompra {
         padding: 0.625rem;
         width: 90%;
     }
 
-    .letraTamanio{
+    .letraTamanio {
         margin-top: 2rem;
     }
 
-    .letraTamanio p{
+    .letraTamanio p {
         width: 90%;
     }
 
-    .total{
-        margin-top: 2rem;
-        margin-left: 15rem;
-    }
+    
 
-    .principal{
+    .principal {
         padding-bottom: 3rem;
     }
 }
@@ -267,128 +295,122 @@ h3{
 /* --------Responsive Tablet---------- */
 
 
-@media screen and (max-width: 20rem) {
-    .total{
-        margin-left: 13rem;
-    }
-}
 
-@media screen and (min-width: 40rem) and (max-width: 60rem){
-    .titulo{
+@media screen and (min-width: 40rem) and (max-width: 60rem) {
+    .titulo {
         margin: 1rem 0;
         text-align: center;
     }
 
-    .main{
+    .main {
         display: flex;
         flex-direction: column;
         gap: 3rem;
     }
 
-    .carrito-pio{
+    .carrito-pio {
         padding: 0.625rem;
         width: 90%;
     }
 
-    .carritoImput{
+    .carritoImput {
         display: flex;
         flex-direction: column;
     }
 
-    .medios-de-pago-lista{
+    .medios-de-pago-lista {
         margin-top: 1rem;
         gap: 0.125rem;
     }
 
-    .medios-de-pago-lista img{
+    .medios-de-pago-lista img {
         padding: 0;
         margin: 0;
     }
 
-    .listaCompra{
+    .listaCompra {
         padding: 0.625rem;
         width: 90%;
     }
 
-    .letraTamanio{
+    .letraTamanio {
         margin-top: 2rem;
     }
 
-    .letraTamanio p{
+    .letraTamanio p {
         width: 90%;
     }
 
-    .total{
-        margin-top: 2rem;
-        margin-left: 15rem;
-    }
+    
 
-    .principal{
+    .principal {
         padding-bottom: 3rem;
     }
-} 
+}
 
 /* --------Responsive PC---------- */
-@media screen and (min-width: 60rem) { /* A partir de 1024px en adelante */
+@media screen and (min-width: 60rem) {
+    /* A partir de 1024px en adelante */
 
-    .titulo{
+    .titulo {
         margin: 1rem 0;
         text-align: center;
     }
 
-    .main{
+    .main {
         display: flex;
-        flex-direction: row; /* Recupera la disposición original en filas */
-        justify-content: center; /* Ajusta los elementos al centro */
-        gap: 7rem; /* Restablece el gap entre los elementos */
+        flex-direction: row;
+        /* Recupera la disposición original en filas */
+        justify-content: center;
+        /* Ajusta los elementos al centro */
+        gap: 7rem;
+        /* Restablece el gap entre los elementos */
     }
 
-    .carrito-pio{
+    .carrito-pio {
         padding: 0.625rem;
         width: 90%;
         margin-left: 2rem;
 
     }
 
-    .carritoImput{
+    .carritoImput {
         display: flex;
         flex-direction: column;
     }
 
-    .medios-de-pago-lista{
+    .medios-de-pago-lista {
         margin-top: 1rem;
         gap: 0.125rem;
     }
 
-    .medios-de-pago-lista img{
+    .medios-de-pago-lista img {
         padding: 0;
         margin: 0;
     }
 
-    .carrito-pio, .listaCompra {
-        width: 42rem; /* Restablece el ancho original */
+    .carrito-pio,
+    .listaCompra {
+        width: 42rem;
+        /* Restablece el ancho original */
     }
 
-    .listaCompra{
+    .listaCompra {
         padding: 0.625rem;
         width: 90%;
         margin-right: 2rem;
     }
 
-    .letraTamanio{
+    .letraTamanio {
         margin-top: 2rem;
     }
 
-    .letraTamanio p{
+    .letraTamanio p {
         width: 90%;
     }
 
-    .total{
-        margin-top: 2rem;
-        margin-left: 32rem;
-    }
 
-    .principal{
+    .principal {
         padding-bottom: 3rem;
     }
 }

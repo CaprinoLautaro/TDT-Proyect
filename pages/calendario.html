@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="shorcut icon" href="../img/icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link rel="stylesheet" href="../styles/calendario.css">
-    <link rel="stylesheet" href="../styles/header-footer-style.css"> 
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
 
     <title>Calendario</title>
 </head>
+
 <body>
 
     <header class="header">
@@ -21,18 +24,18 @@
                 <section class="navBar1_elements">
                     <!-- LOGO -->
                     <a href="../index.html">
-                        <img class="logo" src="../img/icono.png"  alt="logo">
+                        <img class="logo" src="../img/icono.png" alt="logo">
                     </a>
                     <!-- BUSQUEDA -->
                     <form class="busqueda" method="get" action="https://www.google.com.ar">
-                        <p class="textoBusqueda" >Buscar:</p>
-                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
-                        <button  class="boton-lupa" type="submit" >
-                            <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
+                        <p class="textoBusqueda">Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search">
+                        <button class="boton-lupa" type="submit">
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar">
                         </button>
                     </form>
                     <!-- BOTONES DE INICIO Y REGISTRO -->
-                    <div >
+                    <div>
                         <ul class="botones-navBar1">
                             <li>
                                 <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
@@ -41,28 +44,29 @@
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
                             </li>
                             <li>
-                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./usuario.html"> Mi Cuenta</a>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro"
+                                    href="./usuario.html"> Mi Cuenta</a>
                             </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
                     <a class="carrito" href="./carrito.html">
-                        <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
-                        
+                        <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
+                        <p class="numero-carrito">0</p>
                     </a>
                 </section>
             </nav>
         </section><!-- aca termina la 1er barra de nav -->
-    
+
         <!-- 2da BARRA- MENU -->
         <section class="navBar-inf">
             <nav class="navBar2">
                 <ul class="navBar2_elements">
-                    
+
                     <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                
+
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -70,7 +74,7 @@
 
     </header>
 
-    <main >
+    <main>
 
         <section class="calendar-container">
             <div class="calendar-header">
@@ -95,7 +99,36 @@
                 <div class="day">6</div>
                 <div class="day">7</div>
                 <div class="day">8</div>
-                <div class="day">9 <a href="https://www.youtube.com/watch?v=Dr3TxFQlT9Y" class="task"><p>IMPORTANTE</p></a></div>
+
+                <div class="day">9
+                    <a class="task">
+                        <p>Curso de Excel</p>
+                    </a>
+                    <button class="btn-abrir">+</button>
+
+                    <div class="modal">
+                        <div class="modal-info">
+                            <h2>Curso de Excel Avanzado</h2>
+                            <p id="info">Aprende a aprovechar el poder de Excel para realizar cálculos, analizar datos y
+                                automatizar tareas. Este curso está diseñado para todos los niveles, desde principiantes
+                                que buscan adquirir habilidades básicas hasta usuarios avanzados que desean profundizar
+                                en el análisis y la visualización de datos. A lo largo del curso, cubrirás:</p>
+                            <p id="descripcion">Fundamentos de Excel: fórmulas, funciones y organización de datos.
+                                Tablas dinámicas para analizar grandes volúmenes de información. Creación de gráficos
+                                para una visualización de datos efectiva. Uso de funciones avanzadas y herramientas de
+                                automatización con macros. Al finalizar, tendrás la confianza para manejar datos de
+                                manera eficiente, crear reportes y optimizar tus tareas en cualquier entorno laboral.
+                            </p>
+                            <p id="descripcion">Modalidad: Presencial y en línea.</p>
+
+                            <div class="botonCerrar">
+                                <button class="btn-cerrar">Cerrar</button>
+                                <a id="botonIr" href="../pages/pagina-excel.html">Anotarse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="day">10</div>
                 <div class="day">11</div>
                 <div class="day">12</div>
@@ -108,20 +141,82 @@
                 <div class="day">19</div>
                 <div class="day">20</div>
                 <div class="day">21</div>
-                <div class="day">22 <section class="task"><p>Curso bartender</p></section></div>
+
+
+                <div class="day">22
+                    <a class="task">
+                        <p>Curso de HTML</p>
+                    </a>
+                    <button class="btn-abrir">+</button>
+
+                    <dialog class="modal">
+                        <div class="modal-info">
+                            <h2>Curso de HTML Avanzado</h2>
+
+                            <p id="descripcion">Este curso avanzado de HTML está dirigido a desarrolladores web con
+                                conocimientos sólidos en HTML que desean crear sitios más modernos, accesibles y
+                                eficientes. Se explorarán técnicas avanzadas de HTML5, como estructura semántica y
+                                microdatos, accesibilidad (WCAG), y optimización SEO. También se profundizará en la
+                                integración con CSS y JavaScript, así como en metodologías para mejorar el rendimiento
+                                de carga de los sitios web.</p>
+                            <p id="descripcion">Objetivos del curso: Dominar la estructura semántica avanzada y
+                                etiquetas específicas de HTML5. Implementar buenas prácticas de accesibilidad (WCAG)
+                                para construir sitios inclusivos. Integrar HTML con CSS y JavaScript de manera eficiente
+                                para lograr interfaces interactivas.</p>
+                            <p id="descripcion">Modalidad: Presencial y en línea.</p>
+
+                            <div class="botonCerrar">
+                                <button class="btn-cerrar">Cerrar</button>
+                                <a id="botonIr" href="../pages/pagina-html.html">Anotarse</a>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
+
                 <div class="day">23</div>
-                <div class="day">24 <section class="task"><a href="./pagina-php.html"><p>Curso de php</p></a></section></div>
+
+
+
+
+                <div class="day">24
+                    <a class="task">
+                        <p>Curso de PHP</p>
+                    </a>
+                    <button class="btn-abrir">+</button>
+
+                    <dialog class="modal">
+                        <div class="modal-info">
+                            <h2>Curso de PHP Avanzado</h2>
+
+                            <p id="descripcion">Este curso de PHP ofrece las bases para crear aplicaciones web dinámicas
+                                e interactivas. Aprenderás desde la sintaxis básica hasta la conexión con bases de
+                                datos, manejo de formularios y sesiones, y seguridad. Al finalizar, estarás preparado
+                                para desarrollar sitios web completos y gestionar datos de forma segura.</p>
+                            <p id="descripcion">Objetivos del curso: Comprender los conceptos básicos de PHP y su
+                                sintaxis. Interactuar con bases de datos para crear aplicaciones dinámicas. Implementar
+                                seguridad y buenas prácticas en el desarrollo de aplicaciones web.</p>
+                            <p id="descripcion">Modalidad: Presencial y en línea.</p>
+
+                            <div class="botonCerrar">
+                                <button class="btn-cerrar">Cerrar</button>
+                                <a id="botonIr" href="../pages/pagina-php.html">Anotarse</a>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+
                 <div class="day">25</div>
                 <div class="day">26</div>
                 <div class="day">27</div>
                 <div class="day">28</div>
                 <div class="day">29</div>
-                <div class="day">30 <section class="task"><p>Nueva seccion</p></section></div>
+                <div class="day">30</div>
                 <div class="day">31</div>
                 <div class="day day-disabled">1</div>
                 <div class="day day-disabled">2</div>
             </div>
-        </section>          
+        </section>
     </main>
 
     <footer class="footer">
@@ -129,7 +224,7 @@
             <h3 class="datos-grupo-titulo">Datos </h3>
             <ul class="datos-grupo-lista">
                 <li>Lautaro Caprino - DNI: 47164463</li>
-                <li>Lucas Agustín García - DNI: 46288646</li> 
+                <li>Lucas Agustín García - DNI: 46288646</li>
                 <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
                 <li>Ramiro Matias Bruzon - DNI: 37990199</li>
             </ul>
@@ -141,34 +236,40 @@
                 <li><a href="./cursos.html"> Cursos </a></li>
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
-               
+                <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
-         </section>
+        </section>
 
         <section class="redes-sociales">
             <h3>Redes sociales</h3>
             <ul class="redes-sociales-lista">
                 <li>
-                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg" alt="instagram">Instagram 
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg"
+                            alt="instagram">Instagram
                     </a>
                 </li>
-                <li>  
-                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg" alt="X">X/Twitter</a>
+                <li>
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg"
+                            alt="X">X/Twitter</a>
                 </li>
                 <li>
-                    
-                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber">Youtube</a>
+
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg"
+                            alt="Youtuber">Youtube</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg"
+                            alt="mail">Gwyn@lordOfCinder.com</a>
                 </li>
             </ul>
         </section>
     </footer>
-    
 
+    <script src="../JavaScript/Calendario.js"></script>
+    <script src="../JavaScript/Comprar.js"></script>
     <script src="../JavaScript/main.js"></script>
     <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
-    <script src="../JavaScript/Comprar.js"></script>
 </body>
+
+</html>

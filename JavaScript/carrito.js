@@ -36,7 +36,7 @@ function mostrarMensajeCarritoVacio(mensaje) {
     const carritoContainer = document.querySelector('.listaCompra .letraTamanio');
     const totalContainer = document.querySelector('.total');
     carritoContainer.innerHTML = `<p>${mensaje}</p>`;
-    totalContainer.innerText = "Total: $0";
+    totalContainer.innerText = "Total a pagar: $0";
 }
 
 // Función para agrupar los cursos y contar cuántas veces se compraron
@@ -60,10 +60,14 @@ function mostrarCursosEnCarrito(cursosAgrupados, carritoContainer) {
         const cursoElement = document.createElement("div");
         cursoElement.classList.add("curso-item");
 
+        // aca verifico si es una gift card o un curso 
+        const esGiftCard = curso.modalidad === "Gift Card";
+        const titulo = esGiftCard ? `Gift Card para ${curso.titulo.split(" - ")[1]}` : `Curso: ${curso.titulo}`;
+        
         cursoElement.innerHTML = `
-            <h5>Curso: ${curso.titulo}</h5>
+            <h5>${titulo}</h5>
             <h7>${curso.modalidad}</h7>
-            <div class="division-contenedor"> <!-- Contenedor con borde -->
+            <div class="division-contenedor">
                 <div class="division">
                     <p>Precio: $${curso.valor}</p>
                     <p>Cantidad: ${curso.cantidad}</p>
@@ -96,7 +100,7 @@ function actualizarTotal(cursosAgrupados, totalContainer) {
     cursosAgrupados.forEach(curso => {
         total += curso.valor * curso.cantidad;
     });
-    totalContainer.innerText = `Total: $${total.toFixed(2)}`;
+    totalContainer.innerText = `Total a pagar: $${total.toFixed(2)}`;
 }
 
 // Función para manejar el clic en el botón de eliminar
@@ -125,4 +129,56 @@ function eliminarCurso(titulo, modalidad, loggedUser, userData) {
         // Recargar la página del carrito para reflejar los cambios
         location.reload(); // Recargar la página para ver los cambios en el carrito
     }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const verificarCodigoButton = document.getElementById("verificarCodigo");
+    const codigoDescuentoInput = document.getElementById("codigoDescuento");
+    const mensajeDescuento = document.getElementById("mensajeDescuento");
+
+    let descuentoAplicado = false; 
+    const DESCUENTO = 3000;
+    const CODIGO_VALIDO = "A5BG67";
+
+    verificarCodigoButton.addEventListener("click", function () {
+        const codigoIngresado = codigoDescuentoInput.value.trim();
+
+        // Obtener el usuario logueado y verificar si su carrito está vacío
+        const loggedUser = sessionStorage.getItem("loggedUser");
+        const userData = JSON.parse(localStorage.getItem(loggedUser));
+
+         // Verificar si hay elementos en el carrito antes de aplicar el descuento
+        if (!userData || !userData.cursosComprados || userData.cursosComprados.length === 0) {
+            alert("El carrito se encuentra vacío, no se puede aplicar el descuento.");
+            return;
+        }
+
+        if (codigoIngresado === CODIGO_VALIDO && !descuentoAplicado) {
+            mensajeDescuento.innerText = "Tienes un descuento de $3000";
+            mensajeDescuento.style.color = "green";
+
+            verificarCodigoButton.innerText = "Aplicar descuento";
+            
+            verificarCodigoButton.onclick = function () {
+                aplicarDescuento(DESCUENTO);
+                verificarCodigoButton.disabled = true; // Deshabilitar botón después de aplicar
+                descuentoAplicado = true; // Marcar el descuento como aplicado
+            };
+        } else if (descuentoAplicado) {
+            mensajeDescuento.innerText = "El descuento ya ha sido aplicado.";
+            mensajeDescuento.style.color = "orange";
+        } else {
+            mensajeDescuento.innerText = "Código inválido, prueba con otro código";
+            mensajeDescuento.style.color = "red";
+        }
+    });
+});
+
+// Función para aplicar el descuento al total
+function aplicarDescuento(descuento) {
+    const totalContainer = document.querySelector('.total');
+    let totalActual = parseFloat(totalContainer.innerText.replace("Total a pagar: $", ""));
+
+    totalActual -= descuento;
+    totalContainer.innerText = `Total a pagar: $${totalActual.toFixed(2)}`;
 }

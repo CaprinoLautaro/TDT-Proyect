@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (userData) {
             // Inicializar el array de gift cards compradas si no existe
-            userData.giftCardCompradas = userData.giftCardCompradas || [];
-
-            // Agregar la nueva gift card
-            userData.giftCardCompradas.push({
-                nombre: recipientName,
-                monto: giftCardMount
+            userData.cursosComprados = userData.cursosComprados || [];
+            userData.cursosComprados.push({
+                titulo: `Gift Card - ${recipientName}`,
+                modalidad: "Gift Card",
+                valor: parseFloat(giftCardMount),
+                cantidad: 1 // Siempre es una única unidad
             });
 
             // Incrementar el contador del carrito
@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             alert("Gift card añadida al carrito!");
+            location.reload();
         }
     });
 });

@@ -45,12 +45,16 @@
                             <li>
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
                             </li>
+                            <li>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro"
+                                    href="./usuario.html"> Mi Cuenta</a>
+                            </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
                     <a class="carrito" href="./carrito.html">
                         <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
-                        
+                        <p class="numero-carrito"></p>
                     </a>
                 </section>
             </nav>
@@ -64,7 +68,7 @@
                     <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                   
+
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -75,13 +79,13 @@
     <main class="main">
         <section class="pagina-python">
             <section class="curso-python">
-
                 <div class="curso-python-div1">
-                    <img class="curso-python-div-img" src="../img/presenciales/curso-office.webp" alt="curso-python-imagen">
-                    <h1>Curso De curso-office </h1>
-                    <h2> Valor por persona: $20</h2>
-                    <h3>Tiempo De Dedicacion Necesario: 120 hs </h3>
-                    <h4>Modalidad : presencial</h4>
+                    <img class="curso-python-div-img" src="../img/presenciales/curso-office.webp"
+                        alt="curso-python-imagen">
+                    <h1 class="curso-nombre"> Curso De curso-office </h1>
+                    <h2>Valor por persona: $20</h2>
+                    <h3>Tiempo De Dedicacion Necesario: 120 hs</h3>
+                    <h4 class="modalidad" >Modalidad : presencial</h4>
                 </div>
 
 
@@ -98,116 +102,137 @@
                     <h2>Requisitos Previos : </h2>
                     <p>Computadora personal</p>
                     <p> Ganas de aprender</p>
-                    
-                    
-                    <a class="boton-inscripcion" href="./formuEmpresas.html" target=“_blank”>COMPLETAR FORMULARIO </a>
+
+
+                    <button class="boton-inscripcion inscribirse" target=“_blank”>COMPLETAR FORMULARIO </button>
 
                 </div>
             </section>
 
 
             <!--CONTENIDOS POR CLASE-->
-<section class="contenidos-por-clase">
-    <h2>CONTENIDO POR CLASE :</h2>
+            <section class="contenidos-por-clase">
+                <h2>CONTENIDO POR CLASE :</h2>
 
-    <div class="acordeon">
-        <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
-        <label for="btn-acordeon1">Introducción a Office</label>
-        <div class="contenido-acordeon">
-            <p>En esta primera sesión, el profesor Dumbledore nos dará una visión general del poder de las herramientas de Office, revelando su magia para simplificar tareas cotidianas y mejorar la productividad. Exploraremos la interfaz de usuario y las principales funciones de Excel, Word y PowerPoint.</p>
-        </div>
-    </div>
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                    <label for="btn-acordeon1">Introducción a Office</label>
+                    <div class="contenido-acordeon">
+                        <p>En esta primera sesión, el profesor Dumbledore nos dará una visión general del poder de las
+                            herramientas de Office, revelando su magia para simplificar tareas cotidianas y mejorar la
+                            productividad. Exploraremos la interfaz de usuario y las principales funciones de Excel,
+                            Word y PowerPoint.</p>
+                    </div>
+                </div>
 
-    <div class="acordeon">
-        <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
-        <label for="btn-acordeon2">Unidad 1: Excel Básico y Fórmulas</label>
-        <div class="contenido-acordeon">
-            <p>En esta unidad, Dumbledore guiará a los estudiantes a través de las fórmulas básicas de Excel. Aprenderemos cómo realizar cálculos sencillos, organizar datos y crear tablas, preparando a los alumnos para desentrañar los secretos del análisis de datos.</p>
-        </div>
-    </div>
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                    <label for="btn-acordeon2">Unidad 1: Excel Básico y Fórmulas</label>
+                    <div class="contenido-acordeon">
+                        <p>En esta unidad, Dumbledore guiará a los estudiantes a través de las fórmulas básicas de
+                            Excel. Aprenderemos cómo realizar cálculos sencillos, organizar datos y crear tablas,
+                            preparando a los alumnos para desentrañar los secretos del análisis de datos.</p>
+                    </div>
+                </div>
 
-    <div class="acordeon">
-        <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
-        <label for="btn-acordeon3">Unidad 2: Word y Formato de Documentos</label>
-        <div class="contenido-acordeon">
-            <p>Esta unidad profundiza en Word, donde Dumbledore enseñará a los estudiantes a estructurar y formatear documentos de manera profesional. Desde el uso de estilos hasta la incorporación de imágenes y tablas, aprenderemos a crear documentos impactantes y bien organizados.</p>
-        </div>
-    </div>
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                    <label for="btn-acordeon3">Unidad 2: Word y Formato de Documentos</label>
+                    <div class="contenido-acordeon">
+                        <p>Esta unidad profundiza en Word, donde Dumbledore enseñará a los estudiantes a estructurar y
+                            formatear documentos de manera profesional. Desde el uso de estilos hasta la incorporación
+                            de imágenes y tablas, aprenderemos a crear documentos impactantes y bien organizados.</p>
+                    </div>
+                </div>
 
-    <div class="acordeon">
-        <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
-        <label for="btn-acordeon4">Unidad 3: PowerPoint y Diseño de Presentaciones</label>
-        <div class="contenido-acordeon">
-            <p>Finalmente, exploraremos PowerPoint, donde Dumbledore nos mostrará cómo diseñar presentaciones cautivadoras y persuasivas. Desde transiciones elegantes hasta el uso estratégico de imágenes y gráficos, esta unidad nos prepara para dejar una impresión duradera en cualquier audiencia.</p>
-        </div>
-    </div>
-</section>
-
-
-
-
-      <!--Profesor-->
-<section class="apartado-profesor">
-    <img class="imagen-profesor" src="../img/presenciales/dumble.jpg" alt="profesor-albus-dumbledore">
-    <section class="texto-profesor">
-        <h3><strong>Albus Dumbledore:</strong></h3>
-        <div class="estrellitas">
-            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
-            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
-            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
-            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
-            <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
-        </div>
-        <p>Albus Dumbledore, conocido por su sabiduría y perspicacia incomparables, ofrece su conocimiento en el uso de las herramientas de Office, un conjunto de habilidades esenciales en el mundo moderno. Desde su vasta experiencia liderando y guiando mentes, Dumbledore aplica un enfoque intuitivo y reflexivo a este curso, enseñando a los estudiantes a usar Excel, Word y PowerPoint con maestría.</p>
-        <p>Con un estilo de enseñanza carismático y una profunda comprensión de la importancia de cada detalle, Dumbledore muestra a los estudiantes cómo transformar documentos en obras precisas y efectivas, aprovechar las fórmulas de Excel para hacer cálculos complejos y dar vida a presentaciones en PowerPoint de manera persuasiva. Su enfoque es tanto técnico como inspirador, promoviendo no solo la eficiencia, sino también la creatividad y la claridad en cada proyecto. Aprender de Dumbledore es más que adquirir habilidades; es una experiencia que lleva a los estudiantes a un dominio de las herramientas de Office con una mente abierta y un toque de magia.</p>
-    </section>
-</section>
-</section>
+                <div class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                    <label for="btn-acordeon4">Unidad 3: PowerPoint y Diseño de Presentaciones</label>
+                    <div class="contenido-acordeon">
+                        <p>Finalmente, exploraremos PowerPoint, donde Dumbledore nos mostrará cómo diseñar
+                            presentaciones cautivadoras y persuasivas. Desde transiciones elegantes hasta el uso
+                            estratégico de imágenes y gráficos, esta unidad nos prepara para dejar una impresión
+                            duradera en cualquier audiencia.</p>
+                    </div>
+                </div>
             </section>
 
 
-            <!--MAS CURSOS-->
-            <div class="mas-cursos">
-                <div class="curso-css">
-                    <figure>
-                        <img src="../img/cursos/curso-css.webp" alt="imagen-curso-css">
-                    </figure>
-                    <div class="contenido">
-                        <h2>Curso De CSS </h2>
-                        <p>
-                            Domina CSS3 (Desde cero a master) Curso 100% Practico [Flexbox, CSS GRID, Animaciones en
-                            CSS3, BEM, Responsive, TAILWIN]
-                        </p>
-                        <a href="./pagina-css.html">Ir Al Curso.</a>
+
+
+            <!--Profesor-->
+            <section class="apartado-profesor">
+                <img class="imagen-profesor" src="../img/presenciales/dumble.jpg" alt="profesor-albus-dumbledore">
+                <section class="texto-profesor">
+                    <h3><strong>Albus Dumbledore:</strong></h3>
+                    <div class="estrellitas">
+                        <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                        <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                        <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                        <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                        <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
                     </div>
-                </div>
-                <div class="curso-css">
-                    <figure>
-                        <img src="../img/cursos/curso-html.webp" alt="imagen-curso-html">
-                    </figure>
-                    <div class="contenido">
-                        <h2>Curso De HTML </h2>
-                        <p>
-                            Aprende HTML 5 y crea tus primeras páginas web paso a paso con decenas de ejercicios.
-                            Empieza en el desarrollo web aquí
-                        </p>
-                        <a href="./pagina-html.html">Ir Al Curso.</a>
-                    </div>
-                </div>
-                <div class="curso-css">
-                    <figure>
-                        <img src="../img/cursos/curso-java.webp" alt="imagen-curso-java">
-                    </figure>
-                    <div class="contenido">
-                        <h2>Curso De JAVA </h2>
-                        <p>
-                            El mejor curso Java con aplicaciones del mundo real (Escritorio, Web y Full Stack) Spring,
-                            Hibernate, Jakarta EE y más!
-                        </p>
-                        <a href="./pagina-java.html">Ir Al Curso.</a>
-                    </div>
+                    <p>Albus Dumbledore, conocido por su sabiduría y perspicacia incomparables, ofrece su conocimiento
+                        en el uso de las herramientas de Office, un conjunto de habilidades esenciales en el mundo
+                        moderno. Desde su vasta experiencia liderando y guiando mentes, Dumbledore aplica un enfoque
+                        intuitivo y reflexivo a este curso, enseñando a los estudiantes a usar Excel, Word y PowerPoint
+                        con maestría.</p>
+                    <p>Con un estilo de enseñanza carismático y una profunda comprensión de la importancia de cada
+                        detalle, Dumbledore muestra a los estudiantes cómo transformar documentos en obras precisas y
+                        efectivas, aprovechar las fórmulas de Excel para hacer cálculos complejos y dar vida a
+                        presentaciones en PowerPoint de manera persuasiva. Su enfoque es tanto técnico como inspirador,
+                        promoviendo no solo la eficiencia, sino también la creatividad y la claridad en cada proyecto.
+                        Aprender de Dumbledore es más que adquirir habilidades; es una experiencia que lleva a los
+                        estudiantes a un dominio de las herramientas de Office con una mente abierta y un toque de
+                        magia.</p>
+                </section>
+            </section>
+        </section>
+        </section>
+
+
+        <!--MAS CURSOS-->
+        <div class="mas-cursos">
+            <div class="curso-css">
+                <figure>
+                    <img src="../img/cursos/curso-css.webp" alt="imagen-curso-css">
+                </figure>
+                <div class="contenido">
+                    <h2>Curso De CSS </h2>
+                    <p>
+                        Domina CSS3 (Desde cero a master) Curso 100% Practico [Flexbox, CSS GRID, Animaciones en
+                        CSS3, BEM, Responsive, TAILWIN]
+                    </p>
+                    <a href="./pagina-css.html">Ir Al Curso.</a>
                 </div>
             </div>
+            <div class="curso-css">
+                <figure>
+                    <img src="../img/cursos/curso-html.webp" alt="imagen-curso-html">
+                </figure>
+                <div class="contenido">
+                    <h2>Curso De HTML </h2>
+                    <p>
+                        Aprende HTML 5 y crea tus primeras páginas web paso a paso con decenas de ejercicios.
+                        Empieza en el desarrollo web aquí
+                    </p>
+                    <a href="./pagina-html.html">Ir Al Curso.</a>
+                </div>
+            </div>
+            <div class="curso-css">
+                <figure>
+                    <img src="../img/cursos/curso-java.webp" alt="imagen-curso-java">
+                </figure>
+                <div class="contenido">
+                    <h2>Curso De JAVA </h2>
+                    <p>
+                        El mejor curso Java con aplicaciones del mundo real (Escritorio, Web y Full Stack) Spring,
+                        Hibernate, Jakarta EE y más!
+                    </p>
+                    <a href="./pagina-java.html">Ir Al Curso.</a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!--aca termina python -->
@@ -228,7 +253,7 @@
                 <li><a href="./cursos.html"> Cursos </a></li>
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
-              
+                <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
         </section>
@@ -257,7 +282,9 @@
             </ul>
         </section>
     </footer>
-<script src="../JavaScript/cursoPres.js"></script>
-<script src="../JavaScript/Comprar.js"></script>
-
+    <script src="../JavaScript/cursoPres.js"></script>
+    <script src="../JavaScript/Comprar.js"></script>
+    <script src="../JavaScript/inscribirse.js"></script>
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
 </body>

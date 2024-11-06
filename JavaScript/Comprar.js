@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // Actualiza el número de artículos en el carrito
                 numeroCarrito.innerText = userData.contadorCarrito;
+                alert("Curso añadido al carrito!");
+            location.reload();
             }
         });
     });

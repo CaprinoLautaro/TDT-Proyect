@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const cursos = [
         {
             titulo: "Curso De Introduccion A css",
@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     const cursosPresenciales = [
-        
-        
+
+
         {
             titulo: "Curso De photoshop e ilustrator",
             valor: 20,
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             titulo: "Curso De Office",
             valor: 20,
-            descripcion: "Aprende a dominar herramientas esenciales de Microsoft Office, desde Word y Excel hasta PowerPoint, optimizando tu productividad y mejorando tus habilidades en el manejo de datos y presentaciones. Este curso es ideal para quienes buscan eficacia en el entorno laboral.",            profesor: "Albus Dumbledore",
+            descripcion: "Aprende a dominar herramientas esenciales de Microsoft Office, desde Word y Excel hasta PowerPoint, optimizando tu productividad y mejorando tus habilidades en el manejo de datos y presentaciones. Este curso es ideal para quienes buscan eficacia en el entorno laboral.", profesor: "Albus Dumbledore",
             imagen: "../img/presenciales/curso-office.webp",
             enlace: "./curso-presencial-office.html",
             modalidad: "presencial"
@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", function() {
             descripcion: "Curso de Python: aprende a programar desde cero y domina los fundamentos de Python. Ideal para principiantes, cubrirá conceptos esenciales como variables, estructuras de control, funciones y manejo de datos. Este curso es perfecto para aquellos que desean iniciarse en el mundo de la programación y aplicar sus conocimientos en proyectos prácticos.",
             profesor: "Severus Snape",
             imagen: "../img/presenciales/Curso Python.webp",
-            enlace: "./curso-presencial-office.html",
+            enlace: "./curso-presencial-python.html",
             modalidad: "presencial"
         }
-        
+
     ]
     const contenedorCursosOnline = document.querySelector(".cursos-Online");
     const contenedorCursosPresenciales = document.querySelector(".cursos-Presenciales");
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (curso.modalidad == "online") {
 
             contenedorCursosOnline.innerHTML += cursoHTML;
-        } 
+        }
     });
 
     cursosPresenciales.forEach(curso => {
@@ -128,13 +128,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="clase">
                 <a href="${curso.enlace}" class="clase-contenido">
                     <img src="${curso.imagen}" alt="Imagen-clase">
-                    <h3 class="Titulo">${curso.titulo}</h3>
-                    <p class="Modalidad"> Cursada : ${curso.modalidad} </p>
+                    <h3 class="Titulo curso-nombre">${curso.titulo}</h3>
+                    <p class="modalidad"> Cursada : ${curso.modalidad} </p>
                     <p>${curso.profesor}</p>
                     <p class="descripcion"> ${curso.descripcion}</p>
                 </a>
-                <button class="link comprar">
-                    <p>Comprar </p> <p class="precio">$${curso.valor}</p><img src="../img/carrito de compras.png" alt="carrito-compras">
+                <button class="link inscribirse">
+                    <p>Inscribirme</p> <p class="precio"> $${curso.valor}</p> <img src="../img/carrito de compras.png" alt="carrito-compras">
                 </button>
             </div>`;
 

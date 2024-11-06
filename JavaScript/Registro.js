@@ -39,8 +39,8 @@ const parrafo = document.getElementById("warnings");
             cursosComprados: [],
             giftCardsCompradas: [],
             giftCardsUsuario: {
-                Monto: 400,
-                Codigo: 1
+                Monto: 3000,
+                Codigo: "A5BG67"
             },
             cursosPresenciales: [],
             contadorCarrito: 0
@@ -50,3 +50,5 @@ const parrafo = document.getElementById("warnings");
     }
 
 });
+
+

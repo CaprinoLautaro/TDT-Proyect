@@ -50,10 +50,8 @@
 }
 
 #imagenContacto {
-    padding-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    width: 16rem;
 }
 
 /* Ajusta los estilos para que el formulario y la información de contacto se alineen */
@@ -124,71 +122,89 @@
     --color--tercero: #03112b;
 }
 
+
+
+
+/* Estilos del popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.popup-content button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color--principal);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 /* --------Responsive Mobile---------- */
 
 @media screen and (max-width: 40rem) {
 
     .titulo {
-        margin-left: 0;
-        /* Sin margen en móviles */
-        text-align: center;
-        /* Centrar título en móviles */
+    margin-left: 0; /* Sin margen en móviles */
+    text-align: center; /* Centrar título en móviles */
     }
 
     .contacto-formulario-container {
-        flex-direction: column;
-        /* Cambia a columna en dispositivos móviles */
-        width: 100%;
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
+    width: 100%;
     }
 
-    .formulario,
-    .contacto-info {
-        width: 100%;
-        /* Toma el 100% del ancho en móviles */
-        margin-left: 0;
-        /* Sin margen en móviles */
-        margin-right: 0;
+    .formulario, .contacto-info {
+    width: 100%; /* Toma el 100% del ancho en móviles */
+    margin-left: 0; /* Sin margen en móviles */
+    margin-right: 0;
     }
 
     .mapa img {
-        width: 100%;
-        /* Imagen del mapa ocupa todo el ancho */
-        height: auto;
-        /* Mantiene la proporción */
+    width: 100%; /* Imagen del mapa ocupa todo el ancho */
+    height: auto; /* Mantiene la proporción */
     }
 }
 
 /* --------Responsive Tablet---------- */
 
-@media screen and (min-width: 40rem) and (max-width: 60rem) {
+@media screen and (min-width: 40rem) and (max-width: 60rem){
 
-    .titulo {
-        margin-left: 0;
-        /* Sin margen en móviles */
-        text-align: center;
-        /* Centrar título en móviles */
+.titulo {
+    margin-left: 0; /* Sin margen en móviles */
+    text-align: center; /* Centrar título en móviles */
     }
 
     .contacto-formulario-container {
-        flex-direction: column;
-        /* Cambia a columna en dispositivos móviles */
-        width: 100%;
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
+    width: 100%;
     }
 
-    .formulario,
-    .contacto-info {
-        width: 100%;
-        /* Toma el 100% del ancho en móviles */
-        margin-left: 0;
-        /* Sin margen en móviles */
-        margin-right: 0;
+    .formulario, .contacto-info {
+    width: 100%; /* Toma el 100% del ancho en móviles */
+    margin-left: 0; /* Sin margen en móviles */
+    margin-right: 0;
     }
 
     .mapa img {
-        width: 100%;
-        /* Imagen del mapa ocupa todo el ancho */
-        height: auto;
-        /* Mantiene la proporción */
+    width: 100%; /* Imagen del mapa ocupa todo el ancho */
+    height: auto; /* Mantiene la proporción */
     }
 }
 
@@ -196,32 +212,24 @@
 
 @media screen and (max-width: 64rem) {
 
-    .titulo {
-        margin-left: 0;
-        /* Sin margen en móviles */
-        text-align: center;
-        /* Centrar título en móviles */
+.titulo {
+    margin-left: 0; /* Sin margen en móviles */
+    text-align: center; /* Centrar título en móviles */
     }
 
     .contacto-formulario-container {
-        flex-direction: column;
-        /* Cambia a columna en dispositivos móviles */
-        width: 100%;
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
+    width: 100%;
     }
 
-    .formulario,
-    .contacto-info {
-        width: 100%;
-        /* Toma el 100% del ancho en móviles */
-        margin-left: 0;
-        /* Sin margen en móviles */
-        margin-right: 0;
+    .formulario, .contacto-info {
+    width: 100%; /* Toma el 100% del ancho en móviles */
+    margin-left: 0; /* Sin margen en móviles */
+    margin-right: 0;
     }
 
     .mapa img {
-        width: 100%;
-        /* Imagen del mapa ocupa todo el ancho */
-        height: auto;
-        /* Mantiene la proporción */
+    width: 100%; /* Imagen del mapa ocupa todo el ancho */
+    height: auto; /* Mantiene la proporción */
     }
 }
