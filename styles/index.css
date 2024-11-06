@@ -282,6 +282,23 @@ h2 {
 
 }
 
+/* Ajustes de estilo para el slider en pantallas pequeñas */
+.boton-adelante, .boton-atras {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    top: calc(50% - 25px); /* Ajuste vertical para centrar el botón */
+}
+
+.contenedor {
+    height: 20rem; /* Ajusta la altura para pantallas más pequeñas */
+}
+
+.contenedor:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
 @media screen and (max-width:25rem) {
     .slider {
         margin: 0;
@@ -305,6 +322,18 @@ h2 {
     .clase p {
         display: none;
     }
+}
+
+/* Ajustes para el slider en pantallas muy pequeñas */
+.boton-adelante, .boton-atras {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    top: calc(50% - 20px);
+}
+
+.contenedor {
+    height: 15rem; /* Más pequeña para pantallas de este tamaño */
 }
 
 /*tablet */
@@ -368,4 +397,12 @@ h2 {
         width: 100%;
         max-width: 20rem;
     }
+
+    /* Ajustes del slider para pantallas tablet */
+    .boton-adelante, .boton-atras {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    top: calc(50% - 30px);
+}
 }
