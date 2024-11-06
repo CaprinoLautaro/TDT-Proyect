@@ -1,8 +1,10 @@
+//--ESTA ES PARA COMPRAS DIRECTAMENTE DE LA PAGINA DE CURSOS--
+
 document.addEventListener("DOMContentLoaded", function() {
     const botonesCompra = document.querySelectorAll('.comprar');
     const loggedUser = sessionStorage.getItem("loggedUser");
 
-    // Asegúrate de que el usuario esté registrado y que los datos existan en localStorage
+    // Asegurar de que el usuario esté registrado y que los datos existan en localStorage
     const userData = JSON.parse(localStorage.getItem(loggedUser));
 
     // Selecciona el contenedor del carrito (sin número inicial)
@@ -22,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function() {
             const titulo = cursoElemento.querySelector(".Titulo").innerText; // Verifica el selector
             const valor = cursoElemento.querySelector(".precio").innerText.replace('$', '');
             const modalidad = cursoElemento.querySelector(".Modalidad").innerText.replace('Modalidad : ', '');
+
+            const loggedUser = sessionStorage.getItem("loggedUser");
+            if (!loggedUser) {
+                alert("Debes iniciar sesión para poder comprar.");
+                return;
+            }
 
             if (userData) {
                 // Agregar el curso a cursosComprados
