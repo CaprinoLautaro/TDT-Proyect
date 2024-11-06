@@ -133,8 +133,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>${curso.profesor}</p>
                     <p class="descripcion"> ${curso.descripcion}</p>
                 </a>
-                <button class="link comprar">
-                    <p>Comprar </p> <p class="precio">$${curso.valor}</p><img src="../img/carrito de compras.png" alt="carrito-compras">
+                <button class="link inscribirse">
+                    <p>Inscribirme</p> <p class="precio">$${curso.valor} por persona</p><img src="../img/carrito de compras.png" alt="carrito-compras">
                 </button>
             </div>`;
 

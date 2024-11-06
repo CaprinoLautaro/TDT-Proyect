@@ -48,7 +48,7 @@
                     <!-- CARRITO DE COMPRAS -->
                     <a class="carrito" href="./carrito.html">
                         <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
-                        <p class="numero-carrito">0</p>
+                        <p class="numero-carrito"></p>
                     </a>
                 </section>
             </nav>
@@ -81,26 +81,18 @@
 
             <section class="main">
                 <section class="carrito-pio">
-                    <h3>Complete los datos y seleccione un método de pago</h3>
+                    <h3>Complete los datos de pago</h3>
                     <form class="carritoImput">
                         <input type="text" name="numTarjeta" id="numTarjeta" placeholder="Número de tarjeta" required />
                         <input type="number" name="mesExpiracion" id="mesExpiracion" placeholder="Mes de expiración"
                             required />
                         <input type="number" name="anio" id="anio" placeholder="Año" required />
                         <input type="text" name="cvv" id="cvv" placeholder="CVV" required />
+                        <p>¿Tenes un código de descuento?</p>
+                        <input type="text" name="gift" id="gift" placeholder="Código de descuento" />
                         <button type="submit" class="button">Completar compra</button>
                     </form>
-                    <div class="medios-de-pago-slider"></div>
-                    <section>
-                        <ul class="medios-de-pago-lista">
-                            <li> <img src="../img/medios de pago/cdni.jpg" alt="Cuenta dni"></li>
-                            <li><img src="../img/medios de pago/mp.png" alt="Mercado pago"></li>
-                            <li><img src="../img/medios de pago/provnet.jpg" alt="Provincia net"></li>
-                            <li><img src="../img/medios de pago/rappi.png" alt="Rappi pago"></li>
-                        </ul>
-                    </section>
 
-                    </div>
 
                 </section>
 
@@ -134,7 +126,7 @@
                 <li><a href="./cursos.html"> Cursos </a></li>
                 <li><a href="./calendario.html"> Proximos cursos </a></li>
                 <li><a href="./giftCard.html"> Gift Card </a></li>
-                <li><a href="./formuEmpresas.html">Cursos para Empresas</a></li>
+
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
         </section>
@@ -168,6 +160,7 @@
     <script src="../JavaScript/main.js"></script>
     <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
     <script src="../JavaScript/Comprar.js"></script>
+    <script src="../JavaScript/carrito.js"></script>
 </body>
 
 </html>
