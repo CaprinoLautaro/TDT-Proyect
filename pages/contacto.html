@@ -69,44 +69,51 @@
     </header>
 
     <main class="main">
-        <div class="titulo">
-            <h1>Contacto</h1>
-            <h2>Formulario de Contacto</h2>
-        </div>
-
-        <div class="contacto-formulario-container">
-            <div class="formulario">
-                <h3>Complete el Formulario:</h3>
-
-                <form>
-                    <input type="text" name="name" id="name" placeholder="Nombre" required />
-                    <input type="text" name="last_name" id="last_name" placeholder="Apellido" required />
-                    <input type="email" name="email" id="email" placeholder="E-Mail" required />
-                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono (opcional)" />
-                    <textarea name="consulta" id="consulta" placeholder="Detalle su consulta" required></textarea>
-                    <p id="char-count">Caracteres restantes: 1000</p>
-                    <!-- <input type="text" name="consulta" id="consulta" placeholder="Detalle su consulta" required/> -->
-
-                    <button type="submit" class="button">Envíar</button>
-
-                </form>
-            </div>
-
-            <div class="contacto-info">
-                <h2>Datos de Contacto</h2>
-                <img id="imagenContacto" src="../img/contacto img/contacto.png" width="50%" height="50%" />
-                <p>Nombre de la Empresa</p>
-                <p>Dirección: yVaElTercero912, Madrid, España</p>
-                <p>Teléfono: +9122018</p>
-                <p>Email: contacto@empresa.com</p>
+        <div id="popup" class="popup-container">
+            <div class="popup-content">
+                <p>¡Formulario enviado correctamente!</p>
+                <button id="popupButton">Cerrar</button>
             </div>
         </div>
 
-        <div class="mapa">
-            <h2 id="ubi">Ubicación de la Empresa</h2>
-            <img src="../img/contacto img/ubicacionEmpresa.jpeg" width="50%" height="60%"
-                alt="ubicacionDeLaEmpresaDesdeGoogleMaps" />
-        </div>
+    <div class="titulo">
+        <h1>Contacto</h1>
+        <h2>Formulario de Contacto</h2>
+    </div>
+
+    <div class="contacto-formulario-container">
+        <div class="formulario">
+        <h3>Complete el Formulario:</h3>
+
+    <form>
+        <input type="text" name="name" id="name" placeholder="Nombre" required/>
+        <input type="text" name="last_name" id="last_name" placeholder="Apellido" required/>
+        <input type="email" name="email" id="email" placeholder="E-Mail" required/>
+        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono (opcional)"/>
+        <textarea name="consulta" id="consulta" placeholder="Detalle su consulta" required></textarea>
+        <p id="char-count">Caracteres restantes: 1000</p>
+        <!-- <input type="text" name="consulta" id="consulta" placeholder="Detalle su consulta" required/> -->
+
+        <button type="submit" class="button">Envíar</button>
+
+    </form>
+    </div>
+
+    <div class="contacto-info">
+        <h2>Datos de Contacto</h2>
+        <img id="imagenContacto" src="../img/contacto img/contacto.png" width="50%" height="50%"/> 
+        <p>Nombre de la Empresa</p>
+        <p>Dirección: yVaElTercero912, Madrid, España</p>
+        <p>Teléfono: +9122018</p>
+        <p>Email: contacto@empresa.com</p>
+    </div>
+    </div>
+
+    <div class="mapa">
+        <h2 id="ubi">Ubicación de la Empresa</h2>
+        <img src="../img/contacto img/ubicacionEmpresa.jpeg" width="50%" height="60%" alt="ubicacionDeLaEmpresaDesdeGoogleMaps"/>
+    </div>
+
 
     </main>
 
