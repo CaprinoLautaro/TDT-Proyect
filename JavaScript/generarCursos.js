@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         {
             titulo: "Curso De photoshop e ilustrator",
-            valor: 20,
+            valor: 2500,
             descripcion: " Este curso te guiará en el dominio de herramientas de diseño gráfico esenciales, permitiéndote crear y editar gráficos profesionales. Desde la edición de imágenes en Photoshop hasta la creación de ilustraciones en Illustrator, este curso es ideal para aquellos que desean aprender y perfeccionar sus habilidades en diseño visual.",
             profesor: "Minerva McGonagall",
             imagen: "../img/presenciales/curso-adobe.webp",
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         {
             titulo: "Curso De Office",
-            valor: 20,
+            valor: 2500,
             descripcion: "Aprende a dominar herramientas esenciales de Microsoft Office, desde Word y Excel hasta PowerPoint, optimizando tu productividad y mejorando tus habilidades en el manejo de datos y presentaciones. Este curso es ideal para quienes buscan eficacia en el entorno laboral.", profesor: "Albus Dumbledore",
             imagen: "../img/presenciales/curso-office.webp",
             enlace: "./curso-presencial-office.html",
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         {
             titulo: "Curso De Python (Presencial)",
-            valor: 20,
+            valor: 2500,
             descripcion: "Curso de Python: aprende a programar desde cero y domina los fundamentos de Python. Ideal para principiantes, cubrirá conceptos esenciales como variables, estructuras de control, funciones y manejo de datos. Este curso es perfecto para aquellos que desean iniciarse en el mundo de la programación y aplicar sus conocimientos en proyectos prácticos.",
             profesor: "Severus Snape",
             imagen: "../img/presenciales/Curso Python.webp",
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <a href="${curso.enlace}" class="clase-contenido">
             <img src="${curso.imagen}" alt="Imagen-clase">
             <h3 class="Titulo">${curso.titulo}</h3>
-            <p class="Modalidad"> Cursada : ${curso.modalidad} </p>
+            <p class="Modalidad"> Modalidad: ${curso.modalidad} </p>
             <p>${curso.profesor}</p>
             <p class="descripcion"> ${curso.descripcion}</p>
         </a>
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="${curso.enlace}" class="clase-contenido">
                     <img src="${curso.imagen}" alt="Imagen-clase">
                     <h3 class="Titulo curso-nombre">${curso.titulo}</h3>
-                    <p class="modalidad"> Cursada : ${curso.modalidad} </p>
+                    <p class="modalidad">  Modalidad: ${curso.modalidad} </p>
                     <p>${curso.profesor}</p>
                     <p class="descripcion"> ${curso.descripcion}</p>
                 </a>

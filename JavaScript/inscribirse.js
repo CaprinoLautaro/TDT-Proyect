@@ -1,3 +1,5 @@
+//este es de las paginas de cursos presenciales//de c/u
+
 document.addEventListener('DOMContentLoaded', function () {
     const inscribirseButton = document.querySelector('.inscribirse'); // Asegúrate de que este botón exista
     const cursoNombre = document.querySelector('.curso-nombre').innerText;  // Ajustamos la clase para que coincida con el HTML

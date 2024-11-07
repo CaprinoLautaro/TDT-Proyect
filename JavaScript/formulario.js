@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const userData = JSON.parse(localStorage.getItem(loggedUser)) || { cursosPresenciales: [], contadorCarrito: 0 };
     const tituloCursoElement = document.querySelector(".titulo-curso"); 
     if (tituloCursoElement) {
-        tituloCursoElement.textContent = `Curso: ${cursoNombre}`;
+        tituloCursoElement.textContent = `${cursoNombre}`;
     }
     let totalPersonas = 1;
-    let costoPorPersona = 20;
+    let costoPorPersona = 2500;
     let costoTotal = costoPorPersona;
 
     function actualizarCosto() {
@@ -155,14 +155,34 @@ document.addEventListener("DOMContentLoaded", () => {
                 cantidadParticipantes: totalPersonas
             });
 
+
+
+
             // Incrementar el contador del carrito
             userData.contadorCarrito++;
+            alert("Curso presencial añadido al carrito!");
+            location.reload();
 
-            // Guardar los datos actualizados en el localStorage
-            localStorage.setItem(loggedUser, JSON.stringify(userData));
-            modal.style.display = "none";
-        } else {
-            alert("Debe ingresar al menos un participante.");
-        }
+
+          // Actualizar los cursosComprados si es necesario
+        userData.cursosComprados.push({
+            titulo: cursoNombre,
+            modalidad: modalidad,
+            valor: costoTotal,  // El valor total del curso (por cantidad de personas)
+            cantidad: totalPersonas
+        });
+
+        // Guardar los datos actualizados en el localStorage
+        localStorage.setItem(loggedUser, JSON.stringify(userData));
+        
+        // Actualizar el contador en el carrito
+        actualizarContadorCarrito(userData.contadorCarrito);
+
+        // Recargar la página para reflejar los cambios
+        
+        modal.style.display = "none";
+    } else {
+        alert("Debe ingresar al menos un participante.");
+    }
     };
 });

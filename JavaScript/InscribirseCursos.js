@@ -1,3 +1,4 @@
+//este es de la pagina de cursos-cursos presenciales.. o sea la pagina general con la grilla de cursos
 document.addEventListener('DOMContentLoaded', function () {
     // Seleccionar todos los botones de inscribirse
     const inscribirseButtons = document.querySelectorAll('.inscribirse');

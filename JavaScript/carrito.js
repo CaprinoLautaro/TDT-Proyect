@@ -60,13 +60,22 @@ function mostrarCursosEnCarrito(cursosAgrupados, carritoContainer) {
         const cursoElement = document.createElement("div");
         cursoElement.classList.add("curso-item");
 
-        // aca verifico si es una gift card o un curso 
-        const esGiftCard = curso.modalidad === "Gift Card";
-        const titulo = esGiftCard ? `Gift Card para ${curso.titulo.split(" - ")[1]}` : `Curso: ${curso.titulo}`;
-        
+         // Verificar si es una gift card o un curso presencial
+         const esGiftCard = curso.modalidad === "Gift Card";
+         const esCursoPresencial = curso.modalidad === "Presencial"; // Si es curso presencial
+         let titulo = "";
+         
+         if (esGiftCard) {
+             titulo = `Gift Card para ${curso.titulo.split(" - ")[1]}`;
+         } else if (esCursoPresencial) {
+             titulo = `Curso Presencial: ${curso.titulo} (${curso.cantidad} personas)`;
+         } else {
+             titulo = `${curso.titulo}`;
+         }
+
         cursoElement.innerHTML = `
             <h5>${titulo}</h5>
-            <h7>${curso.modalidad}</h7>
+            <h7> ${curso.modalidad}</h7>
             <div class="division-contenedor">
                 <div class="division">
                     <p>Precio: $${curso.valor}</p>
@@ -98,7 +107,7 @@ function actualizarContadorCarrito(contador) {
 function actualizarTotal(cursosAgrupados, totalContainer) {
     let total = 0;
     cursosAgrupados.forEach(curso => {
-        total += curso.valor * curso.cantidad;
+        total += curso.valor * curso.cantidad;  // Incluye el curso presencial también
     });
     totalContainer.innerText = `Total a pagar: $${total.toFixed(2)}`;
 }

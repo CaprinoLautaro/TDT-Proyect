@@ -27,6 +27,17 @@ body {
     margin: 2rem;
     background-color: rgba(3, 17, 43, 0.8);
 }
+.main h2{
+    display: flex;
+    justify-content: center;
+}
+.titulo-curso {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #3db0fa;
+    font-size: 2rem;
+    
+}
 
 .ingreso-datos {
     padding: 2rem;
