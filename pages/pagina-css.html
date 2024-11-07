@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shorcut icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../styles/pagina-python.css">
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
+
+    <title>Curso De Introduccion A CSS</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- 1er barra de navegacion -->
+        <section class="navBar-sup">
+            <nav class="navBar1">
+                <section class="navBar1_elements">
+                    <!-- LOGO -->
+                    <a href="../index.html">
+                        <img class="logo" src="../img/icono.png" alt="logo">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="busqueda" method="get" action="https://www.google.com.ar">
+                        <p class="textoBusqueda">Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search">
+                        <button class="boton-lupa" type="submit">
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar">
+                        </button>
+                    </form>
+                    <!-- BOTONES DE INICIO Y REGISTRO -->
+                    <div>
+                        <ul class="botones-navBar1">
+                            <li>
+                                <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
+                            </li>
+                            <li>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./usuario.html"> Mi Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CARRITO DE COMPRAS -->
+                    <a class="carrito" href="./carrito.html">
+                        <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
+                        <p class="numero-carrito"></p>
+                    </a>
+                </section>
+            </nav>
+        </section><!-- aca termina la 1er barra de nav -->
+
+        <!-- 2da BARRA- MENU -->
+        <section class="navBar-inf">
+            <nav class="navBar2">
+                <ul class="navBar2_elements">
+
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="./calendario.html">Próximos cursos </a></li>
+                    <li><a href="./giftCard.html">Gift Card</a></li>
+                    
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+    <!--aca es python -->
+    <main class="main">
+        <section class="curso-python">
+
+            <div class="curso-python-div1">
+                <img class="curso-python-div-img" src="../img/cursos/curso-css.webp" alt="curso-python-imagen">
+                <h1 class="curso-nombre">Curso De Introduccion A css</h1>
+                <h2> Valor : </h2><h2 class="precio">$3500</h2>
+                <h3>Tiempo De Dedicacion Necesario: 120 hs </h3>
+                <h4>Modalidad : </h4><h4 class="modalidad">online</h4>
+            </div>
+
+
+            <div class="texto-curso-python">
+
+                <h1> Descripcion Del Curso:</h1>
+
+                <h4> Curso de Introducción a css: aprende los fundamentos de programación con css.
+                    Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de
+                    datos.
+                    <br>
+                    ¡Empieza a codificar y desarrolla tus habilidades tecnológicas.
+                </h4>
+                <h2>Requisitos Previos : </h2>
+                <p> Computadora con Conexion a Internet</p>
+                <p> Ganas de aprender</p>
+                <p> Conocimiento basico de informatica</p>
+                <p> IDE : Pycharm</p>
+                <button class="boton-inscripcion comprar-curso">ADQUIRIR</button>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!--CONTENIDOS POR CLASE-->
+        <section class="contenidos-por-clase">
+            <h2>CONTENIDO POR CLASE :</h2>
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                <label for="btn-acordeon1">
+                    Introduccion:
+                </label>
+                <div class="contenido-acordeon">
+                    <p>
+                        En esta sección, se presentarán los conceptos básicos del diseño web y la importancia de CSS en
+                        la creación de páginas visualmente atractivas.
+                        Los estudiantes se familiarizarán con el entorno de desarrollo y las herramientas necesarias
+                        para comenzar a trabajar con CSS.
+                    </p>
+                </div>
+            </div>
+
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                <label for="btn-acordeon2">
+                    Unidad 1: Selectores y Propiedades
+                </label>
+                <div class="contenido-acordeon">
+                    <p>
+                        Los participantes explorarán los diferentes tipos de selectores en CSS y cómo aplicarlos a los
+                        elementos HTML.
+                        Se abordarán propiedades esenciales como color, fuente, márgenes y relleno, permitiendo a los
+                        estudiantes personalizar la apariencia de sus páginas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                <label for="btn-acordeon3">
+                    Unidad 2: Layouts y Modelos de Caja
+                </label>
+                <div class="contenido-acordeon">
+                    <p>
+                        En esta unidad, se estudiarán las técnicas de diseño de layouts utilizando CSS.
+                        Se explicarán conceptos como el modelo de caja, display, y la utilización de Flexbox y Grid para
+                        crear
+                        estructuras de diseño responsivas y efectivas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                <label for="btn-acordeon4">
+                    Unidad 3: Animaciones y Transiciones
+
+                </label>
+                <div class="contenido-acordeon">
+                    <p>
+                        Los estudiantes aprenderán sobre la creación de animaciones y transiciones en CSS.
+                        Se abordará cómo aplicar efectos visuales para mejorar la experiencia del usuario y hacer
+                        que las páginas web sean más interactivas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!--Profesor-->
+        <section class="apartado-profesor">
+            <img class="imagen-profesor" src="../img/profesor-max-wright.webp" alt="profesor-max-wright">
+            <section class="texto-profesor">
+                <h3> <strong>Max Wright :</strong></h3>
+                <div class="estrellitas">
+                    <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                    <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                    <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                    <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                    <img class="estrella" src="../img/star-openmoji.webp" alt="imagen-valoracion">
+                </div>
+                <p>Max Wright es un reconocido especialista en diseño web con amplia experiencia en el uso y enseñanza
+                    de CSS.
+                    A lo largo de su carrera, ha sido una figura clave en la creación de interfaces visuales impactantes
+                    y funcionales,
+                    capacitando a cientos de estudiantes para dominar el arte del diseño web. Su enfoque innovador y su
+                    dominio de las últimas
+                    técnicas de CSS lo han posicionado como uno de los mejores maestros en esta área. Max es conocido
+                    por su capacidad para simplificar
+                    conceptos avanzados, brindando a sus alumnos las herramientas necesarias para crear proyectos
+                    profesionales y
+                    visualmente impresionantes.</p>
+            </section>
+        </section>
+
+
+        <!--MAS CURSOS-->
+        <div class="mas-cursos">
+            <div class="curso-css">
+                <figure>
+                    <img src="../img/cursos/Curso Python.webp" alt="imagen-curso-python">
+                </figure>
+                <div class="contenido">
+                    <h2>Curso De Python </h2>
+                    <p>
+                        El mejor curso de Python con aplicaciones del mundo real (Automatización, Data Science, Web y
+                        más).
+                        Flask, Django, Pandas, NumPy y mucho más!
+                    </p>
+                    <a href="./pagina-python.html">Ir Al Curso.</a>
+                </div>
+            </div>
+            <div class="curso-css">
+                <figure>
+                    <img src="../img/cursos/curso-html.webp" alt="imagen-curso-html">
+                </figure>
+                <div class="contenido">
+                    <h2>Curso De HTML </h2>
+                    <p>
+                        Aprende HTML 5 y crea tus primeras páginas web paso a paso con decenas de ejercicios.
+                        Empieza en el desarrollo web aquí
+                    </p>
+                    <a href="./pagina-html.html">Ir Al Curso.</a>
+                </div>
+            </div>
+            <div class="curso-css">
+                <figure>
+                    <img src="../img/cursos/curso-java.webp" alt="imagen-curso-java">
+                </figure>
+                <div class="contenido">
+                    <h2>Curso De JAVA </h2>
+                    <p>
+                        El mejor curso Java con aplicaciones del mundo real (Escritorio, Web y Full Stack) Spring,
+                        Hibernate, Jakarta EE y más!
+                    </p>
+                    <a href="./pagina-java.html">Ir Al Curso.</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--aca termina python -->
+    <footer class="footer">
+        <section class="datos-grupo">
+            <h3 class="datos-grupo-titulo">Datos </h3>
+            <ul class="datos-grupo-lista">
+                <li>Lautaro Caprino - DNI: 47164463</li>
+                <li>Lucas Agustín García - DNI: 46288646</li>
+                <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
+                <li>Ramiro Matias Bruzon - DNI: 37990199</li>
+            </ul>
+        </section>
+
+        <section class="menu-inferior">
+            <h3>Menu inferior</h3>
+            <ul class="menu-inferior-lista">
+                <li><a href="./cursos.html"> Cursos </a></li>
+                <li><a href="./calendario.html"> Proximos cursos </a></li>
+                <li><a href="./giftCard.html"> Gift Card </a></li>
+                <li><a href="./formuEmpresas.html">Cursos para Empresas</a></li>
+                <li><a href="./contacto.html"> Contacto </a></li>
+            </ul>
+        </section>
+
+        <section class="redes-sociales">
+            <h3>Redes sociales</h3>
+            <ul class="redes-sociales-lista">
+                <li>
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg"
+                            alt="instagram">Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg"
+                            alt="X">X/Twitter</a>
+                </li>
+                <li>
+
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg"
+                            alt="Youtuber">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg"
+                            alt="mail">Gwyn@lordOfCinder.com</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
+    <script src="../JavaScript/comprarCurso.js"></script>
+    <script src="../JavaScript/Comprar.js"></script>
+</body>

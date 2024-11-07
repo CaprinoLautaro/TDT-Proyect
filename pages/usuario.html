@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
+    <link rel="stylesheet" href="../styles/pagina-usuario.css">
+    <title>Usuario</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- 1er barra de navegacion -->
+        <section class="navBar-sup">
+            <nav class="navBar1">
+                <section class="navBar1_elements">
+                    <!-- LOGO -->
+                    <a href="../index.html">
+                        <img class="logo" src="../img/icono.png" alt="logo">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="busqueda" method="get" action="https://www.google.com.ar">
+                        <p class="textoBusqueda">Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search">
+                        <button class="boton-lupa" type="submit">
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar">
+                        </button>
+                    </form>
+                    <!-- BOTONES DE INICIO Y REGISTRO -->
+                    <div>
+                        <ul class="botones-navBar1">
+                            <li>
+                                <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
+                            </li>
+                            <li>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro"
+                                    href="./usuario.html"> Mi Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CARRITO DE COMPRAS -->
+                    <a class="carrito" href="./carrito.html">
+                        <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
+                        
+                    </a>
+                </section>
+            </nav>
+        </section><!-- aca termina la 1er barra de nav -->
+
+        <!-- 2da BARRA- MENU -->
+        <section class="navBar-inf">
+            <nav class="navBar2">
+                <ul class="navBar2_elements">
+
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="./calendario.html">Próximos cursos </a></li>
+                    <li><a href="./giftCard.html">Gift Card</a></li>
+
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div clas="info-titulo">
+                <h2 class="titulo">BIENVENIDO A TU CUENTA </h2>
+                <h2 class="titulo nombre-usuario" id="nameOfUser"></h2>
+            </div>
+            <div class="info-cuenta">
+                <div class="info-name">
+                    <p class="texto"> Nombre de la cuenta : </p>
+                    <p class="texto" id="nameOfUserText"></p>
+                </div>
+                <div class="info-name">
+                    <p class="texto"> mail del usuario :</p>
+                    <p class="texto" id="mailOfUser"></p>
+                </div>
+            </div>
+
+            <p class="texto"> DISFRUTE DE SU ESTADIA POR LA ACADEMIA </p>
+
+            <div class="lista-botones">
+                <button class="boton" id="logoutButton"> Cerrar Sesion </button>
+                <button class="boton" id="eliminateButton"> Eliminar cuenta </button>
+            </div>
+        </section>
+
+        <div class="modal modal-js">
+            <div class="modal-content">
+                <h3>¿Estas seguro de eliminar tu cuenta?</h3>
+                <p>Esta accion no se puede deshacer.</p>
+                <button class="modal-button confirm confirmDelete-js">Si, eliminar</button>
+                <button class="modal-button cancel cancelDelete-js"> cancelar </button>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <section class="datos-grupo">
+            <h3 class="datos-grupo-titulo">Datos </h3>
+            <ul class="datos-grupo-lista">
+                <li>Lautaro Caprino - DNI: 47164463</li>
+                <li>Lucas Agustín García - DNI: 46288646</li>
+                <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
+                <li>Ramiro Matias Bruzon - DNI: 37990199</li>
+            </ul>
+        </section>
+
+        <section class="menu-inferior">
+            <h3>Menu inferior</h3>
+            <ul class="menu-inferior-lista">
+                <li><a href="./cursos.html"> Cursos </a></li>
+                <li><a href="./calendario.html"> Proximos cursos </a></li>
+                <li><a href="./giftCard.html"> Gift Card </a></li>
+            
+                <li><a href="./contacto.html"> Contacto </a></li>
+            </ul>
+        </section>
+
+        <section class="redes-sociales">
+            <h3>Redes sociales</h3>
+            <ul class="redes-sociales-lista">
+                <li>
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg"
+                            alt="instagram">Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg"
+                            alt="X">X/Twitter</a>
+                </li>
+                <li>
+
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg"
+                            alt="Youtuber">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg"
+                            alt="mail">Gwyn@lordOfCinder.com</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="../JavaScript/usuario.js"></script>
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
+</body>
+
+</html>

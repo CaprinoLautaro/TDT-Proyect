@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/inicio_Styles.css">
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
+    <title>inicio-sesion</title>
+</head>
+
+<body id="principal">
+
+    <main>
+        <section class="form-login">
+            <h3 id="formTittle">INICIAR SESION</h3>
+            <form action="" method="post" id="loginForm" >
+                        <input class="controls" type="text" placeholder="Usuario" id="loginName">
+                        <input class="controls" type="password"  placeholder="Contraseña" id="loginPassword">
+                    <button type="submit" class="buttons">Ingresar</button>
+            </form>
+            <button type="submit"  id="logoutButton" class="buttons logout-button">CERRAR SESION</button>
+            <p class="warnings" id="loginWarnings"></p>
+            <p>¿No tienes una cuenta? <a class="link" href="./registro.html">Registrate</a></p>
+        </section>
+    </main>
+
+    <script src="../JavaScript/InicioSesion.js"></script>
+</body>
+
+</html>

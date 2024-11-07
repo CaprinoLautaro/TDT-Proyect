@@ -1,0 +1,232 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shorcut icon" href="../img/icono.ico">
+    <title>The Dream Team page</title>
+
+    <link rel="stylesheet" href="../styles/header-footer-style.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <!-- 1er barra de navegacion -->
+        <section class="navBar-sup">
+            <nav class="navBar1">
+                <section class="navBar1_elements">
+                    <!-- LOGO -->
+                    <a href="./index.html">
+                        <img class="logo" src="../img/icono.png" alt="logo">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="busqueda" method="get" action="https://www.google.com.ar">
+                        <p class="textoBusqueda">Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search">
+                        <button class="boton-lupa" type="submit">
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar">
+                        </button>
+                    </form>
+                    <!-- BOTONES DE INICIO Y REGISTRO -->
+                    <div>
+                        <ul class="botones-navBar1">
+                            <li>
+                                <a id="loginLink" class="botones-navBar1-Inicio" href="./pages/inicioSesion.html"> Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a id="registerLink" class="botones-navBar1-Registro" href="./pages/registro.html">Registrarse</a>
+                            </li>
+                            <li>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./pages/usuario.html"> Mi Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CARRITO DE COMPRAS -->
+                    <button class="carrito carrito-js"><!--CARRITO DE COMPRAS -->
+                        <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
+                    </button>
+                </section>
+            </nav>
+        </section><!-- aca termina la 1er barra de nav -->
+
+        <!-- 2da BARRA- MENU -->
+        <section class="navBar-inf">
+            <nav class="navBar2">
+                <ul class="navBar2_elements">
+
+                    <li><a href="./pages/cursos.html">Cursos</a></li>
+                    <li><a href="./pages/calendario.html">Próximos cursos </a></li>
+                    <li><a href="./pages/giftCard.html">Gift Card</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <main class="main"><!--carrusel-->
+        <section class="contenedor">
+            <div class="boton-atras">
+                &#60
+            </div>
+            <img src="img/cursos/curso python1.jpg" alt="imagen-curso-python" id="imagen-python">
+            <div class="boton-adelante">
+                &#62 
+            </div>
+            
+        <!--xd-->
+        
+        </section><!--fin carrusel, se puede re-hacer esta seccion ? -->
+
+
+
+
+        <section class="pasos">
+
+            <div class="pasos-a-seguir">
+                <a class="pasos-a-seguir-img" href="./pages/inicioSesion.html"> <img src="../img/paso1b.png" alt="paso1"></a>
+                <a class="pasos-a-seguir-img" href="./pages/cursos.html"> <img src="../img/paso2b.jpeg" alt="paso2"></a>
+                <a class="pasos-a-seguir-img" href="#"> <img src="../img/paso3b.jpeg" alt="paso3"></a>
+            </div>
+
+        </section>
+
+        <h2>CURSOS DESTACADOS</h2>
+
+        <section class="cursos-grilla">
+
+            <!-- Curso Online - CSS -->
+            <div class="clase">
+                <a href="./pages/pagina-css.html"> <img src="./img/cursos/curso-css.webp" alt="Imagen-clase"></a>
+                <h3>Curso de diseño con CSS - Online</h3>
+                <p>Max Wright</p>
+                <p>Aprende a diseñar sitios web con CSS, ideal para quienes inician en el desarrollo web.</p>
+                <a class="link" href="./pages/pagina-css.html">Más información</a>
+            </div>
+        
+            <!-- Curso Presencial - Photoshop e Illustrator -->
+            <div class="clase">
+                <a href="./curso-presencial-adobe.html"><img src="../img/presenciales/curso-adobe.webp" alt="Imagen-clase"></a>
+                <h3>Curso de Photoshop e Illustrator - Presencial</h3>
+                <p>Minerva McGonagall</p>
+                <p>Domina herramientas de diseño gráfico profesional con Photoshop e Illustrator.</p>
+                <a class="link" href="./pages/curso-presencial-adobe.html">Más información</a>
+            </div>
+        
+            <!-- Curso Online - HTML -->
+            <div class="clase">
+                <a href="./pages/pagina-html.html"><img src="./img/cursos/curso-html.webp" alt="Imagen-clase"></a>
+                <h3>Curso HTML Avanzado a Experto - Online</h3>
+                <p>Charles Xavier</p>
+                <p>Desarrolla habilidades avanzadas en HTML para construir sitios web modernos y optimizados.</p>
+                <a class="link" href="./pages/pagina-html.html">Más información</a>
+            </div>
+        
+            <!-- Curso Presencial - Office -->
+            <div class="clase">
+                <a href="./curso-presencial-office.html"><img src="../img/presenciales/curso-office.webp" alt="Imagen-clase"></a>
+                <h3>Curso de Office - Presencial</h3>
+                <p>Albus Dumbledore</p>
+                <p>Domina herramientas de productividad como Word, Excel y PowerPoint para el entorno laboral.</p>
+                <a class="link" href="./pages/curso-presencial-office.html">Más información</a>
+            </div>
+        
+            <!-- Curso Online - PHP -->
+            <div class="clase">
+                <a href="./pages/pagina-php.html"><img src="./img/cursos/curso-php.webp" alt="Imagen-clase"></a>
+                <h3>Curso básico de PHP - Online</h3>
+                <p>Hidetaka Miyazaki</p>
+                <p>Inicia tu aprendizaje en desarrollo backend y manejo de bases de datos con PHP.</p>
+                <a class="link" href="./pages/pagina-php.html">Más información</a>
+            </div>
+        
+            <!-- Curso Presencial - Python -->
+            <div class="clase">
+                <a href="./curso-presencial-python.html"><img src="../img/presenciales/Curso Python.webp" alt="Imagen-clase"></a>
+                <h3>Curso de Python -Presencial</h3>
+                <p>Severus Snape</p>
+                <p>Aprende los fundamentos de programación con Python, ideal para principiantes.</p>
+                <a class="link" href="./pages/curso-presencial-python.html">Más información</a>
+            </div>
+        </section>
+
+        <section class="medios-de-pago">
+            <h2>MEDIOS DE PAGO</h2>
+            <div class="medios-de-pago-slider">
+                <a class=flechas-img href="#"><img src="../img/flechaIzq.png" alt="flechaIzq"></a>
+                <section>
+                    <ul class="medios-de-pago-lista">
+                        <li> <img src="../img/medios de pago/cdni.jpg" alt="Cuenta dni"></li>
+                        <li><img src="../img/medios de pago/mp.png" alt="Mercado pago"></li>
+                        <li><img src="../img/medios de pago/provnet.jpg" alt="Provincia net"></li>
+                        <li><img src="../img/medios de pago/rappi.png" alt="Rappi pago"></li>
+                    </ul>
+                </section>
+                <a class="flechas-img" href="#"><img src="../img/flechaDer.png" alt="flechaDer"></a>
+
+            </div>
+
+        </section>
+        <div class="imagen-final">
+            <img class="imagen-final-logo" src="../img/banner ajustado.png" alt="imagen con logo">
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <section class="datos-grupo">
+            <h3 class="datos-grupo-titulo">Datos </h3>
+            <ul class="datos-grupo-lista">
+                <li>Lautaro Caprino - DNI: 47164463</li>
+                <li>Lucas Agustín García - DNI: 46288646</li>
+                <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
+                <li>Ramiro Matias Bruzon - DNI: 37990199</li>
+            </ul>
+        </section>
+
+        <section class="menu-inferior">
+            <h3>Menu inferior</h3>
+            <ul class="menu-inferior-lista">
+                <li><a href="./pages/cursos.html"> Cursos </a></li>
+                <li><a href="./pages/calendario.html"> Proximos cursos </a></li>
+                <li><a href="./pages/giftCard.html"> Gift Card </a></li>
+                
+                <li><a href="./pages/contacto.html"> Contacto </a></li>
+
+
+            </ul>
+        </section>
+
+        <section class="redes-sociales">
+            <h3>Redes sociales</h3>
+            <ul class="redes-sociales-lista">
+                <li>
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg"
+                            alt="instagram">Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg"
+                            alt="X">X/Twitter</a>
+                </li>
+                <li>
+
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg"
+                            alt="Youtuber">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg"
+                            alt="mail">Gwyn@lordOfCinder.com</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/VerificacionDeRegistroCarrito.js"></script>
+    <script src="/JavaScript/carrusel.js"></script>
+    <script src="./JavaScript/Comprar.js"></script>
+</body>
+
+</html>

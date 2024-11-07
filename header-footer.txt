@@ -1,0 +1,102 @@
+COPIAR ESTO EN LAS DEMAS PAGINAS Y LINKEAR A 
+<link rel="stylesheet" href="../styles/header-footer-style.css">    
+    
+TAMBIEN AGREGAR EL ICONO EN EL HEAD PARA QUE APAREZCA EN LA SOLAPA DE LA PAGINA
+<link rel="shorcut icon" href="../img/icono.ico">
+
+
+    <header class="header">
+        <!-- 1er barra de navegacion -->
+        <section class="navBar-sup">
+            <nav class="navBar1">
+                <section class="navBar1_elements">
+                    <!-- LOGO -->
+                    <a href="./pag-principal.html">
+                        <img class="logo" src="../img/icono.png"  alt="logo">
+                    </a>
+                    <!-- BUSQUEDA -->
+                    <form class="busqueda" method="get" action="https://www.google.com.ar">
+                        <p class="textoBusqueda" >Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
+                        <button  class="boton-lupa" type="submit" >
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
+                        </button>
+                    </form>
+                    <!-- BOTONES DE INICIO Y REGISTRO -->
+                    <div >
+                        <ul class="botones-navBar1">
+                            <li>
+                                <a class="botones-navBar1-Inicio" href="../index.html"> Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CARRITO DE COMPRAS -->
+                    <a class="carrito" href="#">
+                        <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
+                        <p class="numero-carrito">0</p>
+                    </a>
+                </section>
+            </nav>
+        </section><!-- aca termina la 1er barra de nav -->
+       
+        <!-- 2da BARRA- MENU -->
+        <section class="navBar-inf">
+            <nav class="navBar2">
+                <ul class="navBar2_elements">
+                    <li><a href="./pag-principal.html">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="./calendario.html">Próximos cursos </a></li>
+                    <li><a href="./giftCard.html">Gift Card</a></li>
+                    <li><a href="./formuEmpresas.html">Inscripcion Empresas</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+    <footer class="footer">
+        <section class="datos-grupo">
+            <h3 class="datos-grupo-titulo">Datos </h3>
+            <ul class="datos-grupo-lista">
+                <li>Lautaro Caprino - DNI: 47164463</li>
+                <li>Lucas Agustín García - DNI: 46288646</li> 
+                <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
+                <li>Ramiro Matias Bruzon - DNI: 37990199</li>
+            </ul>
+        </section>
+
+       <section class="menu-inferior">
+            <h3>Menu inferior</h3>
+            <ul class="menu-inferior-lista">
+                <li><a href="#"> Clases </a></li>
+                <li><a href="./calendario.html"> Proximos cursos </a></li>
+                <li><a href="./giftCard.html"> Gift Card </a></li>
+                <li><a href="#"> Cursos para empresas </a></li>
+                <li><a href="./contacto.html"> Contacto </a></li>
+            </ul>
+       </section>
+
+       <section class="redes-sociales">
+            <h3>Redes sociales</h3>
+            <ul class="redes-sociales-lista">
+                <li>
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg" alt="instagram">Instagram 
+                    </a>
+                </li>
+                <li>  
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg" alt="X">X/Twitter</a>
+                </li>
+                <li>
+                    
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber">Youtube</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
+                </li>
+            </ul>
+       </section>
+    </footer>
