@@ -1,93 +1,57 @@
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function() {
+    const charCount = document.getElementById("char-count");
+    const consultaTextarea = document.getElementById("consulta");
+    const popup = document.getElementById("popup");
+    const popupButton = document.getElementById("popupButton");
     const form = document.querySelector("form");
-    const nameInput = document.getElementById("name");
-    const lastNameInput = document.getElementById("last_name");
-    const emailInput = document.getElementById("email");
-    const phoneInput = document.getElementById("telefono");
-    const consultaInput = document.getElementById("consulta");
 
-    form.addEventListener("submit", function(event) { 
-        event.preventDefault();
+    // muestra el popup cuando se manda el formulario
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // evita el envío del formulario
 
-        if (validateForm()) {
-            showPopup("Consulta enviada", "Aceptar");
+        // validaciones de cada campo
+        const nombre = document.getElementById("name").value.trim();
+        const apellido = document.getElementById("last_name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        
+        // validación de nombre y apellido
+        if (nombre === "" || apellido === "") {
+            alert("Nombre y apellido son obligatorios.");
+            return;
         }
-    });
-
-    consultaInput.addEventListener("input", function() { 
-        updateCharacterCount();
-    });
-
-    function validateForm() {
-        let isValid = true;
-
-        if (!nameInput.value.trim()) {
-            alert("El campo 'Nombre' no puede estar vacío.");
-            isValid = false;
-        }
-
-        if (!lastNameInput.value.trim()) {
-            alert("El campo 'Apellido' no puede estar vacío.");
-            isValid = false;
-        }
-
-        if (!validateEmail(emailInput.value)) {
-            alert("El campo 'E-Mail' no tiene un formato válido.");
-            isValid = false;
-        }
-
-        if (phoneInput.value && !validatePhone(phoneInput.value)) {
-            alert("El campo 'Teléfono' debe contener 8 dígitos y opcionalmente un guión en la posición correcta.");
-            isValid = false;
-        }
-
-        if (consultaInput.value.length > 1000) {
-            alert("El campo 'Consulta' no puede exceder los 1000 caracteres.");
-            isValid = false;
-        }
-
-        return isValid;
-    }
-
-    function validateEmail(email) {
+        
+        // validación de mail
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-
-    function validatePhone(phone) {
-        const phoneRegex = /^\d{4}-?\d{4}$/;
-        return phoneRegex.test(phone);
-    }
-
-    function updateCharacterCount() {
-        const maxLength = 1000;
-        const currentLength = consultaInput.value.length;
-        const remainingCharacters = maxLength - currentLength;
-
-        let counterElement = document.getElementById("characterCounter");
-        if (!counterElement) {
-            counterElement = document.createElement("p");
-            counterElement.id = "characterCounter";
-            consultaInput.parentNode.appendChild(counterElement);
+        if (!emailRegex.test(email)) {
+            alert("Por favor, introduce un correo electrónico válido.");
+            return;
         }
-        counterElement.textContent = `Caracteres restantes: ${remainingCharacters}`;
-    }
 
-    function showPopup(message, buttonText) {
-        const popup = document.createElement("div");
-        popup.classList.add("popup");
+        // validacion de telefono
+        const telefonoRegex = /^(\d{4}-\d{4}|\d{8})$/;
+        if (telefono && !telefonoRegex.test(telefono)) {
+            alert("El teléfono debe tener 8 dígitos, opcionalmente con un guion (por ejemplo, 1234-5678 o 12345678).");
+            return;
+        }
 
-        popup.innerHTML = `
-            <p>${message}</p>
-            <button id="popupButton">${buttonText}</button>
-        `;
+        // si todas las validaciones son correctas, muestra el popup
+        popup.classList.add("show");
+    });
 
-        document.body.appendChild(popup);
+    // Ocultar el popup y redirigir al hacer clic en el botón de cierre
+    popupButton.addEventListener("click", function() {
+        popup.classList.remove("show");
+        // espera un poco para la transición, luego recarga la página
+        setTimeout(function() {
+            window.location.href = "../index.html"; // redirige
+        }, 300); 
+    });
 
-        const popupButton = document.getElementById("popupButton");
-        popupButton.addEventListener("click", function() {
-            document.body.removeChild(popup);
-            window.location.href = "../index.html";
-        });
-    }
+    // Actualiza el conteo de caracteres
+    consultaTextarea.addEventListener("input", function() {
+        const maxChars = 1000;
+        const remainingChars = maxChars - consultaTextarea.value.length;
+        charCount.textContent = `Caracteres restantes: ${remainingChars}`;
+    });
 });
