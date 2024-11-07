@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
     <link rel="shorcut icon" href="../img/icono.ico">
 
-    <link rel="stylesheet" href="../styles/contacto.css"/>
+    <link rel="stylesheet" href="../styles/contacto.css" />
     <link rel="stylesheet" href="../styles/header-footer-style.css">
 </head>
 
 <body id="principal">
-
-
     <header class="header">
         <!-- 1er barra de navegacion -->
         <section class="navBar-sup">
@@ -20,18 +19,18 @@
                 <section class="navBar1_elements">
                     <!-- LOGO -->
                     <a href="../index.html">
-                        <img class="logo" src="../img/icono.png"  alt="logo">
+                        <img class="logo" src="../img/icono.png" alt="logo">
                     </a>
                     <!-- BUSQUEDA -->
                     <form class="busqueda" method="get" action="https://www.google.com.ar">
-                        <p class="textoBusqueda" >Buscar:</p>
-                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search" >
-                        <button  class="boton-lupa" type="submit" >
-                            <img class="lupa-img" src="../img/lupa.png" alt="buscar"> 
+                        <p class="textoBusqueda">Buscar:</p>
+                        <input class="inputBusqueda" type="search" placeholder="Ingrese su busqueda" id="search">
+                        <button class="boton-lupa" type="submit">
+                            <img class="lupa-img" src="../img/lupa.png" alt="buscar">
                         </button>
                     </form>
                     <!-- BOTONES DE INICIO Y REGISTRO -->
-                    <div >
+                    <div>
                         <ul class="botones-navBar1">
                             <li>
                                 <a class="botones-navBar1-Inicio" href="./inicioSesion.html"> Iniciar Sesion</a>
@@ -39,26 +38,29 @@
                             <li>
                                 <a class="botones-navBar1-Registro" href="./registro.html">Registrarse</a>
                             </li>
+                            <li>
+                                <a id="userInfoLink" class="botones-navBar1-cuenta botones-navBar1-Registro" href="./usuario.html"> Mi Cuenta</a>
+                            </li>
                         </ul>
                     </div>
                     <!-- CARRITO DE COMPRAS -->
                     <a class="carrito" href="./carrito.html">
-                        <img class="imgCarrito" src="../img/carrito de compras.png"  alt="carrito-compras">
-                        <p class="numero-carrito">0</p>
+                        <img class="imgCarrito" src="../img/carrito de compras.png" alt="carrito-compras">
+                        <p class="numero-carrito"></p>
                     </a>
                 </section>
             </nav>
         </section><!-- aca termina la 1er barra de nav -->
-    
+
         <!-- 2da BARRA- MENU -->
         <section class="navBar-inf">
             <nav class="navBar2">
                 <ul class="navBar2_elements">
-                    
+
                     <li><a href="./cursos.html">Cursos</a></li>
                     <li><a href="./calendario.html">Próximos cursos </a></li>
                     <li><a href="./giftCard.html">Gift Card</a></li>
-                    <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
+
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -115,12 +117,12 @@
 
     </main>
 
-        <footer class="footer">
+    <footer class="footer">
         <section class="datos-grupo">
             <h3 class="datos-grupo-titulo">Datos </h3>
             <ul class="datos-grupo-lista">
                 <li>Lautaro Caprino - DNI: 47164463</li>
-                <li>Lucas Agustín García - DNI: 46288646</li> 
+                <li>Lucas Agustín García - DNI: 46288646</li>
                 <li>Rocío Verónica Campagnoli - DNI: 37659747</li>
                 <li>Ramiro Matias Bruzon - DNI: 37990199</li>
             </ul>
@@ -135,34 +137,36 @@
                 <li><a href="./cursosEmpre.html">Cursos para Empresas</a></li>
                 <li><a href="./contacto.html"> Contacto </a></li>
             </ul>
-         </section>
+        </section>
 
         <section class="redes-sociales">
             <h3>Redes sociales</h3>
             <ul class="redes-sociales-lista">
                 <li>
-                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg" alt="instagram">Instagram 
+                    <a href="https://www.instagram.com/unlamoficial/"><img src="../img/instagram-stroke-rounded.svg"
+                            alt="instagram">Instagram
                     </a>
                 </li>
-                <li>  
-                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg" alt="X">X/Twitter</a>
+                <li>
+                    <a href="https://x.com/DarkSoulsGame"><img src="../img/new-twitter-stroke-rounded.svg"
+                            alt="X">X/Twitter</a>
                 </li>
                 <li>
-                    
-                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg" alt="Youtuber">Youtube</a>
+
+                    <a href="https://www.youtube.com/@soydalto"><img src="../img/youtube-stroke-rounded.svg"
+                            alt="Youtuber">Youtube</a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg" alt="mail">Gwyn@lordOfCinder.com</a>
+                    <a href="https://www.youtube.com/watch?v=hYpFePDkEo8"><img src="../img/mail-01-stroke-rounded.svg"
+                            alt="mail">Gwyn@lordOfCinder.com</a>
                 </li>
             </ul>
         </section>
     </footer>
-
-
-
-    <script src="../JS/Contacto.js"></script>
-
-
-
+    <script src="../JavaScript/contacto.js"></script>
+    <script src="../JavaScript/Comprar.js"></script>
+    <script src="../JavaScript/main.js"></script>
+    <script src="../JavaScript/VerificacionDeRegistroCarrito.js"></script>
 </body>
+
 </html>

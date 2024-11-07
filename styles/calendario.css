@@ -1,29 +1,30 @@
-* {
+
+*{
     text-decoration: none;
 }
 
 
-body {
+body{
     color: var(--color--texto);
     box-sizing: border-box;
 
 }
 
-:root {
+:root{
     --color--principal: #3db0fa;
     --color--texto: #020202;
     --color--secundario: #f9f7ff;
     --color--tercero: #03112b;
 }
 
-a {
+a{
     color: var(--color--texto);
 }
 
 
 
 
-.calendar-container {
+.calendar-container{
     width: 100%;
     max-width: 75rem;
     background-color: white;
@@ -31,29 +32,27 @@ a {
     margin: 2rem auto;
     border-radius: 0.625rem;
 }
-
-.calendar-header {
+.calendar-header{
     text-align: center;
     padding: 1.2rem 0;
     border-bottom: 0.2rem solid #aaa;
     color: #03112b;
 
 }
-
-.calendar-hearder h1 {
+.calendar-hearder h1{
     font-size: 1.1rem;
     margin: 0;
-
+    
 }
 
-.calendar-header p {
+.calendar-header p{
     font-size: 0.8rem;
     margin: 0.3rem;
     font-weight: bold;
-
+    
 }
 
-.calendar {
+.calendar{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(7, minmax(7.5rem, 1fr));
@@ -62,7 +61,7 @@ a {
     color: var(--color--texto);
 }
 
-.day {
+.day{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -75,7 +74,7 @@ a {
     justify-items: center;
 }
 
-.day-name {
+.day-name{
     font-size: 0.8rem;
     text-transform: uppercase;
     color: var(--color--tercero);
@@ -85,24 +84,23 @@ a {
     border-bottom: 0.0625rem solid #aaa;
 }
 
-.day:nth-of-type(7n + 7) {
+.day:nth-of-type(7n + 7){
     border-right: none;
 }
 
-.day-disabled {
+.day-disabled{
     background-color: #0b0c25ad;
     cursor: not-allowed;
 }
 
-.task {
+.task{
     background-color: var(--color--principal);
     border-radius: 0.4rem;
     padding: 0.2rem;
     color: var(--color--texto);
     text-decoration: none;
 }
-
-.task p {
+.task p{
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -154,13 +152,13 @@ a {
 .btn-abrir {
     width: 2rem;
     height: 2rem;
-    background-color: var(--color--principal);
+    background-color:var(--color--principal);
     border-radius: 6px;
     border: none;
-    color: black;
+    color: black; 
 }
 
-.modal {
+ .modal{
     position: fixed;
     z-index: 1000;
     width: 50%;
@@ -180,14 +178,14 @@ a {
     left: 50%;
     opacity: 0;
     transition: opacity 0.3s ease;
-}
+} 
 
-.modal.active {
+.modal.active{
     display: flex;
     opacity: 1;
 }
 
-.modal-info {
+.modal-info{
     color: white;
     text-align: center;
 }
@@ -195,27 +193,19 @@ a {
 
 /* Estilos para el modal */
 .modal h2 {
-    font-size: 2rem;
-    /* Tamaño de fuente grande */
-    font-weight: 700;
-    /* Negrita para destacarlo */
-    text-align: center;
-    /* Centrar el texto */
-    margin-bottom: 1.5rem;
-    /* Espacio debajo del título */
+    font-size: 2rem; /* Tamaño de fuente grande */
+    font-weight: 700; /* Negrita para destacarlo */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 1.5rem; /* Espacio debajo del título */
 }
 
 /* Estilos para el párrafo de información general */
 #info {
-    font-size: 1.1rem;
-    /* Tamaño de fuente mayor que el predeterminado */
-    line-height: 1.6;
-    /* Mejorar la legibilidad */
-    margin-bottom: 1rem;
-    /* Separación debajo de info */
+    font-size: 1.1rem; /* Tamaño de fuente mayor que el predeterminado */
+    line-height: 1.6; /* Mejorar la legibilidad */
+    margin-bottom: 1rem; /* Separación debajo de info */
     font-weight: 400;
-    text-align: justify;
-    /* Justificar texto para un look más ordenado */
+    text-align: justify; /* Justificar texto para un look más ordenado */
 }
 
 /* Estilos para el párrafo de descripción */
@@ -224,30 +214,27 @@ a {
     line-height: 1.6;
     font-weight: 400;
     text-align: justify;
-    margin-bottom: 1.5rem;
-    /* Espacio debajo de la descripción */
+    margin-bottom: 1.5rem; /* Espacio debajo de la descripción */
 }
 
 /* Botón de cierre */
 .btn-cerrar {
     display: block;
-    margin: 0 auto;
-    /* Centrar el botón */
+    margin: 0 auto; /* Centrar el botón */
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
 }
 
-.botonCerrar {
+.botonCerrar{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
+ 
 
 #botonIr {
-    display: block;
-    /* Cambia a 'block' para que funcione margin auto */
+    display: block; /* Cambia a 'block' para que funcione margin auto */
     color: white;
     background-color: #4CAF50;
     padding: 10px 20px;
@@ -259,17 +246,14 @@ a {
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: auto;
-    max-width: 150px;
-    /* Controla el tamaño máximo del botón */
-    margin: 0 auto;
-    /* Centra el botón horizontalmente */
+    max-width: 150px; /* Controla el tamaño máximo del botón */
+    margin: 0 auto; /* Centra el botón horizontalmente */
 }
 
 
 /* Efecto al pasar el cursor por encima */
 #botonIr:hover {
-    background-color: #45a049;
-    /* Cambia el color de fondo */
+    background-color: #45a049; /* Cambia el color de fondo */
 }
 
 
@@ -277,36 +261,30 @@ a {
 
     /* Estilo del botón para abrir el popup */
     .btn-abrir {
-        position: relative;
-        /* Evitar solapamientos */
-        margin-top: 0.5rem;
-        /* Espacio superior */
-        width: 2.5rem;
-        /* Tamaño adecuado */
+        position: relative; /* Evitar solapamientos */
+        margin-top: 0.5rem; /* Espacio superior */
+        width: 2.5rem; /* Tamaño adecuado */
         height: 2.5rem;
         background-color: var(--color--principal);
         border-radius: 6px;
         border: none;
         color: black;
         cursor: pointer;
-        z-index: 1001;
-        /* Por encima del modal */
+        z-index: 1001; /* Por encima del modal */
     }
 
     /* Estilo del modal */
     .modal {
         position: fixed;
         z-index: 1000;
-        width: 90%;
-        /* Ancho del modal */
+        width: 90%; /* Ancho del modal */
         max-height: 80%;
         overflow-y: auto;
         padding: 15px;
         background-color: gray;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        display: none;
-        /* Oculto inicialmente */
+        display: none; /* Oculto inicialmente */
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
@@ -350,14 +328,12 @@ a {
 
     /* Ajustes de texto en el modal */
     .modal h2 {
-        font-size: 1.5rem;
-        /* Tamaño de fuente del título */
+        font-size: 1.5rem; /* Tamaño de fuente del título */
     }
 
     #info,
     #descripcion {
-        font-size: 1rem;
-        /* Tamaño de fuente de los párrafos */
+        font-size: 1rem; /* Tamaño de fuente de los párrafos */
     }
 
     /* Estilo de los botones dentro del modal */
@@ -381,8 +357,7 @@ a {
 
     .calendar {
         display: grid;
-        width: 100%;
-        /* Ocupa el 100% del ancho del contenedor */
+        width: 100%; /* Ocupa el 100% del ancho del contenedor */
         grid-template-columns: repeat(7, minmax(3.7rem, 1fr));
         grid-template-rows: 5rem;
         grid-auto-rows: 6rem;
@@ -391,40 +366,23 @@ a {
     /* Estilos del modal */
     .modal {
         position: fixed;
-        z-index: 1050;
-        /* Aumenta el z-index para estar encima de todo */
-        width: 80%;
-        /* Ancho del modal en tablet */
-        max-height: 80%;
-        /* Altura máxima del modal */
-        overflow-y: auto;
-        /* Permitir desplazamiento vertical */
-        padding: 20px;
-        /* Espaciado dentro del modal */
-        background-color: gray;
-        /* Color de fondo */
-        border-radius: 8px;
-        /* Bordes redondeados */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        /* Sombra */
-        display: none;
-        /* Oculto inicialmente */
-        transform: translate(-50%, -50%);
-        /* Centrar modal */
-        top: 50%;
-        /* Centrado vertical */
-        left: 50%;
-        /* Centrado horizontal */
-        opacity: 0;
-        /* Opacidad inicial */
-        transition: opacity 0.3s ease;
-        /* Transición suave */
-        flex-direction: column;
-        /* Organizar contenido en columna */
-        justify-content: center;
-        /* Centrado vertical */
-        align-items: center;
-        /* Centrado horizontal */
+        z-index: 1050; /* Aumenta el z-index para estar encima de todo */
+        width: 80%; /* Ancho del modal en tablet */
+        max-height: 80%; /* Altura máxima del modal */
+        overflow-y: auto; /* Permitir desplazamiento vertical */
+        padding: 20px; /* Espaciado dentro del modal */
+        background-color: gray; /* Color de fondo */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        display: none; /* Oculto inicialmente */
+        transform: translate(-50%, -50%); /* Centrar modal */
+        top: 50%; /* Centrado vertical */
+        left: 50%; /* Centrado horizontal */
+        opacity: 0; /* Opacidad inicial */
+        transition: opacity 0.3s ease; /* Transición suave */
+        flex-direction: column; /* Organizar contenido en columna */
+        justify-content: center; /* Centrado vertical */
+        align-items: center; /* Centrado horizontal */
     }
 
     .modal.active {
@@ -503,53 +461,53 @@ a {
 
 
 
-@media screen and (max-width: 40rem) {
-    main {
+@media screen and (max-width: 40rem){
+    main{
         font-size: 0.625rem;
     }
 
-    .calendar-container {
+    .calendar-container{
         width: 100%;
     }
 
-    .calendar {
+    .calendar{
         display: grid;
         width: 90%;
         grid-template-columns: repeat(7, minmax(3.7rem, 1fr));
         grid-template-rows: 3rem;
         grid-auto-rows: 6rem;
-
+        
     }
 
-    .task {
+    .task{
         box-sizing: border-box;
         overflow: hidden;
     }
 
-    .task p {
+    .task p{
         width: 8ch;
         display: none;
     }
 
     .modal {
         position: fixed;
-        z-index: 1000;
-        width: 90%;
-        max-height: 80%;
-        overflow-y: auto;
-        padding: 20px;
+        z-index: 1000; 
+        width: 90%; 
+        max-height: 80%; 
+        overflow-y: auto; 
+        padding: 20px; 
         background-color: gray;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        display: none;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        display: none; 
+        transform: translate(-50%, -50%); 
+        top: 50%; 
+        left: 50%; 
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
     }
 
     .modal.active {
@@ -557,69 +515,69 @@ a {
         opacity: 1;
     }
 
-    /* Estilos para el título del modal */
-    .modal h2 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    /* Estilos para el párrafo de información general */
-    #info {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        margin-bottom: 0.5rem;
-        font-weight: 400;
-        text-align: justify;
-    }
-
-    /* Estilos para el párrafo de descripción */
-    #descripcion {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        font-weight: 400;
-        text-align: justify;
-        margin-bottom: 1rem;
-    }
-
-    /* Botón de cierre */
-    .btn-cerrar {
-        display: block;
-        margin: 0 auto;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-
-    /* Estilos para el contenedor de los botones */
-    .botonCerrar {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    /* Estilo del botón de anotación */
-    #botonIr {
-        display: block;
-        color: white;
-        background-color: #4CAF50;
-        padding: 10px 20px;
-        font-size: 1rem;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        width: auto;
-        max-width: 150px;
-        margin: 0 auto;
-    }
+        /* Estilos para el título del modal */
+        .modal h2 {
+            font-size: 1.5rem;
+            font-weight: 700; 
+            text-align: center; 
+            margin-bottom: 1rem; 
+        }
+    
+        /* Estilos para el párrafo de información general */
+        #info {
+            font-size: 0.9rem;
+            line-height: 1.4; 
+            margin-bottom: 0.5rem; 
+            font-weight: 400; 
+            text-align: justify; 
+        }
+    
+        /* Estilos para el párrafo de descripción */
+        #descripcion {
+            font-size: 0.9rem;
+            line-height: 1.4; 
+            font-weight: 400; 
+            text-align: justify; 
+            margin-bottom: 1rem; 
+        }
+    
+        /* Botón de cierre */
+        .btn-cerrar {
+            display: block; 
+            margin: 0 auto; 
+            padding: 0.5rem 1rem; 
+            font-size: 1rem; 
+            cursor: pointer; 
+        }
+    
+        /* Estilos para el contenedor de los botones */
+        .botonCerrar {
+            display: flex;
+            flex-direction: column; 
+            gap: 1rem; 
+        }
+    
+        /* Estilo del botón de anotación */
+        #botonIr {
+            display: block; 
+            color: white; 
+            background-color: #4CAF50; 
+            padding: 10px 20px; 
+            font-size: 1rem; 
+            text-align: center; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            border: none; 
+            cursor: pointer; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            width: auto; 
+            max-width: 150px; 
+            margin: 0 auto; 
+        }
 }
 
-@media screen and (max-width: 23.4375rem) {
-    .calendar {
+@media screen and (max-width: 23.4375rem){
+    .calendar{
         display: grid;
         width: 90%;
         grid-template-columns: repeat(7, minmax(3.3rem, 1fr));
@@ -628,8 +586,8 @@ a {
 
 }
 
-@media screen and (max-width: 20rem) {
-    .calendar {
+@media screen and (max-width: 20rem){
+    .calendar{
         display: grid;
         width: 90%;
         grid-template-columns: repeat(7, minmax(2.8rem, 1fr));
@@ -637,20 +595,21 @@ a {
     }
 
     .modal-info h2 {
-        font-size: 1.2rem;
-        /* Tamaño adicionalmente reducido del título */
+        font-size: 1.2rem; /* Tamaño adicionalmente reducido del título */
     }
 
     .modal-info p {
-        font-size: 0.8rem;
-        /* Tamaño adicionalmente reducido del párrafo */
+        font-size: 0.8rem; /* Tamaño adicionalmente reducido del párrafo */
     }
 
     @media screen and (min-width: 26.25rem) and (max-width: 40rem) {
         .calendar {
             width: 100%;
-            grid-template-columns: repeat(7, minmax(3.7rem, 1fr));
-            /* Ajuste de tamaño de columna */
+            grid-template-columns: repeat(7, minmax(3.7rem, 1fr)); /* Ajuste de tamaño de columna */
         }
     }
 }
+
+
+
+

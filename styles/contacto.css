@@ -1,11 +1,11 @@
-.main {
+.main{
     margin: 1em;
-    background-color: rgba(3, 17, 43, 0.8);
+    background-color:rgba(3, 17, 43, 0.8);
     border-radius: 2em;
-    justify-content: center;
+    justify-content: center;   
 }
 
-.titulo {
+.titulo{
     color: white;
     text-transform: uppercase;
     margin-left: 11.5%;
@@ -15,10 +15,8 @@
 /* Estilo para el contenedor de formulario y contacto */
 .contacto-formulario-container {
     display: flex;
-    justify-content: space-between;
-    /* Alinea los elementos con espacio entre ellos */
-    gap: 2rem;
-    /* Espacio entre el formulario y la información de contacto */
+    justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+    gap: 2rem; /* Espacio entre el formulario y la información de contacto */
 }
 
 /* Estilo para el formulario */
@@ -37,8 +35,7 @@
 /* Estilo para la información de contacto */
 .contacto-info {
     margin-right: 10%;
-    width: 30%;
-    /* Ajusta el ancho según sea necesario */
+    width: 30%; /* Ajusta el ancho según sea necesario */
     background-color: var(--color--tercero);
     padding: 1.5rem;
     border-radius: 2rem;
@@ -49,7 +46,7 @@
     align-items: center;
 }
 
-#imagenContacto {
+#imagenContacto{
     padding-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -60,8 +57,7 @@
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario input[type="tel"] {
-    width: 100%;
-    /* Ajusta el ancho a 100% para que se alinee correctamente */
+    width: 100%; /* Ajusta el ancho a 100% para que se alinee correctamente */
     padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ffffff;
@@ -71,16 +67,13 @@
 
 .formulario textarea {
     width: 100%;
-    min-height: 10rem;
-    /* Altura mínima para el campo de consulta */
+    min-height: 10rem; /* Altura mínima para el campo de consulta */
     padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ffffff;
     border-radius: 0.25rem;
-    box-sizing: border-box;
-    /* Incluye el padding y el border en el tamaño total */
-    resize: vertical;
-    /* Permite al usuario ajustar la altura verticalmente */
+    box-sizing: border-box; /* Incluye el padding y el border en el tamaño total */
+    resize: vertical; /* Permite al usuario ajustar la altura verticalmente */
 }
 
 .formulario button {
@@ -99,7 +92,7 @@
     background: var(--color--principal)
 }
 
-#ubi {
+#ubi{
     color: var(--color--secundario);
 }
 
@@ -110,24 +103,22 @@
 }
 
 .mapa img {
-    border: 2px solid #333;
-    /* Borde alrededor del header */
-    border-radius: 8px;
-    /* Bordes redondeados */
+    border: 2px solid #333; /* Borde alrededor del header */
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 
 
-:root {
+ :root{
     --color--principal: #3db0fa;
     --color--texto: #020202;
     --color--secundario: #f9f7ff;
     --color--tercero: #03112b;
-}
+} 
 
 
 
-#popup {
+ #popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -148,8 +139,7 @@
 }
 
 .popup-content {
-    width: 90%;
-    /* Responsive width */
+    width: 90%; /* Responsive width */
     max-width: 600px;
 }
 
@@ -159,119 +149,93 @@
 
 /* --------Responsive Mobile---------- */
 
-@media screen and (max-width: 40rem) {
+    @media screen and (max-width: 40rem) {
 
-    .titulo {
-        margin-left: 0;
-        /* Sin margen en móviles */
-        text-align: center;
-        /* Centrar título en móviles */
-    }
+        .titulo {
+        margin-left: 0; /* Sin margen en móviles */
+        text-align: center; /* Centrar título en móviles */
+        }
 
-    .contacto-formulario-container {
-        flex-direction: column;
-        /* Cambia a columna en dispositivos móviles */
+        .contacto-formulario-container {
+        flex-direction: column; /* Cambia a columna en dispositivos móviles */
         width: 100%;
-    }
+        }
 
-    .formulario,
-    .contacto-info {
-        width: 100%;
-        /* Toma el 100% del ancho en móviles */
-        margin-left: 0;
-        /* Sin margen en móviles */
+        .formulario, .contacto-info {
+        width: 100%; /* Toma el 100% del ancho en móviles */
+        margin-left: 0; /* Sin margen en móviles */
         margin-right: 0;
-    }
+        }
 
-    .mapa img {
-        width: 100%;
-        /* Imagen del mapa ocupa todo el ancho */
-        height: auto;
-        /* Mantiene la proporción */
-    }
+        .mapa img {
+        width: 100%; /* Imagen del mapa ocupa todo el ancho */
+        height: auto; /* Mantiene la proporción */
+        }
 
-    .popup-content {
-        width: 95%;
-        /* Asegura que el popup ocupe un buen porcentaje en pantallas pequeñas */
-        padding: 1rem;
-        /* Menos padding para evitar sobrecargar la pantalla */
+        .popup-content {
+            width: 95%;  /* Asegura que el popup ocupe un buen porcentaje en pantallas pequeñas */
+            padding: 1rem;  /* Menos padding para evitar sobrecargar la pantalla */
+        }
     }
-}
 
 /* --------Responsive Tablet---------- */
 
-@media screen and (min-width: 40rem) and (max-width: 60rem) {
-
+@media screen and (min-width: 40rem) and (max-width: 60rem){
+   
     .titulo {
-        margin-left: 0;
-        /* Sin margen en móviles */
-        text-align: center;
-        /* Centrar título en móviles */
-    }
+        margin-left: 0; /* Sin margen en móviles */
+        text-align: center; /* Centrar título en móviles */
+        }
 
-    .contacto-formulario-container {
-        flex-direction: column;
-        /* Cambia a columna en dispositivos móviles */
+        .contacto-formulario-container {
+        flex-direction: column; /* Cambia a columna en dispositivos móviles */
         width: 100%;
-    }
+        }
 
-    .formulario,
-    .contacto-info {
-        width: 100%;
-        /* Toma el 100% del ancho en móviles */
-        margin-left: 0;
-        /* Sin margen en móviles */
+        .formulario, .contacto-info {
+        width: 100%; /* Toma el 100% del ancho en móviles */
+        margin-left: 0; /* Sin margen en móviles */
         margin-right: 0;
-    }
+        }
 
-    .mapa img {
-        width: 100%;
-        /* Imagen del mapa ocupa todo el ancho */
-        height: auto;
-        /* Mantiene la proporción */
-    }
+        .mapa img {
+        width: 100%; /* Imagen del mapa ocupa todo el ancho */
+        height: auto; /* Mantiene la proporción */
+        }
 
-    .popup-content {
-        width: 85%;
-        /* Ajustamos un poco el tamaño para tablet */
-    }
+        .popup-content {
+            width: 85%;  /* Ajustamos un poco el tamaño para tablet */
+        }
 }
 
 /* --------Responsive compu---------- */
 
 @media screen and (max-width: 64rem) {
-
+   
     .titulo {
-        margin-left: 0;
-        /* Sin margen en móviles */
-        text-align: center;
-        /* Centrar título en móviles */
-    }
+        margin-left: 0; /* Sin margen en móviles */
+        text-align: center; /* Centrar título en móviles */
+        }
 
-    .contacto-formulario-container {
-        flex-direction: column;
-        /* Cambia a columna en dispositivos móviles */
+        .contacto-formulario-container {
+        flex-direction: column; /* Cambia a columna en dispositivos móviles */
         width: 100%;
-    }
+        }
 
-    .formulario,
-    .contacto-info {
-        width: 100%;
-        /* Toma el 100% del ancho en móviles */
-        margin-left: 0;
-        /* Sin margen en móviles */
+        .formulario, .contacto-info {
+        width: 100%; /* Toma el 100% del ancho en móviles */
+        margin-left: 0; /* Sin margen en móviles */
         margin-right: 0;
-    }
+        }
 
-    .mapa img {
-        width: 100%;
-        /* Imagen del mapa ocupa todo el ancho */
-        height: auto;
-        /* Mantiene la proporción */
-    }
+        .mapa img {
+        width: 100%; /* Imagen del mapa ocupa todo el ancho */
+        height: auto; /* Mantiene la proporción */
+        }
 
-    .popup-content {
-        width: 50%;
-        /* En pantallas grandes no necesitamos que el popup sea tan grande */
-    }
+        .popup-content {
+            width: 50%;  /* En pantallas grandes no necesitamos que el popup sea tan grande */
+        }
 }
+
+
