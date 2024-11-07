@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const cursos = [
         {
-            titulo: "Curso De Introduccion A css",
+            titulo: "Curso De Introduccion A CSS",
             valor: 3500,
-            descripcion: "Curso de Introducción a css: aprende los fundamentos de programación con css.Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de datos.",
+            descripcion: "Curso de Introducción a CSS: aprende los fundamentos de programación con css.Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de datos.",
             profesor: "Max Wright",
             imagen: "../img/cursos/curso-css.webp",
             enlace: "./pagina-css.html",
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
         {
-            titulo: "Curso De Introduccion A excel",
+            titulo: "Curso De Introduccion A Excel",
             valor: 5000,
             descripcion: "Curso de Introducción a Excel: aprende los fundamentos de programación con Python. Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de datos.",
             profesor: "Hideo Kojima",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
         {
-            titulo: "Curso De Introduccion A java",
+            titulo: "Curso De Introduccion A JAVA",
             valor: 3499.99,
             descripcion: "Curso de Introducción a JAVA: aprende los fundamentos de programación con Python. Ideal para principiantes, cubrirá variables, estructuras de control, funciones y manejo de datos.",
             profesor: "Lee Sang-Hyeok",
