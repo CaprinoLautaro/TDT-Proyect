@@ -191,3 +191,44 @@ function aplicarDescuento(descuento) {
     totalActual -= descuento;
     totalContainer.innerText = `Total a pagar: $${totalActual.toFixed(2)}`;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const completarPagoButton = document.getElementById("completarPago");
+
+    if (completarPagoButton) {
+        completarPagoButton.addEventListener("click", function () {
+            const loggedUser = sessionStorage.getItem("loggedUser");
+            const userData = JSON.parse(localStorage.getItem(loggedUser));
+
+        
+            if (!userData || !userData.cursosComprados || userData.cursosComprados.length === 0) {
+                alert("El carrito está vacío. No puedes realizar la compra.");
+                return;
+            }
+
+           
+            alert("¡Compra realizada con éxito!");
+
+            vaciarCarrito(userData, loggedUser);
+        });
+    }
+});
+
+// Función para vaciar el carrito
+function vaciarCarrito(userData, loggedUser) {
+    
+    userData.cursosComprados = [];
+    userData.contadorCarrito = 0;
+
+    localStorage.setItem(loggedUser, JSON.stringify(userData));
+
+    actualizarContadorCarrito(userData.contadorCarrito);
+
+    const carritoContainer = document.querySelector('.listaCompra .letraTamanio');
+    const totalContainer = document.querySelector('.total');
+    carritoContainer.innerHTML = "<p>Tu carrito está vacío.</p>";
+    totalContainer.innerText = "Total a pagar: $0";
+
+    
+    location.reload(); 
+}
