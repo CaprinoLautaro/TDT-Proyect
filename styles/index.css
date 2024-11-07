@@ -306,10 +306,6 @@ h2 {
         padding-right: 0;
     }
 
-    .slider-flechas img {
-        width: 3rem;
-    }
-
     .cursos-grilla {
         display: flex;
         flex-direction: column;
@@ -337,17 +333,13 @@ h2 {
 }
 
 /*tablet */
-@media screen and (min-width:40.1rem) and (max-width: 64rem) {
+@media screen and (max-width: 64rem) {
 
     .slider {
         margin: 0.5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between
-    }
-
-    .slider-flechas img {
-        width: 5rem;
     }
 
     .pasos-a-seguir {

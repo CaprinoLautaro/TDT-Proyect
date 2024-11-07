@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const addToCartButton = document.querySelector('.comprar-curso');
     const cursoNombre = document.querySelector('.curso-nombre').innerText;
     const precioCurso = document.querySelector('.precio').innerText.replace('$', '');
-    const modalidad = document.querySelector('.modalidad').innerText;
+    const modalidad = document.querySelector('.modalidad').innerText.replace('Modalidad :', '');
     const loggedUser = sessionStorage.getItem("loggedUser");
     const userData = JSON.parse(localStorage.getItem(loggedUser));
     const carrito = document.querySelector(".carrito");
