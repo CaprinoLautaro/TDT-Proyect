@@ -1,7 +1,9 @@
-let imagenes = ['img/cursos/curso python1.jpg', 'img/cursos/curso-java.webp', 'img/cursos/curso-html.webp', 'img/cursos/curso-css.webp', 'img/cursos/curso-php.webp']
+let imagenes = ['img/cursos/curso python1.jpg', 'img/cursos/curso-java.webp', 'img/cursos/curso-html.webp', 'img/cursos/curso-css.webp', 'img/cursos/curso-php.webp',
+    'img/presenciales/curso-adobe.webp','img/presenciales/curso-office.webp','img/presenciales/curso-python.webp']
 
 
-let linksImg = ['pages/pagina-python.html', 'pages/pagina-java.html', 'pages/pagina-html.html', 'pages/pagina-css.html', 'pages/pagina-php.html'];
+let linksImg = ['pages/pagina-python.html', 'pages/pagina-java.html', 'pages/pagina-html.html', 'pages/pagina-css.html', 'pages/pagina-php.html','pages/curso-presencial-adobe.html',
+    'pages/curso-presencial-office.html','pages/curso-presencial-python.html'];
 
 let contador = 0;
 const intervaloTiempo = 3000
@@ -53,10 +55,6 @@ function carruselEnMovimiento() {
 function detenerCarrousel(){
         clearInterval(intervaloId);
 }
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {

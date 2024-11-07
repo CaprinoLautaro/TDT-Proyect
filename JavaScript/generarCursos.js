@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             valor: 20,
             descripcion: "Curso de Python: aprende a programar desde cero y domina los fundamentos de Python. Ideal para principiantes, cubrirá conceptos esenciales como variables, estructuras de control, funciones y manejo de datos. Este curso es perfecto para aquellos que desean iniciarse en el mundo de la programación y aplicar sus conocimientos en proyectos prácticos.",
             profesor: "Severus Snape",
-            imagen: "../img/presenciales/Curso Python.webp",
+            imagen: "../img/presenciales/curso-python.webp",
             enlace: "./curso-presencial-python.html",
             modalidad: "presencial"
         }
