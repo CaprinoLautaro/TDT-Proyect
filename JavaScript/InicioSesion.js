@@ -32,11 +32,7 @@ loginForm.addEventListener("submit", function(e){
             warnings.innerHTML = "Contraseña incorrecta.";
         }
     } else {
-<<<<<<< HEAD
         warnings.innerHTML = "El usuario no está registrado";
-=======
-        warnings.innerHTML = "El usuario no esta regitrado";
->>>>>>> 20bf8da648a9a88f77efdd0adbf3fa106d413020
     }
 });
 
