@@ -60,22 +60,22 @@ function mostrarCursosEnCarrito(cursosAgrupados, carritoContainer) {
         const cursoElement = document.createElement("div");
         cursoElement.classList.add("curso-item");
 
-         // Verificar si es una gift card o un curso presencial
-         const esGiftCard = curso.modalidad === "Gift Card";
-         const esCursoPresencial = curso.modalidad === "Presencial"; // Si es curso presencial
-         let titulo = "";
-         
-         if (esGiftCard) {
-             titulo = `Gift Card para ${curso.titulo.split(" - ")[1]}`;
-         } else if (esCursoPresencial) {
-             titulo = `Curso Presencial: ${curso.titulo} (${curso.cantidad} personas)`;
-         } else {
-             titulo = `${curso.titulo}`;
-         }
+        // Verificar si es una gift card o un curso presencial
+        const esGiftCard = curso.modalidad === "Gift Card";
+        const esCursoPresencial = curso.modalidad === "Presencial"; // Si es curso presencial
+        let titulo = "";
+
+        if (esGiftCard) {
+            titulo = `Gift Card para ${curso.titulo.split(" - ")[1]}`;
+        } else if (esCursoPresencial) {
+            titulo = `Curso Presencial: ${curso.titulo} (${curso.cantidad} personas)`;
+        } else {
+            titulo = `${curso.titulo}`;
+        }
 
         cursoElement.innerHTML = `
             <h5>${titulo}</h5>
-            <h7> ${curso.modalidad}</h7>
+            <h7>Modalidad: ${curso.modalidad}</h7>
             <div class="division-contenedor">
                 <div class="division">
                     <p>Precio: $${curso.valor}</p>
@@ -128,13 +128,13 @@ function eliminarCurso(titulo, modalidad, loggedUser, userData) {
     if (index !== -1) {
         userData.cursosComprados.splice(index, 1); // Eliminar una instancia del curso
         userData.contadorCarrito--; // Disminuir el contador del carrito
-        
+
         // Actualizar localStorage con los nuevos datos
         localStorage.setItem(loggedUser, JSON.stringify(userData));
 
         // Actualizar el contador en el header
         actualizarContadorCarrito(userData.contadorCarrito);
-        
+
         // Recargar la página del carrito para reflejar los cambios
         location.reload(); // Recargar la página para ver los cambios en el carrito
     }
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const codigoDescuentoInput = document.getElementById("codigoDescuento");
     const mensajeDescuento = document.getElementById("mensajeDescuento");
 
-    let descuentoAplicado = false; 
+    let descuentoAplicado = false;
     const DESCUENTO = 3000;
     const CODIGO_VALIDO = "A5BG67";
 
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const loggedUser = sessionStorage.getItem("loggedUser");
         const userData = JSON.parse(localStorage.getItem(loggedUser));
 
-         // Verificar si hay elementos en el carrito antes de aplicar el descuento
+        // Verificar si hay elementos en el carrito antes de aplicar el descuento
         if (!userData || !userData.cursosComprados || userData.cursosComprados.length === 0) {
             alert("El carrito se encuentra vacío, no se puede aplicar el descuento.");
             return;
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
             mensajeDescuento.style.color = "green";
 
             verificarCodigoButton.innerText = "Aplicar descuento";
-            
+
             verificarCodigoButton.onclick = function () {
                 aplicarDescuento(DESCUENTO);
                 verificarCodigoButton.disabled = true; // Deshabilitar botón después de aplicar
@@ -200,13 +200,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const loggedUser = sessionStorage.getItem("loggedUser");
             const userData = JSON.parse(localStorage.getItem(loggedUser));
 
-        
+
             if (!userData || !userData.cursosComprados || userData.cursosComprados.length === 0) {
                 alert("El carrito está vacío. No puedes realizar la compra.");
                 return;
             }
 
-           
+
             alert("¡Compra realizada con éxito!");
 
             vaciarCarrito(userData, loggedUser);
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Función para vaciar el carrito
 function vaciarCarrito(userData, loggedUser) {
-    
+
     userData.cursosComprados = [];
     userData.contadorCarrito = 0;
 
@@ -229,6 +229,6 @@ function vaciarCarrito(userData, loggedUser) {
     carritoContainer.innerHTML = "<p>Tu carrito está vacío.</p>";
     totalContainer.innerText = "Total a pagar: $0";
 
-    
-    location.reload(); 
+
+    location.reload();
 }
