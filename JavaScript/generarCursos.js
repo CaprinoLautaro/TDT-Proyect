@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <a href="${curso.enlace}" class="clase-contenido">
             <img src="${curso.imagen}" alt="Imagen-clase">
             <h3 class="Titulo">${curso.titulo}</h3>
-            <p class="Modalidad"> Cursada : ${curso.modalidad} </p>
+            <p class="Modalidad"> Modalidad : ${curso.modalidad} </p>
             <p>${curso.profesor}</p>
             <p class="descripcion"> ${curso.descripcion}</p>
         </a>
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a href="${curso.enlace}" class="clase-contenido">
                     <img src="${curso.imagen}" alt="Imagen-clase">
                     <h3 class="Titulo curso-nombre">${curso.titulo}</h3>
-                    <p class="modalidad"> Cursada : ${curso.modalidad} </p>
+                    <p class="modalidad"> Modalidad : ${curso.modalidad} </p>
                     <p>${curso.profesor}</p>
                     <p class="descripcion"> ${curso.descripcion}</p>
                 </a>
